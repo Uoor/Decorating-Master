@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>登录-微课程</title>
+<title>登录-微裱花</title>
 <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
 <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
 
@@ -28,11 +28,11 @@
 <section class="container homepage">
 
     <div class="flat clearfix">
-        <h2>课程频道</h2>
+        <h2>裱花频道</h2>
         <ul class="cells channel-cells">
-           <li class="cell"><a href=""><i class="channel-icon channel-icon-photography"></i>摄影</a></li>
+           <li class="cell"><a href=""><i class="channel-icon channel-icon-photography"></i>奶油</a></li>
            <li class="cell"><a href=""><i class="channel-icon channel-icon-programme"></i>编程</a></li>
-           <li class="cell"><a href=""><i class="channel-icon channel-icon-interest"></i>兴趣</a></li>
+           <li class="cell"><a href=""><i class="channel-icon channel-icon-interest"></i>鲜奶油</a></li>
            <li class="cell"><a href=""><i class="channel-icon channel-icon-computer"></i>电脑</a></li>
            <li class="cell"><a href=""><i class="channel-icon channel-icon-language"></i>语言</a></li>
     
@@ -40,13 +40,13 @@
     </div>
 
    <div class="flat clearfix">
-        <h2>最新课程</h2>
+        <h2>最新裱花</h2>
         <ul class="cells cells-middle">
         <li class="cell">
         <div class="course-item">
-         <div class="thumb"><a href=""><img src="" alt="南京大学：普通天文学" /></a></div>
-         <p class="title"><a href="" title="南京大学：普通天文学"><span class="video" title="视频课程"></span>南京大学：普通天文学</a></p>
-          <div class="summary">南京大学天文学</div>
+         <div class="thumb"><a href=""><img src="" alt="南京大学：普通天蛋白" /></a></div>
+         <p class="title"><a href="" title="南京大学：普通天蛋白"><span class="video" title="视频裱花"></span>南京大学：普通天蛋白</a></p>
+          <div class="summary">南京大学天蛋白</div>
           <p class="metas clearfix">
           <span class="fr learn" title="学员人数">7</span>
          <span class="fr view mrm" title="查看次数">354</span>

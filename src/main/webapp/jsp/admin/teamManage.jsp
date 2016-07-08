@@ -56,7 +56,7 @@ function _search()
 }
 </script>
 
-<title>小组管理 - 萌课网</title>
+<title>花圈管理 - 裱花大师</title>
 </head>
 <body>
 <div id="header">
@@ -89,14 +89,14 @@ function _search()
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="turnToCourseManage.htm"><i class="icon icon-tint"></i> <span>课程管理</span> <span class="label">3</span></a>
+					<a href="turnToCourseManage.htm"><i class="icon icon-tint"></i> <span>裱花管理</span> <span class="label">3</span></a>
 					<ul>
-						<li><a href="turnToCourseManage.htm">申请中课程</a></li>
-						<li><a href="turnToNormalCourse.htm">已批准的课程</a></li>
-						<li><a href="turnToLockCourse.htm">封禁的课程</a></li>
+						<li><a href="turnToCourseManage.htm">申请中裱花</a></li>
+						<li><a href="turnToNormalCourse.htm">已批准的裱花</a></li>
+						<li><a href="turnToLockCourse.htm">封禁的裱花</a></li>
 					</ul>
 				</li>
-				<li class="active"><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>小组管理</span></a></li>
+				<li class="active"><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>花圈管理</span></a></li>
 				<li><a href="turnToUserManage.htm"><i class="icon icon-user"></i> <span>用户管理</span></a></li>
 				<li><a href="turnToAuthorManage.htm"><i class="icon icon-pencil"></i> <span>权限管理</span></a></li>
 				<li><a href=""><i class="icon icon-th"></i> <span>爬虫管理</span></a></li>
@@ -124,12 +124,12 @@ function _search()
 		</div>
 		<div id="content">
 			<div id="content-header">
-				<h1>小组管理</h1>
+				<h1>花圈管理</h1>
 			</div>
 			<div id="breadcrumb">
 				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>首页</a>
 				
-				<a href="#" class="current">小组管理</a>
+				<a href="#" class="current">花圈管理</a>
 			</div>
 			<div class="container-fluid">
 				<div class="page">
@@ -137,7 +137,7 @@ function _search()
 			<div class="container">
 				<div class="row">
 					<div class="span12">						
-						<h4 class="header">小组管理</h4>
+						<h4 class="header">花圈管理</h4>
 						
 						<table class="table table-striped sortable" >
 							<thead>
@@ -186,7 +186,7 @@ function _search()
 
 									</td>
 									<td style="text-align:center;">
-									  <a class="btn success" href="alterTeamState.htm?teamId=${team.teamId}&type=3">删除小组</a>
+									  <a class="btn success" href="alterTeamState.htm?teamId=${team.teamId}&type=3">删除花圈</a>
 									</td>
 								</tr>
 								</c:forEach>							

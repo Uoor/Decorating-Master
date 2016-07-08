@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>萌课网 - 登录</title>
+    <title>裱花大师 - 登录</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <script type="text/javascript" src="<c:url value="/resource/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
 

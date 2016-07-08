@@ -18,7 +18,7 @@
     <script src="<c:url value="/resource/js/jquery.flot.resize.min.js"/>"></script>
     <script src="<c:url value="/resource/js/jquery.peity.min.js"/>"></script>
     <script src="<c:url value="/resource/js/unicorn.js"/>"></script>
-    <title>管理员首页 - 萌课网</title>
+    <title>管理员首页 - 裱花大师</title>
 
     <script type="text/javascript">
 
@@ -65,14 +65,14 @@
 					</ul>
 				</li>
 				<li class="submenu">
-					<a href="turnToCourseManage.htm"><i class="icon icon-tint"></i> <span>课程管理</span> <span class="label">3</span></a>
+					<a href="turnToCourseManage.htm"><i class="icon icon-tint"></i> <span>裱花管理</span> <span class="label">3</span></a>
 					<ul>
-						<li><a href="turnToCourseManage.htm">申请中课程</a></li>
-						<li><a href="turnToNormalCourse.htm">已批准的课程</a></li>
-						<li><a href="turnToLockCourse.htm">封禁的课程</a></li>
+						<li><a href="turnToCourseManage.htm">申请中裱花</a></li>
+						<li><a href="turnToNormalCourse.htm">已批准的裱花</a></li>
+						<li><a href="turnToLockCourse.htm">封禁的裱花</a></li>
 					</ul>
 				</li>
-				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>小组管理</span></a></li>
+				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>花圈管理</span></a></li>
 				<li><a href="turnToUserManage.htm"><i class="icon icon-user"></i> <span>用户管理</span></a></li>
 				<li><a href="turnToAuthorManage.htm"><i class="icon icon-pencil"></i> <span>权限管理</span></a></li>
 				<li><a href=""><i class="icon icon-th"></i> <span>爬虫管理</span></a></li>
@@ -121,13 +121,13 @@
 								
 								<div class="right">
 									<strong>${courseSum}</strong>
-									课程数
+									裱花数
 								</div>
 							</li>
 							<li>
 								<div class="right">
 									<strong>${teamSum}</strong>
-									小组数
+									花圈数
 								</div>
 							</li>
 							<li>
@@ -181,14 +181,14 @@
 					
 					<div class="span6">
 						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>最新课程</h5></div>
+							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>最新裱花</h5></div>
 							<div class="widget-content nopadding">
 								<ul class="recent-comments">
 									<li>
 										<table class="table table-striped sortable" >
 											<thead>
 												<tr>
-												    <th>课程名称</th>
+												    <th>裱花名称</th>
 													<th>简介</th>
 													<th>发布时间</th>
 													<th>浏览次数</th>	
@@ -219,14 +219,14 @@
 				<div class="row-fluid">
 					<div class="span6">
 						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>最新小组</h5></div>
+							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>最新花圈</h5></div>
 							<div class="widget-content nopadding">
 								<ul class="recent-posts">
 									<li>
 										<table class="table table-striped sortable" >
 											<thead>
 												<tr>
-												    <th>小组名称</th>
+												    <th>花圈名称</th>
 													<th>简介</th>
 													<th>建设度</th>
 													<th>创建时间</th>	
@@ -265,7 +265,7 @@
 										<table class="table table-striped sortable" >
 											<thead>
 												<tr>
-												    <th>所属课程</th>
+												    <th>所属裱花</th>
 													<th>所属用户</th>
 													<th>发布时间</th>
 													<th>是否公开</th>	

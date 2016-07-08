@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>${userTeam2.team.teamName}的小组成员 - 萌课网</title>
+    <title>${userTeam2.team.teamName}的花圈成员 - 裱花大师</title>
 
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="imageblock-content">
                     <div class="clearfix">
-                        <h1 class="pull-left">小组名：${userTeam2.team.teamName}</h1>
+                        <h1 class="pull-left">花圈名：${userTeam2.team.teamName}</h1>
                     </div>
 
                     <ul class="course-metas">
@@ -51,7 +51,7 @@
 
             <div class="UIImageBlock_Content_1">
                 <div class="nav clearfix">
-                    <a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">小组首页</a>
+                    <a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">花圈首页</a>
                     <a href="discussPage.htm?teamId=${userTeam2.team.teamId}">讨论区</a>
                     <a href="membersAdminPage.htm?teamId=${userTeam2.team.teamId}">成员</a>
                     <c:if test="${userTeam1.userPosition=='组长'}">
@@ -83,12 +83,12 @@
                             </p>
 
                             <p>建设度：${userTeam2.contribution}&nbsp;&nbsp;&nbsp;
-                                小组等级：${level2.lv}&nbsp;&nbsp;&nbsp;
-                                小组称号：${level2.title}
+                                花圈等级：${level2.lv}&nbsp;&nbsp;&nbsp;
+                                花圈称号：${level2.title}
                             </p>
 
                             <div class="tags">
-                                小组标签：
+                                花圈标签：
                                 <c:if test="${empty labelList}"><b>暂时没有标签</b></c:if>
                                 <c:if test="${!empty labelList}">
                                     <c:forEach items="${labelList}" var="label">
@@ -126,7 +126,7 @@
                                                 <c:if test="${userTeam.userPosition=='组长'}">
                                                     <p>
                                                         <a href="addApplyUser.htm?userTeamId=${ut.userTeamId}"
-                                                           class="opt" title="把${ut.user.userName}加入小组">加</a>
+                                                           class="opt" title="把${ut.user.userName}加入花圈">加</a>
                                                         <a href="kickOutTeam.htm?userTeamId=${ut.userTeamId}"
                                                            class="opt" title="把${ut.user.userName}移除列表">除</a>
                                                     </p>
@@ -151,7 +151,7 @@
                                                     <c:if test="${userTeam1.userPosition=='组长'}">
                                                         <p>
                                                             <a href="kickOutTeam.htm?userTeamId=${uts.userTeamId}"
-                                                               class="opt" title="把${uts.user.userName}踢出小组">踢</a>
+                                                               class="opt" title="把${uts.user.userName}踢出花圈">踢</a>
                                                             <a href="banTeamUser.htm?userTeamId=${uts.userTeamId}"
                                                                class="opt" title="把${uts.user.userName}封禁">黑</a>
                                                         </p>
@@ -220,17 +220,17 @@
             <div class="mod">
                 <h2>添加和移除</h2>
 
-                <p class="stext">把用户添加进小组，点击头像旁边的"<b>加</b>"。</p>
+                <p class="stext">把用户添加进花圈，点击头像旁边的"<b>加</b>"。</p>
 
-                <p class="stext">把用户移除小组申请列表，点击头像旁边的"<b>除</b>"。</p>
+                <p class="stext">把用户移除花圈申请列表，点击头像旁边的"<b>除</b>"。</p>
             </div>
 
             <div class="mod">
                 <h2>踢人和封禁</h2>
 
-                <p class="stext">把成员踢出小组，点击头像旁边的"<b>踢</b>"，踢出去的用户以后可以再次加入小组。</p>
+                <p class="stext">把成员踢出花圈，点击头像旁边的"<b>踢</b>"，踢出去的用户以后可以再次加入花圈。</p>
 
-                <p class="stext">永久禁止一个成员加入本小组，点击头像旁边的"<b>黑</b>"。</p>
+                <p class="stext">永久禁止一个成员加入本花圈，点击头像旁边的"<b>黑</b>"。</p>
             </div>
         </div>
     </div>

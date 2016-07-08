@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>创建公开小组 - 萌课网</title>
+    <title>创建公开花圈 - 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" href="<c:url value="/resource/bootstrap/css/bootstrap.css"/>" media="screen">
 
@@ -40,20 +40,20 @@
 
                 <section class="container group" style="margin-top: 60px;">
                     <div class="container-padding clearfix">
-                        <h1>创建公开小组</h1>
+                        <h1>创建公开花圈</h1>
 
                         <form id="group-form" class="form group-form" method="post" action="createTeam.htm">
 
                             <p>
-                                <label for="group_name" class="required">小组名称:</label>
+                                <label for="group_name" class="required">花圈名称:</label>
                                 <input type="text" id="team_name" name="teamName" required="required"    class="wide" />
                             </p>
                             <p>
-                                <label for="group_about" class="required">小组介绍:</label>
+                                <label for="group_about" class="required">花圈介绍:</label>
                                 <textarea id="group_about" name="teamIntro" required="required"    class="wide low mceEditor"></textarea>
                             </p>
                             <p>
-                                <label for="group_about" class="required">小组类型:</label>
+                                <label for="group_about" class="required">花圈类型:</label>
                                 <select id="team_type" name="teamType" required="required">
                                     <c:forEach items="${majorType}" var="mtype">
                                         <option value="${mtype.dicValue}"><c:out value="${mtype.dicValue}"></c:out></option>
@@ -62,7 +62,7 @@
                             </p>
                             <p>
                                 <label for="group_joinMethod" class="required">成员加入方式:</label>
-                                <select id="group_joinMethod" name="method" required="required"><option value="1">允许任何人加入小组</option><option value="2">[即将开放] 只有接受组员邀请才能加入小组</option><option value="3">[即将开放] 需要小组管理员批准后才能加入小组</option></select>
+                                <select id="group_joinMethod" name="method" required="required"><option value="1">允许任何人加入花圈</option><option value="2">[即将开放] 只有接受组员邀请才能加入花圈</option><option value="3">[即将开放] 需要花圈管理员批准后才能加入花圈</option></select>
                             </p>
 
                             <p class="actions">

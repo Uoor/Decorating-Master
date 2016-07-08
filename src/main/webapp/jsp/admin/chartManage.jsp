@@ -19,7 +19,7 @@
 <script src="<c:url value="/resource/js/jquery.flot.pie.min.js"/>"></script>
 <script src="<c:url value="/resource/js/unicorn.js"/>"></script>
 <script src="<c:url value="/resource/js/unicorn.charts.js"/>"></script>
-<title>报表管理 - 萌课网</title>
+<title>报表管理 - 裱花大师</title>
     <script type="text/javascript">
 
         function _search()
@@ -65,7 +65,7 @@
 						<li><a href="">金币管理</a></li>
 					</ul>
 				</li>
-				<li><a href=""><i class="icon icon-tint"></i> <span>课程审核</span></a></li>
+				<li><a href=""><i class="icon icon-tint"></i> <span>裱花审核</span></a></li>
 				<li><a href=""><i class="icon icon-pencil"></i> <span>权限管理</span></a></li>
 				<li><a href=""><i class="icon icon-th"></i> <span>爬虫管理</span></a></li>
 				<li class="active"><a href=""><i class="icon icon-th-list"></i> <span>报表管理</span></a></li>

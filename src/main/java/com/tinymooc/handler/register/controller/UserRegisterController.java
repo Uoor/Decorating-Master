@@ -103,11 +103,11 @@ public class UserRegisterController {
 		userRegisterService.save(user);
 		
 		SendMailService email = new SendMailService("smtp.163.com", 25, 0, true, "initialran@163.com","19920104tr",true);
-		String url="尊敬的"+user.getUserName()+"您好，点击链接激活您的微课程账号<br><a href='http://localhost:8092/verifyEmail.htm?userid="+user.getUserId()+"'>激活</a><br>";
+		String url="尊敬的"+user.getUserName()+"您好，点击链接激活您的微裱花账号<br><a href='http://localhost:8092/verifyEmail.htm?userid="+user.getUserId()+"'>激活</a><br>";
 		try {
 			email.sendEmail(
 					"initialran@163.com",
-					"微课程",
+					"微裱花",
 					userEmail,
 					"激活邮件",url
 					);
@@ -153,7 +153,7 @@ public class UserRegisterController {
         try {
             email.sendEmail(
                     "initialran@163.com",
-                    "微课程",
+                    "微裱花",
                     userEmail,
                     "找回密码",url
             );

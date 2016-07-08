@@ -7,7 +7,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>${currentCourse.course.courseTitle} - 萌课网</title>
+    <title>${currentCourse.course.courseTitle} - 裱花大师</title>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
 
@@ -87,7 +87,7 @@
             </c:if>
             <c:if test="${!empty user}">
             if ($("#start").html() == "学习中") {
-                alert("暂不支持取消课程的学习┗( T﹏T )┛");
+                alert("暂不支持取消裱花的学习┗( T﹏T )┛");
             }
             if ($("#start").html() == "开始学习") {
                 var courseId = $("#courseId").val();
@@ -150,7 +150,7 @@
         });
     </script>
 
-    <%-- 收藏课程 --%>
+    <%-- 收藏裱花--%>
     <script type="text/javascript">
         $(function () {
             // a为ok代表已经收藏 no代表尚未收藏
@@ -276,11 +276,11 @@
                         </c:forEach>
                     </c:if>
                 </div>
-                <%-- 收藏课程--%>
+                <%-- 收藏裱花--%>
                 <c:if test="${!empty user}">
                 <c:if test="${isFavorite==0}">
                     <div class="fr" id="cancel-course-opts">
-                        <a href="javascript:;" id="add-course" class="btn btn-small disabled action-ajax fr" style="display: inline-block;"><i class="icon-plus"></i>收藏本课程</a>
+                        <a href="javascript:;" id="add-course" class="btn btn-small disabled action-ajax fr" style="display: inline-block;"><i class="icon-plus"></i>收藏本裱花</a>
                         <a href="javascript:;" id="cancel-course" class="btn btn-small disabled action-ajax fr" style="display: none;">已收藏</a>
                         <input type="hidden" name="aa" value="no" id="add">
                         <input type="hidden" name="bb" value="${currentCourse.course.courseId}" id="cancel">
@@ -289,14 +289,14 @@
                     </c:if>
                     <c:if test="${isFavorite==1}">
                         <div class="fr" id="follow-user-opts">
-                            <%--<a href="javascript:;" id="add-course" class="btn btn-small disabled action-ajax fr" style="display: none;"><i class="icon-plus"></i>收藏本课程</a>--%>
+                            <%--<a href="javascript:;" id="add-course" class="btn btn-small disabled action-ajax fr" style="display: none;"><i class="icon-plus"></i>收藏本裱花</a>--%>
                             <a href="javascript:;" id="cancel-course" class="btn btn-small disabled action-ajax fr" style="display: inline-block;">已收藏</a>
                             <%--<input type="hidden" name="aa" value="ok" id="add">--%>
                             <%--<input type="hidden" name="bb" value="${currentCourse.course.courseId}" id="cancel">--%>
                         </div>
                     </c:if>
                     </c:if>
-                    <%-- 收藏课程--%>
+                    <%-- 收藏裱花--%>
             </div>
 
 
@@ -380,7 +380,7 @@
 
     <div id="course-side">
         <div class="flat">
-            <h3>课程创建人</h3>
+            <h3>裱花创建人</h3>
 
             <div class="course-author-block imageblock clearfix">
                 <div class="imageblock-image"><img
@@ -412,7 +412,7 @@
                                                  title="${currentCourse.user.userName}">${currentCourse.user.userName}<span
                                 class="o-ver-icn"></span></a></div>
                         <div>
-                            <a href="#" class="stats">课程&nbsp;${creatorCourseNum}</a>
+                            <a href="#" class="stats">裱花&nbsp;${creatorCourseNum}</a>
                             <a href="#" class="stats">粉丝&nbsp;${fansNum}</a>
                             <a href="#" class="stats">关注&nbsp;${followNum}</a>
                         </div>
@@ -426,7 +426,7 @@
                 <h2>最近加入的学员</h2>
                 <ul class="grids smallpic-grids">
                     <c:if test="${empty userLearnCourseList}">
-                        暂无用户学习此课程
+                        暂无用户学习此裱花
                     </c:if>
                     <c:if test="${!empty userLearnCourseList}">
                         <c:forEach items="${userLearnCourseList}" var="course">
@@ -441,10 +441,10 @@
             </div>
 
             <div class="flat">
-                <h2>已完成该课程的学员</h2>
+                <h2>已完成该裱花的学员</h2>
                 <ul class="grids smallpic-grids">
                     <c:if test="${empty userEndCourseList}">
-                        <p>暂无用户学完此课程</p>
+                        <p>暂无用户学完此裱花</p>
                     </c:if>
                     <c:if test="${!empty userEndCourseList}">
                         <c:forEach items="${userEndCourseList}" var="course">

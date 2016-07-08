@@ -8,7 +8,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>${userTeam2.team.teamName} - 萌课网</title>
+    <title>${userTeam2.team.teamName} - 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="imageblock-content">
                     <div class="clearfix">
-                        <h1 class="pull-left">小组名：${userTeam2.team.teamName}</h1>
+                        <h1 class="pull-left">花圈名：${userTeam2.team.teamName}</h1>
                     </div>
 
                     <ul class="course-metas">
@@ -86,7 +86,7 @@
 
             <div class="UIImageBlock_Content_1">
                 <div class="nav clearfix">
-                    <a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">小组首页</a>
+                    <a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">花圈首页</a>
                     <a href="discussPage.htm?teamId=${userTeam2.team.teamId}">讨论区</a>
                     <a href="membersAdminPage.htm?teamId=${userTeam2.team.teamId}">成员</a>
                     <c:if test="${userTeam.userPosition=='组长'}">
@@ -106,7 +106,7 @@
                             <a href="createDiscussPage.htm?teamId=${userTeam2.team.teamId}" class="btn-s1"><span>发话题</span></a>
                         </div>
                         <c:if test="${discussNum==0}">
-                            <h3>本小组暂时还没有话题</h3>
+                            <h3>本花圈暂时还没有话题</h3>
                         </c:if>
                         <c:if test="${discussNum>0}">
                             <h2><span>(共${discussNum}话题)</span></h2>
@@ -157,8 +157,8 @@
     <div id="course-side">
         <c:if test="${empty userTeam1.userPosition}">
             <div class="mod joingroup-mod">
-                <span class="gray">加入小组后才能发言哦！</span>
-                <a href="takePartInTeam.htm?teamId=${userTeam2.team.teamId}" class="swbtn"><span>加入小组</span></a>
+                <span class="gray">加入花圈后才能发言哦！</span>
+                <a href="takePartInTeam.htm?teamId=${userTeam2.team.teamId}" class="swbtn"><span>加入花圈</span></a>
             </div>
         </c:if>
         <c:if test="${!empty userTeam1.user}">
@@ -223,7 +223,7 @@
         <c:if test="${userTeam1.userPosition=='成员'}">
             <div class="mod">
                 <div class="ptl">
-                    <p>&raquo; <a href="">退出小组</a></p>
+                    <p>&raquo; <a href="">退出花圈</a></p>
                 </div>
             </div>
         </c:if>

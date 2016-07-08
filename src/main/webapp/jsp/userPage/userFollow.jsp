@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
 
-    <title>好友 - 萌课网</title>
+    <title>好友 - 裱花大师</title>
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 </head>
 
@@ -129,7 +129,7 @@
 
                         <div class="nav clearfix">
                             <a href="goPersonal.htm?userId=${user1.userId}">主页</a>
-                            <a href="goPersonalTeam.htm?userId=${user1.userId}">小组</a>
+                            <a href="goPersonalTeam.htm?userId=${user1.userId}">花圈</a>
                             <a href="goPersonalAttention.htm?userId=${user1.userId}" class="on">好友</a>
                             <a href="goPersonalNote.htm?userId=${user1.userId}">笔记</a>
                         </div>

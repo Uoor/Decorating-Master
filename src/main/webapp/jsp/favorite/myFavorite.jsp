@@ -7,7 +7,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>课程收藏 - 萌课网</title>
+    <title>裱花收藏 - 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />"/>
     <script type="text/javascript">
         $(function () {
@@ -40,7 +40,7 @@
         <div class="mod">
             <table class="datagrid">
                 <thead>
-                <th colspan="2">课程名</th>
+                <th colspan="2">裱花名</th>
                 <th colspan="2">URL</th>
                 </thead>
                 <tbody>

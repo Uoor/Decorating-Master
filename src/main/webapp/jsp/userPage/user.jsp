@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
 
-    <title>个人主页 - 萌课网</title>
+    <title>个人主页 - 裱花大师</title>
 
 <script type="text/javascript">
 	$(function(){
@@ -176,7 +176,7 @@
 
                         <div class="nav clearfix">
                             <a href="goPersonal.htm?userId=${user1.userId}" class="on">主页</a>
-                            <a href="goPersonalTeam.htm?userId=${user1.userId}">小组</a>
+                            <a href="goPersonalTeam.htm?userId=${user1.userId}">花圈</a>
                             <a href="goPersonalAttention.htm?userId=${user1.userId}">好友</a>
                             <a href="goPersonalNote.htm?userId=${user1.userId}">笔记</a>
                         </div>
@@ -217,7 +217,7 @@
 
                     <hr>
                     <div class="mod">
-                        <h3>在学的课程</h3>
+                        <h3>在学的裱花</h3>
                         <ul class="course-cards">
                             <c:forEach items="${currentCourseList}" var="course">
                                 <li>
@@ -234,13 +234,13 @@
                     </div>
                     <hr>
                     <div class="mod">
-                        <h3>学过的课程</h3>
+                        <h3>学过的裱花</h3>
                         <ul class="course-cards">
                             <c:forEach items="${endCourseList}" var="course">
                                 <li>
                                     <div class="course-item">
                                         <div class="thumb"><a href=""><img src="/resource/pic/daa.jpg"></a></div>
-                                        <p class="title"><a href="" title="新版课程创建指南">${course.course.courseTitle}</a></p>
+                                        <p class="title"><a href="" title="新版裱花创建指南">${course.course.courseTitle}</a></p>
                                         <p class="metas clearfix">
                                             <span class="fr view mrm" title="查看次数">浏览次数：${course.course.scanNum}</span>
                                         </p>

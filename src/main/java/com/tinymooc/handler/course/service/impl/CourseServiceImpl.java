@@ -177,9 +177,9 @@ public class CourseServiceImpl extends BaseServiceImpl implements CourseService 
             IndexWriter indexWriter = new IndexWriter(directory, analyzer ,true, IndexWriter.MaxFieldLength.LIMITED);
 
             long begin = new Date().getTime();
-            System.out.println("***所有课程数量***" + list.size());
-            System.out.println("***所有课程id***" + list.get(1).getCourseId());
-            System.out.println("***所有课程1的Title***" + list.get(1).getCourseTitle());
+            System.out.println("***所有裱花数量***" + list.size());
+            System.out.println("***所有裱花id***" + list.get(1).getCourseId());
+            System.out.println("***所有裱花1的Title***" + list.get(1).getCourseTitle());
             for(Course course: list)
             {
                 Document doc = new Document();

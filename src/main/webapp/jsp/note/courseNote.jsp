@@ -126,7 +126,7 @@
 
 			</div>
 			<div class="flat">
-				<h2>相关课程</h2>
+				<h2>相关裱花</h2>
 				<ul class="course-cards" id="course-looking-panel">
 					<li>
 						<div class="course-item">
@@ -134,7 +134,7 @@
 								<a href=""><img src=""></a>
 							</div>
 							<p class="title">
-								<a href=""></span>健康图书馆--斯坦福大学开放课程（第一部分）</a>
+								<a href=""></span>健康图书馆--斯坦福大学开放裱花（第一部分）</a>
 							</p>
 							<p class="metas clearfix">
 								<span class="fr learn" title="学员人数">65</span> <span
@@ -151,7 +151,7 @@
 		</div>
 		<div id="course-side">
 			<div class="flat">
-				<h2>此课程中我的笔记</h2>
+				<h2>此裱花中我的笔记</h2>
 				<ul class="text-list">
 				<c:forEach items="${courseList1}" var="list">
 					<c:forEach items="${list.notes}" var="no1">

@@ -58,11 +58,11 @@ public class HomePageController {
     @RequestMapping("turnToHomePage.htm")
     public ModelAndView turnToHomePage(HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("user");
-        //热门课程
+        //热门裱花
         DetachedCriteria dCriteria = DetachedCriteria.forClass(Course.class);
         dCriteria.addOrder(Order.desc("scanNum"));
         dCriteria.add(Restrictions.eq("courseState", "批准"));
-        // TODO 是否取消课程的自关联
+        // TODO 是否取消裱花的自关联
         dCriteria.add(Restrictions.isNull("course"));
         List<Course> hotCourseListTemp = userService.queryMaxNumOfCondition(Course.class, dCriteria, 8);
         // FIXME
@@ -85,7 +85,7 @@ public class HomePageController {
         // FIXME
         System.out.println("=======未登录hotCourseList .size()===========" + hotCourseList.size());
 
-        //最新课程
+        //最新裱花
         DetachedCriteria dCriteria1 = DetachedCriteria.forClass(Course.class);
         dCriteria1.addOrder(Order.desc("applyDate"));
         dCriteria1.add(Restrictions.eq("courseState", "批准"));
@@ -113,7 +113,7 @@ public class HomePageController {
         // FIXME
         System.out.println("=====未登录newCourseList.size=====" + newCourseList.size());
 
-        //推荐小组
+        //推荐花圈
         DetachedCriteria dCriteria2 = DetachedCriteria.forClass(Team.class);
         dCriteria2.addOrder(Order.desc("construction"));
         dCriteria2.add(Restrictions.eq("teamState", "批准"));
@@ -136,9 +136,9 @@ public class HomePageController {
         List<Note> noteList = userService.queryMaxNumOfCondition(Note.class, dCriteria5, 5);
 
 
-        request.setAttribute("hotCourseList", hotCourseList); // 热门课程
-        request.setAttribute("newCourseList", newCourseList); // 最新课程
-        request.setAttribute("teamList", teamList); // 小组
+        request.setAttribute("hotCourseList", hotCourseList); // 热门裱花
+        request.setAttribute("newCourseList", newCourseList); // 最新裱花
+        request.setAttribute("teamList", teamList); // 花圈
         request.setAttribute("discussList", discussList); // 话题
         request.setAttribute("labelList", labelList); // 标签
         request.setAttribute("noteList", noteList); // 笔记
@@ -172,7 +172,7 @@ public class HomePageController {
     }
 
     /**
-     * 我的萌课
+     * 我的裱花大师
      *
      * @param request
      * @return ModelAndView
@@ -206,11 +206,11 @@ public class HomePageController {
             dCriteriaLabel.addOrder(Order.desc("frequency"));
             List<Label> labelList = userService.queryMaxNumOfCondition(Label.class, dCriteriaLabel, 8);
 
-            //课程推荐
+            //裱花推荐
             DetachedCriteria dCriteriaCourse = DetachedCriteria.forClass(Course.class);
             dCriteriaCourse.addOrder(Order.desc("scanNum"));
             dCriteriaCourse.add(Restrictions.eq("courseState", "批准"));
-            // TODO 是否取消课程的自关联
+            // TODO 是否取消裱花的自关联
             dCriteriaCourse.add(Restrictions.isNull("course"));
             List<Course> courseList1 = userService.queryMaxNumOfCondition(Course.class, dCriteriaCourse, 6);
 
@@ -272,7 +272,7 @@ public class HomePageController {
                 .add(Restrictions.ne("userId", user.getUserId()));
         List<User> expertList = userService.queryMaxNumOfCondition(User.class, detachedCriteria2, 4);
 
-        //小组推荐
+        //花圈推荐
         DetachedCriteria detachedCriteria3 = DetachedCriteria.forClass(LabelObject.class)
                 .add(Restrictions.eq("objectId", user.getUserId()));
         List<LabelObject> labelObjectList = userService.queryAllOfCondition(LabelObject.class, detachedCriteria3);
@@ -453,7 +453,7 @@ public class HomePageController {
             List<Attention> fansList = userService.queryAllOfCondition(Attention.class, dCriteria2);
 
 
-            // 获取当前学习课程
+            // 获取当前学习裱花
             DetachedCriteria dCriteria3 = DetachedCriteria.forClass(UserCourse.class)
                     .add(Restrictions.eq("user", user1))
                     .add(Restrictions.eq("learnState", "学习中"))
@@ -463,7 +463,7 @@ public class HomePageController {
             List<UserCourse> currentCourseList = userService.queryAllOfCondition(UserCourse.class, dCriteria3);
 
 
-            // 获取当前学完课程
+            // 获取当前学完裱花
             DetachedCriteria dCriteria4 = DetachedCriteria.forClass(UserCourse.class);
             dCriteria4.add(Restrictions.eq("learnState", "已学"));
             dCriteria4.add(Restrictions.eq("user", user1))
@@ -576,7 +576,7 @@ public class HomePageController {
 
     }
 
-    /*---------------------------导航栏课程首页------------------------*/
+    /*---------------------------导航栏裱花首页------------------------*/
     @SuppressWarnings("unchecked")
     @RequestMapping("goCourseHome.htm")
     public ModelAndView goCourseHome(HttpServletRequest request) {
@@ -629,7 +629,7 @@ public class HomePageController {
         System.out.println("============majorList.size=" + majorCourseList.size());
 
 
-        //最新课程 显示4门
+        //最新裱花显示4门
         DetachedCriteria detachedCriteria2 = DetachedCriteria.forClass(Course.class);
         detachedCriteria2.add(Restrictions.eq("courseState", "批准"));
         detachedCriteria2.add(Restrictions.eq("type", type));
@@ -653,7 +653,7 @@ public class HomePageController {
         }
 
 
-        //热门课程 显示4门
+        //热门裱花显示4门
         DetachedCriteria detachedCriteria3 = DetachedCriteria.forClass(Course.class);
         detachedCriteria3.addOrder(Order.desc("scanNum"));
         detachedCriteria3.add(Restrictions.eq("courseState", "批准"));
@@ -677,12 +677,12 @@ public class HomePageController {
         }
 
 
-        //小组话题
+        //花圈话题
         DetachedCriteria detachedCriteria4 = DetachedCriteria.forClass(Discuss.class);
         detachedCriteria4.addOrder(Order.desc("scanNum")).createCriteria("team").add(Restrictions.eq("type", type)).add(Restrictions.eq("teamState", "批准"));
         List<Discuss> discussList = userService.queryMaxNumOfCondition(Discuss.class, detachedCriteria4, 4);
 
-        //相关小组
+        //相关花圈
         DetachedCriteria detachedCriteria5 = DetachedCriteria.forClass(Team.class);
         detachedCriteria5.addOrder(Order.desc("construction"));
         detachedCriteria5.add(Restrictions.eq("teamState", "批准"));

@@ -8,7 +8,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />"/>
-    <title>萌课网 - 小组</title>
+    <title>裱花大师 - 花圈</title>
 
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -35,7 +35,7 @@
         $("a.lyl").live('click', function () {
                     a = $(this).html();
                     //alert(a);
-                    if (a == "摄影") {
+                    if (a == "奶油") {
 //                        alert(a);
                         $("#groups-video").css("display", "block");
                         $("#groups-art").css("display", "none");
@@ -47,7 +47,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "艺术") {
+                    if (a == "人造奶油") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "block");
@@ -59,7 +59,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "兴趣") {
+                    if (a == "鲜奶油") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "none");
@@ -71,7 +71,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "计算机") {
+                    if (a == "植指奶油") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "none");
@@ -83,7 +83,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "文学") {
+                    if (a == "蛋白") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "none");
@@ -95,7 +95,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "求职") {
+                    if (a == "巧克力") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "none");
@@ -107,7 +107,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "动漫") {
+                    if (a == "糖面") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "none");
@@ -119,7 +119,7 @@
                         $("#groups-openSubject").css("display", "none");
                         $("#groups-other").css("display", "none");
                     }
-                    if (a == "音乐") {
+                    if (a == "水果") {
 //                        alert(a);
                         $("#groups-video").css("display", "none");
                         $("#groups-art").css("display", "none");
@@ -182,11 +182,11 @@
                     <ul class="sub-menu">
 
                         <c:if test="${empty userTeam1 && empty userTeam2}">
-                            <div class="empty">你还没有参加任何小组！</div>
+                            <div class="empty">你还没有参加任何花圈！</div>
                         </c:if>
 
                         <c:if test="${!empty userTeam1}">
-                            <div class="gray">我管理的小组</div>
+                            <div class="gray">我管理的花圈</div>
 
                             <ul class="grids smallpic-grids">
                                 <c:forEach items="${userTeam1}" var="team">
@@ -199,7 +199,7 @@
                         </c:if>
 
                         <c:if test="${!empty userTeam2}">
-                            <div class="gray">我加入的小组</div>
+                            <div class="gray">我加入的花圈</div>
 
                             <ul class="grids smallpic-grids">
                                 <c:forEach items="${userTeam2}" var="userteam2">
@@ -220,7 +220,7 @@
 
                         </c:if>
 
-                        <div class="mvs"><a href="createGuidePage.htm" class="">» 申请创建小组</a></div>
+                        <div class="mvs"><a href="createGuidePage.htm" class="">» 申请创建花圈</a></div>
 
                     </ul>
                     </li>
@@ -241,7 +241,7 @@
         <div class="right">
 
             <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-                <h1>活跃小组</h1>
+                <h1>活跃花圈</h1>
 
                 <ul class="grids smallpic-grids">
                     <c:forEach items="${hotTeams}" var="team" begin="0" end="6">
@@ -266,12 +266,12 @@
                 </c:forEach>
 
                 <div id="groups-video" class="groups-panel">
-                    <p>摄影</p>
+                    <p>奶油</p>
 
                     <div class="mbl">
                         <ul class="group-cells">
                             <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='摄影'}">
+                                <c:if test="${team.type=='奶油'}">
                                     <li style="float:left">
                                         <div class="group-cell">
                                             <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -291,12 +291,12 @@
                     </div>
                 </div>
                 <div id="groups-art" class="groups-panel">
-                    <p>艺术</p>
+                    <p>人造奶油</p>
 
                     <div class="mbl">
                         <ul class="group-cells">
                             <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='艺术'}">
+                                <c:if test="${team.type=='人造奶油'}">
                                     <li style="float:left">
                                         <div class="group-cell">
                                             <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -317,12 +317,12 @@
                     </div>
                 </div>
                 <div id="groups-favorite" class="groups-panel" style="display: block;">
-                    <p>兴趣</p>
+                    <p>鲜奶油</p>
 
                     <div class="mbl">
                         <ul class="group-cells">
                             <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='兴趣'}">
+                                <c:if test="${team.type=='鲜奶油'}">
                                     <li style="float:left">
                                         <div class="group-cell">
                                             <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -343,11 +343,11 @@
                 </div>
 
                 <div id="groups-computer" class="groups-panel">
-                    <p>计算机</p>
+                    <p>植指奶油</p>
 
                     <div class="mbl">
                         <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='计算机'}">
+                            <c:if test="${team.type=='植指奶油'}">
                                 <li style="float:left">
                                     <div class="group-cell">
                                         <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -366,11 +366,11 @@
                     </div>
                 </div>
                 <div id="groups-literature" class="groups-panel">
-                    <p>文学</p>
+                    <p>蛋白</p>
 
                     <div class="mbl">
                         <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='文学'}">
+                            <c:if test="${team.type=='蛋白'}">
                                 <li style="float:left">
                                     <div class="group-cell">
                                         <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -390,12 +390,12 @@
                     </div>
                 </div>
                 <div id="groups-job" class="groups-panel">
-                    <p>求职</p>
+                    <p>巧克力</p>
 
                     <div class="mbl">
                         <ul class="group-cells">
                             <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='求职'}">
+                                <c:if test="${team.type=='巧克力'}">
                                     <li style="float:left">
                                         <div class="group-cell">
                                             <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -415,11 +415,11 @@
                     </div>
                 </div>
                 <div id="groups-comic" class="groups-panel">
-                    <p>动漫</p>
+                    <p>糖面</p>
 
                     <div class="mbl">
                         <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='动漫'}">
+                            <c:if test="${team.type=='糖面'}">
                                 <li style="float:left">
                                     <div class="group-cell">
                                         <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
@@ -439,11 +439,11 @@
                     </div>
                 </div>
                 <div id="groups-openSubject" class="groups-panel">
-                    <p>音乐</p>
+                    <p>水果</p>
 
                     <div class="mbl">
                         <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='音乐'}">
+                            <c:if test="${team.type=='水果'}">
                                 <li style="float:left">
                                     <div class="group-cell">
                                         <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img

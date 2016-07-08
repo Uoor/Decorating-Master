@@ -7,7 +7,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>我的课程 - 萌课网</title>
+  <title>我的裱花- 裱花大师</title>
   <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 <link rel="stylesheet" href="<c:url value="/resource/bootstrap/css/bootstrap.css"/>" media="screen">
 
@@ -30,7 +30,7 @@ $().ready(function(){
 	   	e.preventDefault();
 	   	$.fancybox( 
 	   	{href:'manageCoursePage.htm?courseId='+courseId,   		
-		   	title:'管理课程',type:'iframe',
+		   	title:'管理裱花',type:'iframe',
 	   		onComplete: function() {
 	    		   parent.$("#fancybox-title").css({'top':'-15px', 'bottom':'auto'});
 	    		 }
@@ -84,12 +84,12 @@ $().ready(function(){
                 <div class="mod">
                     <table class="datagrid">
                         <thead>
-                        <th colspan="2">课程</th>
+                        <th colspan="2">裱花</th>
                         <th>简介</th>
                         <th colspan="2">状态</th>
                         </thead>
                         <tbody>
-                        <c:if test="${empty myCreatedCourseList}">您还没有创建课程</c:if>
+                        <c:if test="${empty myCreatedCourseList}">您还没有创建裱花</c:if>
                         <c:if test="${!empty myCreatedCourseList}">
                             <c:forEach items="${myCreatedCourseList}" var="myCourse">
                                 <tr>

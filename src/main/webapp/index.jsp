@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>萌课网 - 学习是为了探索这个世界的本质</title>
+    <title>裱花大师 - 学习是为了探索这个世界的本质</title>
     <meta name="author" content="hd.bilibili.com" />
     <meta name="description" content="tinymooc 学习是为了探索这个世界的本质。" />
     <meta name="keywords"  content="学习是为了探索这个世界的本质。" />
@@ -25,7 +25,7 @@
         <div class="title">
             <div class="group">
                 <div class="item">2015年12月25日</div>
-                <div class="item">萌课网正式公测&nbsp;<a href="http://localhost:8092/turnToHomePage.htm" target="_blank">进入萌课</a></div>
+                <div class="item">裱花大师正式公测&nbsp;<a href="http://localhost:8092/turnToHomePage.htm" target="_blank">进入裱花大师</a></div>
             </div>
         </div>
         <div class="logo">
@@ -37,14 +37,14 @@
             <p>
                 无数的七彩光霞，闪耀漂浮在无重力的空间——知识之海。<br />
                 在那里，有复数的世界、有交错的时间、还有许多人们。<br />
-                一片汪洋，在即将迷失在风暴海时，萌课出现。<br />
-                萌课网，尝试将现代科学知识系统化和趣味化。<br />
+                一片汪洋，在即将迷失在风暴海时，裱花大师出现。<br />
+                裱花大师，尝试将现代科学知识系统化和趣味化。<br />
                 目标是通过简单易懂，诙谐有趣的文字，<br />
                 让用户能够一次性地接触系统化的结构知识，<br />
                 轻松建立起自己的知识体系。<br />
                 当前有许多形式的在线慕课学习网站。<br />
                 唯一能区分的地方在于理念。<br />
-                萌课网的理念是——学习是为了探索这个世界的本质。<br />
+                裱花大师的理念是——学习是为了探索这个世界的本质。<br />
                 让我们把学习回归到最质朴、最纯净的状态，<br />
                 满足人类对未知世界的求知欲。<br />
                 宇宙那么大，我们没弄懂的事情还多着呢。<br />
@@ -74,12 +74,12 @@
             </div>
             <p>
                 &nbsp;<br />
-                活动名称：萌课网公测活动<br />
+                活动名称：裱花大师公测活动<br />
                 活动时间：2015年12月29日 18:30开场 22:00开演<br />
                 活动地点：厦门鼓浪屿（福建省厦门市鼓浪屿）<br />
                 门票分档：S席680元、A席380元、B席280元、C席180元 <br />
 
-                活动流程：1.萌课介绍 2.主创团队见面会相关 3.迷你Live<br />
+                活动流程：1.裱花大师介绍 2.主创团队见面会相关 3.迷你Live<br />
             </p>
         </div>
         <div class="staff">
@@ -95,20 +95,20 @@
     </div>
     <div class="menu">
         <div class="label active" data-type="index"> 首页 </div>
-        <div class="label" data-type="summary"> 萌课简介 </div>
+        <div class="label" data-type="summary"> 裱花大师简介 </div>
         <div class="label" data-type="info"> 公测活动 </div>
         <div class="label" data-type="staff"> STAFF&amp;团队 </div>
-        <div class="buy" data-type="staff"> <a href="http://localhost:8092/turnToHomePage.htm" target="_blank">萌课首页</a>&nbsp;| </div>
+        <div class="buy" data-type="staff"> <a href="http://localhost:8092/turnToHomePage.htm" target="_blank">裱花大师首页</a>&nbsp;| </div>
     </div>
 </div>
 <div class="l-footer">
     <div class="copyright">©Project Campanulaceae</div>
     <div class="menu">
         <div class="label active" data-type="index"> |&nbsp;首页&nbsp;| </div>
-        <div class="label" data-type="summary"> 萌课简介&nbsp;| </div>
+        <div class="label" data-type="summary"> 裱花大师简介&nbsp;| </div>
         <div class="label" data-type="info"> 公测活动&nbsp;| </div>
         <div class="label" data-type="staff"> STAFF&amp;团队&nbsp;| </div>
-        <div class="buy" data-type="staff"> <a href="http://localhost:8092/turnToHomePage.htm" target="_blank">萌课首页</a>&nbsp;| </div>
+        <div class="buy" data-type="staff"> <a href="http://localhost:8092/turnToHomePage.htm" target="_blank">裱花大师首页</a>&nbsp;| </div>
     </div>
     <div class = "menu">
         <div>©2015 TinyMooc.COM &nbsp;All Rights Reserved.&nbsp;<a href="#">闽ICP备15018990号-1</a></div>
@@ -130,7 +130,7 @@
                 e_minsold = (e_hrsold - hrsold) * 60;
                 minsold = Math.floor((e_hrsold - hrsold) * 60);
                 seconds = Math.floor((e_minsold - minsold) * 60);
-                span_dt_dt.innerHTML = "萌课网已萌萌哒运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                span_dt_dt.innerHTML = "裱花大师已萌萌哒运行" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
             }
             show_date_time();
         </SCRIPT>

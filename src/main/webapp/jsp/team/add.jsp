@@ -8,7 +8,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>话题分类设置 - 起风了的小组管理 - 好知网</title>
+  <title>话题分类设置 - 起风了的花圈管理 - 好知网</title>
   <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
  <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
    
@@ -58,22 +58,22 @@ $(function(){
 
 			<ul class="header-nav">
 				<li class="item"><a href="<c:url value="/jsp/homePage/homePage.jsp"/>" class="trigger">首页</a></li>
-				<li class="item course"><a href="#" class="trigger" id="course">课程<span
+				<li class="item course"><a href="#" class="trigger" id="course">裱花<span
 						class="down-triangle"></span></a>
 					<div class="menus">
 						<ul class="clearfix">
-							<li><a href="">摄影</a></li>
+							<li><a href="">奶油</a></li>
 							<li><a href="">编程</a></li>
-							<li><a href="">兴趣</a></li>
+							<li><a href="">鲜奶油</a></li>
 							<li><a href="">电脑</a></li>
 							<li><a href="">语言</a></li>
 							<li><a href="">生活</a></li>
 							<li><a href="">职场</a></li>
 							<li><a href="">文化</a></li>
-							<li><a href="">音乐</a></li>
+							<li><a href="">水果</a></li>
 						</ul>
 					</div></li>
-				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">小组</a></li>
+				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">花圈</a></li>
 			</ul>
 
 			<form class="search-form" action="#" method="get">
@@ -123,7 +123,7 @@ $(function(){
   </div>
   
   <ul class="hnav">
-    <li><a href="teamHome.jsp">小组首页</a></li>
+    <li><a href="teamHome.jsp">花圈首页</a></li>
     <li><a href="discuss.jsp">讨论区</a></li>
     <li><a href="members.jsp">成员</a></li>
     <li class="this"><a href="admin.jsp">管理</a></li>
@@ -168,8 +168,8 @@ $(function(){
 <footer class="footer container">
   <div style="padding: 0px 28px;">
     <div class="fl footer-links">
-      <a href="">关于微课程</a>
-      <a href="">微课程达人</a>
+      <a href="">关于微裱花</a>
+      <a href="">微裱花达人</a>
       <a href="">联系我们</a>
       <a href="">友情链接</a>
       <a href="">意见反馈</a>

@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>头像更换-萌课网</title>
+<title>头像更换-裱花大师</title>
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>

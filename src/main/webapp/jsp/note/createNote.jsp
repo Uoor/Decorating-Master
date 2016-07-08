@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>写笔记 - 萌课网</title>
+<title>写笔记 - 裱花大师</title>
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 <link rel="stylesheet" href="<c:url value="/resource/css/bdsstyle.css"/>">
 <script type="text/javascript" src="<c:url value="/resource/js/xheditor/xheditor-1.1.9-zh-cn.min.js"/>"></script>
@@ -121,7 +121,7 @@
 						</object>
 					</div>
 					<div class="gray fsn">
-						小提示：如无法播放此课程视频，请<a
+						小提示：如无法播放此裱花视频，请<a
 							href="http://www.howzhi.com/group/feedback/discuss/1827"
 							target="_blank" class="thin fsn">查看帮助</a>或<a target="_blank"
 							href="http://wpa.qq.com/msgrd?v=3&uin=2485597828&site=qq&menu=yes"
@@ -154,7 +154,7 @@
 				<div class="pull-left">
 
 					<div id="bdshare" class="bdshare_b" style="line-height: 12px;"
-						data="{&quot;wbuid&quot;:&quot;2169640904&quot;,&quot;url&quot;:&quot;http://www.howzhi.com/course/4631/&quot;,&quot;text&quot;:&quot;突破平面:深度剖析PS&quot;,&quot;desc&quot;:&quot;&amp;amp;lt;Photoshop 核心功能与平面设计&amp;amp;gt;教学课程，由国内Photoshop软件专家周珂令完整讲解，周珂令老师总结多年的工作与教学经验，抓住初学者在学习Photoshop中的最难理解的核心问题，为大家开设专题讲座...&quot;,&quot;comment&quot;:&quot;&amp;amp;lt;Photoshop 核心功能与平面设计&amp;amp;gt;教学课程，由国内Photoshop软件专家周珂令完整讲解，周珂令老师总结多年的工作与教学经验，抓住初学者在学习Photoshop中的最难理解的核心问题，为大家开设专题讲座...&quot;,&quot;pic&quot;:&quot;http://f1.howzhi.com/ci/2013/08-22/14501023d250366903.jpg&quot;}">
+						data="{&quot;wbuid&quot;:&quot;2169640904&quot;,&quot;url&quot;:&quot;http://www.howzhi.com/course/4631/&quot;,&quot;text&quot;:&quot;突破平面:深度剖析PS&quot;,&quot;desc&quot;:&quot;&amp;amp;lt;Photoshop 核心功能与平面设计&amp;amp;gt;教学裱花，由国内Photoshop软件专家周珂令完整讲解，周珂令老师总结多年的工作与教学经验，抓住初学者在学习Photoshop中的最难理解的核心问题，为大家开设专题讲座...&quot;,&quot;comment&quot;:&quot;&amp;amp;lt;Photoshop 核心功能与平面设计&amp;amp;gt;教学裱花，由国内Photoshop软件专家周珂令完整讲解，周珂令老师总结多年的工作与教学经验，抓住初学者在学习Photoshop中的最难理解的核心问题，为大家开设专题讲座...&quot;,&quot;pic&quot;:&quot;http://f1.howzhi.com/ci/2013/08-22/14501023d250366903.jpg&quot;}">
 						<img src="">
 					</div>
 				</div>
@@ -169,7 +169,7 @@
 
 			
 			<div class="flat">
-				<h2>相关课程</h2>
+				<h2>相关裱花</h2>
 				<ul class="course-cards" id="course-looking-panel">
 					<li>
 						<div class="course-item">
@@ -268,7 +268,7 @@
 			</div>
 
 			<div class="flat">
-				<h3>课程创建人</h3>
+				<h3>裱花创建人</h3>
 
 				<div class="course-author-block imageblock clearfix">
 					<div class="imageblock-image">
@@ -289,7 +289,7 @@
 						</div>
 						<div>
 							<a href="http://www.howzhi.com/u/tutu/library?tab=created"
-								class="stats"><em>28</em> 课程</a> <a
+								class="stats"><em>28</em> 裱花</a> <a
 								href="http://www.howzhi.com/u/tutu/fans" class="stats"> <em>433</em>
 								粉丝
 							</a>
@@ -308,7 +308,7 @@
 			</div>
 
 			<div class="flat clearfix">
-				<h2>课程最新笔记</h2>
+				<h2>裱花最新笔记</h2>
 				<ul class="text-list">
 					<li><a href="">像素（1）的笔记</a>
 						<div class="gray"></div></li>
@@ -316,7 +316,7 @@
 
 			</div>
 			<div class="flat">
-				<h3>相关小组</h3>
+				<h3>相关花圈</h3>
 				<ul class="grids smallpic-grids">
 					<li class="grid"><a
 						href=""><img src="" class="thumb"></a>
@@ -329,7 +329,7 @@
 			</div>
 
 			<div class="flat latest-topics clearfix">
-				<h2>相关小组最新话题</h2>
+				<h2>相关花圈最新话题</h2>
 				<ul class="text-list">
 					<li><a href="http://www.howzhi.com/group/snap/discuss/13801">西湖暮色</a></li>
 					

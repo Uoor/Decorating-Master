@@ -7,7 +7,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>${currentCourse.course.courseTitle}-萌课网</title>
+    <title>${currentCourse.course.courseTitle}-裱花大师</title>
     <link rel="stylesheet" href="<c:url value="/resource/css/bdsstyle.css"/>">
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -201,7 +201,7 @@
                         <%--</div>--%>
         <div>
             <h1>
-                <span class="lesson-title">课程名：${lesson.courseTitle}</span>
+                <span class="lesson-title">裱花名：${lesson.courseTitle}</span>
             </h1>
             <div class="action-bar" style="float: right;margin-bottom: 5px">
                 <c:if test="${userCourse.user.userId ne user.userId}">
@@ -371,7 +371,7 @@
     <div id="course-side">
 
         <div class="flat">
-            <h3>课程创建人</h3>
+            <h3>裱花创建人</h3>
 
             <div class="course-author-block imageblock clearfix">
                 <div class="imageblock-image"><a href="goPersonal.htm?userId=${currentCourse.user.userId}"
@@ -405,7 +405,7 @@
                                              title="${currentCourse.user.userName}">${currentCourse.user.userName}<span
                             class="o-ver-icn"></span></a></div>
                     <div>
-                        <a href="#" class="stats">课程&nbsp;0${creatorCourseNum}</a>
+                        <a href="#" class="stats">裱花&nbsp;0${creatorCourseNum}</a>
                         <a href="#" class="stats">粉丝&nbsp;${fansNum}</a>
                         <a href="#" class="stats">关注&nbsp;${followNum}</a>
                     </div>

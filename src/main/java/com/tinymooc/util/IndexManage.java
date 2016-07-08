@@ -66,12 +66,12 @@
 //				Term term2=new Term("type",docModel.getType());
 //				deleterocess(term1, term2, writer);
 //			}
-//			if(docModel.getType().equals("小组")){
+//			if(docModel.getType().equals("花圈")){
 //				Term term1=new Term("userTeamId",docModel.getUserTeamId());
 //				Term term2=new Term("type",docModel.getType());
 //				deleterocess(term1, term2, writer);
 //			}
-//			if(docModel.getType().equals("课程")){
+//			if(docModel.getType().equals("裱花")){
 //				Term term1=new Term("userID",docModel.getUserCourseId());
 //				Term term2=new Term("type",docModel.getType());
 //				deleterocess(term1, term2, writer);

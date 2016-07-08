@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
 
-    <title>我的粉丝 - 萌课网</title>
+    <title>我的粉丝 - 裱花大师</title>
 
 <script type="text/javascript">
 function del(){

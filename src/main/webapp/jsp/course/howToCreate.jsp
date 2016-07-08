@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>帮助-创建课程</title>
+<title>帮助-创建裱花</title>
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -46,16 +46,16 @@
 
             <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
 
-                <h1>创建课程</h1>
+                <h1>创建裱花</h1>
                 <hr />
-                <p><em>第一步：创建课程</em></p>
-                <p>1、创建课程的入口仍然在首页——点击“创建课程”按钮</p>
-                <p><em>第二步：添加课程信息</em></p>
-                <p>1、添加课程封面（支持jpg、png、jpeg等，留空将采用默认图片）</p>
-                <p>2、添加课程标题（标题不宜过长，否则在首页显示会不完整）</p>
-                <p>3、添加课时简介（课时简介为课程的整体摘要，并非课程正文）</p>
-                <p>4、选择分类（按造课程内容选择对应的分类）</p>
-                <p>5、课程创建完成后，在课程页面右边有一个课程发布引导，可以根据引导来完善课程。
+                <p><em>第一步：创建裱花</em></p>
+                <p>1、创建裱花的入口仍然在首页——点击“创建裱花”按钮</p>
+                <p><em>第二步：添加裱花信息</em></p>
+                <p>1、添加裱花封面（支持jpg、png、jpeg等，留空将采用默认图片）</p>
+                <p>2、添加裱花标题（标题不宜过长，否则在首页显示会不完整）</p>
+                <p>3、添加课时简介（课时简介为裱花的整体摘要，并非裱花正文）</p>
+                <p>4、选择分类（按造裱花内容选择对应的分类）</p>
+                <p>5、裱花创建完成后，在裱花页面右边有一个裱花发布引导，可以根据引导来完善裱花。
                     其中未完成的步骤会显示灰色，已完成步骤会变成绿色。</p>
                 <p><em>第三步：等待审核通过</em></p>
                 <p>1、完成</p>

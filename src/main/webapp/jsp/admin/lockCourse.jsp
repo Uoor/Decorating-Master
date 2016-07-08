@@ -20,7 +20,7 @@
     <script src="<c:url value="/resource/js/jquery.peity.min.js"/>"></script>
     <script src="<c:url value="/resource/js/unicorn.js"/>"></script>
 
-<title>课程管理 - 萌课网</title>
+<title>裱花管理 - 裱花大师</title>
     <script type="text/javascript">
 
         function _search()
@@ -56,7 +56,7 @@
         </div>
             
 		<div id="sidebar">
-			<a href="" class="visible-phone"><i class="icon icon-file"></i>课程管理</a>
+			<a href="" class="visible-phone"><i class="icon icon-file"></i>裱花管理</a>
 					<ul>
 				<li><a href="goAdminHome.htm"><i class="icon icon-home"></i><span>统计信息</span></a></li>
 				<li class="submenu">
@@ -67,14 +67,14 @@
 					</ul>
 				</li>
 				<li class="submenu open active">
-					<a href="turnToCourseManage.htm"><i class="icon icon-tint"></i> <span>课程管理</span> <span class="label">3</span></a>
+					<a href="turnToCourseManage.htm"><i class="icon icon-tint"></i> <span>裱花管理</span> <span class="label">3</span></a>
 					<ul>
-						<li><a href="turnToCourseManage.htm">申请中课程</a></li>
-						<li><a href="turnToNormalCourse.htm">已批准的课程</a></li>
-						<li><a href="turnToLockCourse.htm">封禁的课程</a></li>
+						<li><a href="turnToCourseManage.htm">申请中裱花</a></li>
+						<li><a href="turnToNormalCourse.htm">已批准的裱花</a></li>
+						<li><a href="turnToLockCourse.htm">封禁的裱花</a></li>
 					</ul>
 				</li>
-				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>小组管理</span></a></li>
+				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>花圈管理</span></a></li>
 				<li><a href="turnToUserManage.htm"><i class="icon icon-user"></i> <span>用户管理</span></a></li>
 				<li><a href="turnToAuthorManage.htm"><i class="icon icon-pencil"></i> <span>权限管理</span></a></li>
 				<li><a href=""><i class="icon icon-th"></i> <span>爬虫管理</span></a></li>
@@ -102,12 +102,12 @@
 		</div>
 		<div id="content">
 			<div id="content-header">
-				<h1>课程管理</h1>
+				<h1>裱花管理</h1>
 			</div>
 			<div id="breadcrumb">
 				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>首页</a>
-				<a href="#">课程管理</a>
-				<a href="#" class="current">被封禁的课程</a>
+				<a href="#">裱花管理</a>
+				<a href="#" class="current">被封禁的裱花</a>
 			</div>
 			<div class="container-fluid">
 				<div class="page">
@@ -115,15 +115,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">						
-						<h4 class="header">被封禁的课程</h4>
+						<h4 class="header">被封禁的裱花</h4>
 						
 						<table class="table table-striped sortable" >
 							<thead>
 								<tr>
-									<th>课程标题</th>
+									<th>裱花标题</th>
 								
-									<th>课程简介</th>
-									<th>课程类型</th>	
+									<th>裱花简介</th>
+									<th>裱花类型</th>	
 									
 									<th>申请时间</th>
 									<th>状态</th>
@@ -142,7 +142,7 @@
 									<td style="text-align:center;"><span class="label label-success">封禁</span></td>
 									<td style="text-align:center;">
 											<a class="btn success" href="alterCourseState.htm?courseId=${courseList.courseId}&type=4">批准</a>
-											<a class="btn success" href="alterCourseState.htm?courseId=${courseList.courseId}&type=7">删除课程</a>
+											<a class="btn success" href="alterCourseState.htm?courseId=${courseList.courseId}&type=7">删除裱花</a>
 									</td>
 								</tr>
 								</c:forEach>							

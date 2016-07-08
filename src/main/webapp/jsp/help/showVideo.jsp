@@ -22,7 +22,7 @@
 
 
 	<%-- <h3>视频播放</h3>
-	<div>视频内容：课程名</div>
+	<div>视频内容：裱花名</div>
 	<div>
 		<embed src="<c:url value='/resource/video/${video.videoUrl}'/>"
 			autostart="false" loop="false" width="500" height="300">

@@ -6,7 +6,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>修改密码 - ${user.userName}的帐号 - 萌课网</title>
+  <title>修改密码 - ${user.userName}的帐号 - 裱花大师</title>
   <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>

@@ -5,7 +5,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>测试 - 萌课网</title>
+  <title>测试 - 裱花大师</title>
   <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 <link rel="stylesheet" href="<c:url value="/resource/bootstrap/css/bootstrap.css"/>" media="screen">
 
@@ -168,10 +168,10 @@
           <li ><a href="goaccount.htm"><i class="feature-icon feature-icon-home"></i>我的首页</a></li>
           <li ><a href="feed.htm"><i class="feature-icon feature-icon-feed"></i>好友动态<span id="feed-counter" class="counter"></span></a></li>
           <li ><a href="learn.htm"><i class="feature-icon feature-icon-learn"></i>学习计划</a></li>
-          <li ><a href="teach.htm"><i class="feature-icon feature-icon-teach"></i>创建课程</a></li>
+          <li ><a href="teach.htm"><i class="feature-icon feature-icon-teach"></i>创建裱花</a></li>
           <li ><a href="note.htm"><i class="feature-icon feature-icon-note"></i>笔记</a></li>
           <li ><a href="challenge.htm"><i class="feature-icon feature-icon-faq"></i>微挑战</a></li>
-          <li ><a href="discussion.htm"><i class="feature-icon feature-icon-group"></i>小组<span id="group-counter" class="counter"></span></a></li>
+          <li ><a href="discussion.htm"><i class="feature-icon feature-icon-group"></i>花圈<span id="group-counter" class="counter"></span></a></li>
           <li ><a href="favorite.htm"><i class="feature-icon feature-icon-favorite"></i>收藏夹</a></li>
           <li ><a href="shop.htm"><i class="feature-icon feature-icon-faq"></i>商城</a></li>
           <li ><a href="accountprop.htm"><i class="feature-icon feature-icon-faq"></i>我的道具</a></li>

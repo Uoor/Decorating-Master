@@ -10,7 +10,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title> ${discuss.topic} - ${discuss.team.teamName} - 萌课网</title>
+    <title> ${discuss.topic} - ${discuss.team.teamName} - 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <script type="text/javascript" src="<c:url value="/resource/js/xheditor/xheditor-1.1.9-zh-cn.min.js"/>"></script>
     <script type="text/javascript">
@@ -183,7 +183,7 @@
 <section class="container">
 
     <div class="fsm pbm">
-        <a href="teamPage.htm">小组</a> &raquo;
+        <a href="teamPage.htm">花圈</a> &raquo;
         <a href="">${userTeam.team.teamName}</a> &raquo;
         <a href="discussPage.htm?teamId=${userTeam.team.teamId}">讨论区</a> &raquo;
         话题
@@ -334,7 +334,7 @@
 
                     <div  class="nickname"><a href="" class="show-user-card " title="${discuss.user.userName}">${discuss.user.userName}</a></div>
                     <div>
-                        <a href="" class="stats"><em>${courseNum}</em> 课程</a>
+                        <a href="" class="stats"><em>${courseNum}</em> 裱花</a>
                         <a href="" class="stats"><em>${fansNum}</em> 粉丝</span></a>
                     </div>
                 </div>
@@ -342,7 +342,7 @@
             </div>
         </div>
         <div class="flat">
-            <h3>同小组最新话题</h3>
+            <h3>同花圈最新话题</h3>
             <ul class="text-list">
                 <c:forEach items="${discusses}" var="dis">
                     <li><a href="">${dis.topic}</a></li>
@@ -357,8 +357,8 @@
 <footer class="footer container">
     <div style="padding: 0px 28px;">
         <div class="fl footer-links">
-            <a href="">关于微课程</a>
-            <a href="">微课程达人</a>
+            <a href="">关于微裱花</a>
+            <a href="">微裱花达人</a>
             <a href="">联系我们</a>
             <a href="">友情链接</a>
             <a href="">意见反馈</a>

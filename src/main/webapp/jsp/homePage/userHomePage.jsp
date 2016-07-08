@@ -13,7 +13,7 @@
 
     <%-- 本页面为用户未登录时主页 --%>
 
-    <title>萌课网-首页</title>
+    <title>裱花大师-首页</title>
 
     <!-- Make the HTML5 elements work in IE. -->
     <!--[if IE]>
@@ -95,8 +95,8 @@
         }
 
         .why-gnosh-movies{
-            background: url("http://files.bbs.tl.changyou.com/data/attachment/forum/201512/28/170611h1f45gf51i2z4ram.png") top left no-repeat;
-            height:120px;
+          /*  background: url("http://files.bbs.tl.changyou.com/data/attachment/forum/201512/28/170611h1f45gf51i2z4ram.png") top left no-repeat;
+           */ height:60px;
             width:1100px;
             margin-top: 50px;
             margin-left: 0px;
@@ -168,26 +168,26 @@
                     </li>
 
                     <li class="item course">
-                        <a href="goCourseHome.htm" class="scroll" data-offset="30" id="course">课程
+                        <a href="goCourseHome.htm" class="scroll" data-offset="30" id="course">裱花
                             <span class="down-triangle"></span>
                         </a>
                         <div class="menus" id="menu" style="display: none;">
                             <ul class="clearfix">
-                                <li><a href="goMajorHome.htm?type=摄影">摄影</a></li>
-                                <li><a href="goMajorHome.htm?type=艺术">艺术</a></li>
-                                <li><a href="goMajorHome.htm?type=兴趣">兴趣</a></li>
-                                <li><a href="goMajorHome.htm?type=计算机">计算机</a></li>
-                                <li><a href="goMajorHome.htm?type=文学">文学</a></li>
-                                <li><a href="goMajorHome.htm?type=求职">求职</a></li>
-                                <li><a href="goMajorHome.htm?type=动漫">动漫</a></li>
-                                <li><a href="goMajorHome.htm?type=音乐">音乐</a></li>
+                                <li><a href="goMajorHome.htm?type=奶油">奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=人造奶油">人造奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=鲜奶油">鲜奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=植指奶油">植指奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=蛋白">蛋白</a></li>
+                                <li><a href="goMajorHome.htm?type=巧克力">巧克力</a></li>
+                                <li><a href="goMajorHome.htm?type=糖面">糖面</a></li>
+                                <li><a href="goMajorHome.htm?type=水果">水果</a></li>
                                 <li><a href="goMajorHome.htm?type=其他">其他</a></li>
                             </ul>
                         </div>
                     </li>
 
                     <li class="item">
-                        <a href="teamPage.htm" class="" data-offset="-40">小组</a>
+                        <a href="teamPage.htm" class="" data-offset="-40">花圈</a>
                     </li>
                 </ul>
 
@@ -208,7 +208,7 @@
                             <div class="menus" id="menu1" style="display: none;">
                                 <ul class="clearfix">
                                     <li><a href="goPersonal.htm?userId=${sessionScope.user.userId}">个人主页</a></li>
-                                    <li><a href="myTinyMooc.htm">我的萌课</a></li>
+                                    <li><a href="myTinyMooc.htm">我的裱花大师</a></li>
                                     <li> <a href="goPrivateMail.htm" class="status-item message-remind">邮件：${sessionScope.sumMail}</a></li>
                                     <li><a href="myFavorite.htm">收藏夹</a></li>
                                     <li><a href="account.htm">账户设置</a></li>
@@ -226,7 +226,7 @@
 
 
 
-    <section id="home">
+  <%--  <section id="home">
         <!-- All replaced with images in the CSS -->
         <a data-offset="100" class="scroll why_the_apos hoverable">Why the apostrophe and more about us&hellip;</a>
         <!--<p class="gourmet_dips">Gourmet dips without the fuss</p>-->
@@ -261,43 +261,43 @@
         </article>
 
 
-    </section><!-- end #home -->
+    </section><!-- end #home -->--%>
 
 
     <section id="why-gnosh">
         <div class="why-gnosh-movies">
         </div>
-        <div class="flat clearfix">
-            <h2><strong>课程频道</strong></h2>
+        <%--<div class="flat clearfix">
+            <h2><strong>裱花频道</strong></h2>
             <ul class="cells channel-cells">
                 <li class="cell"><a href="goCourseHome.htm"><i
                         class="channel-icon channel-icon-photography"></i>全部</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=摄影"><i
-                        class="channel-icon channel-icon-photography"></i>摄影</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=艺术"><i
-                        class="channel-icon channel-icon-programme"></i>艺术</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=兴趣"><i
-                        class="channel-icon channel-icon-interest"></i>兴趣</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=计算机"><i
-                        class="channel-icon channel-icon-computer"></i>计算机</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=文学"><i
-                        class="channel-icon channel-icon-language"></i>文学</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=求职"><i
-                        class="channel-icon channel-icon-life"></i>求职</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=动漫"><i
-                        class="channel-icon channel-icon-career"></i>动漫</a></li>
-                <li class="cell"><a href="goMajorHome.htm?type=音乐"><i
-                        class="channel-icon channel-icon-culture"></i>音乐</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=奶油"><i
+                        class="channel-icon channel-icon-photography"></i>奶油</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=人造奶油"><i
+                        class="channel-icon channel-icon-programme"></i>人造奶油</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=鲜奶油"><i
+                        class="channel-icon channel-icon-interest"></i>鲜奶油</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=植指奶油"><i
+                        class="channel-icon channel-icon-computer"></i>植指奶油</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=蛋白"><i
+                        class="channel-icon channel-icon-language"></i>蛋白</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=巧克力"><i
+                        class="channel-icon channel-icon-life"></i>巧克力</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=糖面"><i
+                        class="channel-icon channel-icon-career"></i>糖面</a></li>
+                <li class="cell"><a href="goMajorHome.htm?type=水果"><i
+                        class="channel-icon channel-icon-culture"></i>水果</a></li>
                 <li class="cell"><a href="goMajorHome.htm?type=其他"><i
                         class="channel-icon channel-icon-openclass"></i>其他</a></li>
             </ul>
-        </div>
+        </div>--%>
 
-        <div class="why-gnosh-movies">
-        </div>
+       <%-- <div class="why-gnosh-movies">
+        </div>--%>
 
         <div class="flat clearfix">
-            <h2><strong>热门课程 | 瞧瞧大家都在学啥&nbsp;(～￣▽￣)～</strong></h2>
+            <h2><strong>热门裱花| 瞧瞧大家都在学啥&nbsp;(～￣▽￣)～</strong></h2>
             <ul class="cells cells-middle">
                 <c:forEach items="${hotCourseList}" var="hotCourse">
                     <li class="cell">
@@ -306,7 +306,7 @@
                                 <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><img src="${hotCourse.course.logoUrl}"/></a>
                             </div>
                             <p class="title">
-                                <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><span class="video" title="视频课程"></span>${hotCourse.course.courseTitle}</a>
+                                <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><span class="video" title="视频裱花"></span>${hotCourse.course.courseTitle}</a>
                             </p>
                             <div class="summary">${hotCourse.course.courseIntro}</div>
                             <p class="metas clearfix">
@@ -325,7 +325,7 @@
         </div>
 
         <div class="flat clearfix">
-            <h2><strong>最新课程 | 哇塞，又有新课开放了，赶紧学起来&nbsp;(～￣▽￣)～</strong></h2>
+            <h2><strong>最新裱花| 哇塞，又有新课开放了，赶紧学起来&nbsp;(～￣▽￣)～</strong></h2>
             <ul class="cells cells-middle">
                 <c:forEach items="${newCourseList}" var="newCourse" varStatus="iter">
                     <li class="cell">
@@ -334,7 +334,7 @@
                                 <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><img src="${newCourse.course.logoUrl}"/></a>
                             </div>
                             <p class="title">
-                                <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><span class="video" title="视频课程"></span>${newCourse.course.courseTitle}</a>
+                                <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><span class="video" title="视频裱花"></span>${newCourse.course.courseTitle}</a>
                             </p>
                             <div class="summary">${newCourse.course.courseIntro}</div>
                             <p class="metas clearfix">
@@ -349,12 +349,12 @@
             </ul>
         </div>
 
-        <!-- 话题、小组 -->
+        <!-- 话题、花圈 -->
         <div class="why-gnosh-movies">
         </div>
 
         <div class="flat clearfix">
-            <h2><strong>话题、小组&nbsp;╰(￣▽￣)╭</strong></h2>
+            <h2><strong>话题、花圈&nbsp;╰(￣▽￣)╭</strong></h2>
             <div class="flat-main">
                 <h3>最新话题</h3>
                 <div class="discuss-list2">
@@ -371,7 +371,7 @@
                                             <a href="discussDetailPage.htm?discussId=${discuss.discussId}"><span style="color: rgb(102, 194, 160)">${discuss.topic}</span></a>
                                         </p>
                                         <p class="metas">
-                                            <a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="来自『${discuss.team.teamName}』小组"
+                                            <a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="来自『${discuss.team.teamName}』花圈"
                                                class="mrm">${discuss.team.teamName}</a> by <a
                                                 href="goPersonal.htm?userId=${discuss.user.userId}"
                                                 class="show-user-card"  title="${discuss.user.userName}">${discuss.user.userName}</a><span
@@ -385,7 +385,7 @@
                     </ul>
                 </div>
                 <div class="discuss-list2" style="margin-top:15px;">
-                    <h3>推荐小组 </h3>
+                    <h3>推荐花圈 </h3>
                     <div class="metas">
                         <ul class="grids smallpic-grids">
                             <c:forEach items="${teamList}" var="team">
@@ -406,7 +406,7 @@
         </div>
 
         <div class="flat clearfix">
-            <h2><strong>课程笔记和热门标签</strong></h2>
+            <h2><strong>裱花笔记和热门标签</strong></h2>
             <div class="flat-main">
                 <h3>推荐笔记</h3>
                 <div class="discuss-list2">

@@ -9,7 +9,7 @@
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />"/>
 <script type="text/javascript" src="<c:url value="/resource/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resource/js/ga.js"/>"></script>
-<title>萌课网 - 课程分类</title>
+<title>裱花大师 - 裱花分类</title>
 
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -55,15 +55,15 @@
             <ul>
                 <li id="menu-item-4" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-4 gnews-menu-major"><a href="turnToHomePage.htm"></a></li>
                 <ul class="sub-menu">
-                    <li id="menu-item-1271" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1273"><a href="goCourseHome.htm"><span>全部课程</span></a></li>
-                    <li id="menu-item-1273" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1273"><a href="goMajorHome.htm?type=摄影"><span>摄影</span></a></li>
-                    <li id="menu-item-1270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1270"><a href="goMajorHome.htm?type=艺术"><span>艺术</span></a></li>
-                    <li id="menu-item-1274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1274"><a href="goMajorHome.htm?type=兴趣"><span>兴趣</span></a></li>
-                    <li id="menu-item-1272" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1272"><a href="goMajorHome.htm?type=计算机"><span>计算机</span></a></li>
-                    <li id="menu-item-1275" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1275"><a href="goMajorHome.htm?type=文学"><span>文学</span></a></li>
-                    <li id="menu-item-1276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1276"><a href="goMajorHome.htm?type=求职"><span>求职</span></a></li>
-                    <li id="menu-item-1277" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1277"><a href="goMajorHome.htm?type=动漫"><span>动漫</span></a></li>
-                    <li id="menu-item-1278" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1278"><a href="goMajorHome.htm?type=音乐"><span>音乐</span></a></li>
+                    <li id="menu-item-1271" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1273"><a href="goCourseHome.htm"><span>全部裱花</span></a></li>
+                    <li id="menu-item-1273" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1273"><a href="goMajorHome.htm?type=奶油"><span>奶油</span></a></li>
+                    <li id="menu-item-1270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1270"><a href="goMajorHome.htm?type=人造奶油"><span>人造奶油</span></a></li>
+                    <li id="menu-item-1274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1274"><a href="goMajorHome.htm?type=鲜奶油"><span>鲜奶油</span></a></li>
+                    <li id="menu-item-1272" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1272"><a href="goMajorHome.htm?type=植指奶油"><span>植指奶油</span></a></li>
+                    <li id="menu-item-1275" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1275"><a href="goMajorHome.htm?type=蛋白"><span>蛋白</span></a></li>
+                    <li id="menu-item-1276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1276"><a href="goMajorHome.htm?type=巧克力"><span>巧克力</span></a></li>
+                    <li id="menu-item-1277" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1277"><a href="goMajorHome.htm?type=糖面"><span>糖面</span></a></li>
+                    <li id="menu-item-1278" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1278"><a href="goMajorHome.htm?type=水果"><span>水果</span></a></li>
                     <li id="menu-item-1279" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1279"><a href="goMajorHome.htm?type=其他"><span>其他</span></a></li>
                 </ul>
                 </li>
@@ -84,7 +84,7 @@
 
 
 <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-    <h1>最新课程</h1>
+    <h1>最新裱花</h1>
     <a href="" class="fr more">» 更多</a>
 
     <ul class="cells cells-middle">
@@ -112,7 +112,7 @@
 </article>
 
 <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-    <h1>最新小组话题</h1>
+    <h1>最新花圈话题</h1>
     <div class="channel-main">
 
         <div class="discuss-list2">
@@ -129,7 +129,7 @@
                                     <a href="">${discuss.topic}</a>
                                 </p>
                                 <p class="metas">
-                                    <a href="" title="来自『${discuss.team.teamName}』小组"
+                                    <a href="" title="来自『${discuss.team.teamName}』花圈"
                                        class="mrm">${discuss.team.teamName}</a> by <a
                                         href="goPersonal.htm?userId=${discuss.user.userId}"
                                         class="show-user-card"  title="${discuss.user.userName}">${discuss.user.userName}</a> <span
@@ -143,10 +143,10 @@
             </ul>
 
         </div>
-        <div class="gray mvm tar">加入你对味的的小组，查看更多话题吧！</div>
+        <div class="gray mvm tar">加入你对味的的花圈，查看更多话题吧！</div>
     </div>
     <div class="channel-side">
-        <h3>${type}的相关小组</h3>
+        <h3>${type}的相关花圈</h3>
         <ul class="grids smallpic-grids">
             <c:forEach items="${teamList}" var="team">
                 <li class="grid"><a href=""><img src="<c:url value="/resource/pic/huoban.png"/>" title="${team.teamName}" class="thumb"></a>
@@ -158,14 +158,14 @@
         </ul>
 
         <div>
-            <a href="createGuidePage.htm">» 申请创建小组</a>
+            <a href="createGuidePage.htm">» 申请创建花圈</a>
         </div>
     </div>
     <hr class="custom-hr">
 </article>
 
     <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-        <h1>热门课程</h1>
+        <h1>热门裱花</h1>
 
         <ul class="cells cells-middle">
 

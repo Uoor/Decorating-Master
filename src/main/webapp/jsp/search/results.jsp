@@ -16,7 +16,7 @@
 <script type="text/javascript" src="<c:url value="/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
 <script src="<c:url value="/bootstrap/js/bootstrap.js"/>"></script>	
 <script type="text/javascript" src="<c:url value="/js/ga.js"/>"></script>
-<title>微课程-小组</title>
+<title>微裱花-花圈</title>
 <style type="text/css">
 
 
@@ -97,10 +97,10 @@
 			<li><a href="#tab1" data-toggle="tab">用户</a></li>
 			</c:if>
 			  <c:if test="${!empty userTeams}">
-			<li><a href="#tab2" data-toggle="tab">小组</a></li>
+			<li><a href="#tab2" data-toggle="tab">花圈</a></li>
 			</c:if>
 			  <c:if test="${!empty userCourses}">
-			<li><a href="#tab3" data-toggle="tab">课程</a></li>
+			<li><a href="#tab3" data-toggle="tab">裱花</a></li>
 			</c:if>
 			  <c:if test="${!empty discusses}">
 			<li><a href="#tab4" data-toggle="tab">讨论</a></li>
@@ -126,8 +126,8 @@
 			<div class="tab-pane" id="tab2">
 			<table class="table table-condensed">
 			  <tr>
-			  <th>小组</th>
-			  <th>小组介绍</th>
+			  <th>花圈</th>
+			  <th>花圈介绍</th>
 			  <th>创建人</th>
 			  <th>创建时间</th>
 			  </tr>
@@ -144,8 +144,8 @@
 		<div class="tab-pane" id="tab3">
 			<table class="table table-condensed">
 			  <tr>
-			  <th>课程</th>
-			  <th>课程介绍</th>
+			  <th>裱花</th>
+			  <th>裱花介绍</th>
 			  <th>创建人</th>
 			  <th>创建时间</th>
 			  </tr>
@@ -193,11 +193,11 @@
 	             <img src="./搜索  体育 - 好知网_files/091110ea5c7b189121.jpg">
 	             </a>
 	             <div class="imageblock-content">
-		         <div class="fsm mbs">[课程] 
+		         <div class="fsm mbs">[裱花] 
 			      <a href="http://www.howzhi.com/course/pingpang/" target="_blank"> 唐建军乒乓球教学</a>        	     
 		         </div>
 
-		         <div class="mbs"> 唐建军为北京<span class="highlight">体育</span>大学副教授，主攻方向为乒乓球教学与训练理论及其方法。在本课程中，唐教授从基本的握拍方式开始，系统地讲解了乒乓球的相关技巧，让初学者轻松掌握乒乓球。... </div>
+		         <div class="mbs"> 唐建军为北京<span class="highlight">体育</span>大学副教授，主攻方向为乒乓球教学与训练理论及其方法。在本裱花中，唐教授从基本的握拍方式开始，系统地讲解了乒乓球的相关技巧，让初学者轻松掌握乒乓球。... </div>
 		         <div class="gray">
 			      by <a href="http://www.howzhi.com/u/91/" target="_blank">三尺青锋</a>
 			      <span class="mhs">|</span>

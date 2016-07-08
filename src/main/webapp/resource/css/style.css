@@ -438,7 +438,7 @@ body {
 #header { position:relative; }
 #header h1 {
     text-indent:-5000px;
-    background:url(/resource/img/140832wwpp6lmi9ae2pe2a.png) no-repeat;
+    /*<!-- background:url(/resource/img/140832wwpp6lmi9ae2pe2a.png) no-repeat; -->*/
     display:block;
     width:696px;
     height:400px;

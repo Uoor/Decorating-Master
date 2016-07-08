@@ -19,7 +19,7 @@
 
     <script type="text/javascript" src="<c:url value="/resource/js/sea.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resource/js/ga.js"/>"></script>
-<title>课程</title>
+<title>裱花</title>
 </head>
 
 <body class="archive category category-gnews category-3">
@@ -44,24 +44,24 @@
 
 
                 <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-                    <h2><font color="black">课程频道</font></h2>
+                    <h2><font color="black">裱花频道</font></h2>
                     <ul class="cells channel-cells">
-                        <li class="cell"><a href="goMajorHome.htm?type=摄影"><i
-                                class="channel-icon channel-icon-photography"></i>摄影</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=艺术"><i
-                                class="channel-icon channel-icon-programme"></i>艺术</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=兴趣"><i
-                                class="channel-icon channel-icon-interest"></i>兴趣</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=计算机"><i
-                                class="channel-icon channel-icon-computer"></i>计算机</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=文学"><i
-                                class="channel-icon channel-icon-language"></i>文学</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=求职"><i
-                                class="channel-icon channel-icon-life"></i>求职</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=动漫"><i
-                                class="channel-icon channel-icon-career"></i>动漫</a></li>
-                        <li class="cell"><a href="goMajorHome.htm?type=音乐"><i
-                                class="channel-icon channel-icon-culture"></i>音乐</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=奶油"><i
+                                class="channel-icon channel-icon-photography"></i>奶油</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=人造奶油"><i
+                                class="channel-icon channel-icon-programme"></i>人造奶油</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=鲜奶油"><i
+                                class="channel-icon channel-icon-interest"></i>鲜奶油</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=植指奶油"><i
+                                class="channel-icon channel-icon-computer"></i>植指奶油</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=蛋白"><i
+                                class="channel-icon channel-icon-language"></i>蛋白</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=巧克力"><i
+                                class="channel-icon channel-icon-life"></i>巧克力</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=糖面"><i
+                                class="channel-icon channel-icon-career"></i>糖面</a></li>
+                        <li class="cell"><a href="goMajorHome.htm?type=水果"><i
+                                class="channel-icon channel-icon-culture"></i>水果</a></li>
                         <li class="cell"><a href="goMajorHome.htm?type=其他"><i
                                 class="channel-icon channel-icon-openclass"></i>其他</a></li>
                     </ul>
@@ -72,7 +72,7 @@
                     <div class="channel-row channel-straight-row clearfix">
                         <div class="flat">
                             <div class="clearfix">
-                                <h2 class="fl"><font color="black">全部课程</font></h2>
+                                <h2 class="fl"><font color="black">全部裱花</font></h2>
                                 <div class="discuss-list2">
                                     <span  class="metas" style="margin-left: 10px;">排序:&nbsp;&nbsp;<a href="goCourseHome.htm">默认</a>&nbsp;&nbsp;<a href="goCourseHome.htm?filterType=grade">评分</a>&nbsp;&nbsp;<a href="goCourseHome.htm?filterType=time">最新</a>&nbsp;&nbsp;<a href="goCourseHome.htm?filterType=hot">最热</a></span>
                                 </div>

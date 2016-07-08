@@ -9,7 +9,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title> 发言 -${team.teamName}- 萌课网</title>
+    <title> 发言 -${team.teamName}- 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <script type="text/javascript" src="<c:url value="/resource/js/xheditor/xheditor-1.1.9-zh-cn.min.js"/>"></script>
     <script type="text/javascript">
@@ -50,7 +50,7 @@
 
     <div class="container-padding clearfix">
 
-        <div class="fsm pbm"><a href="/groups/">小组</a> &raquo;
+        <div class="fsm pbm"><a href="/groups/">花圈</a> &raquo;
             <a href="/group/pm365/" id="group-url">${team.teamName}</a> &raquo;
             <span>发表新话题</span></div>
 
@@ -88,8 +88,8 @@
 <footer class="footer container">
     <div style="padding: 0px 28px;">
         <div class="fl footer-links">
-            <a href="">关于萌课</a>
-            <a href="">萌课达人</a>
+            <a href="">关于裱花大师</a>
+            <a href="">裱花大师达人</a>
             <a href="">联系我们</a>
             <a href="">友情链接</a>
             <a href="">意见反馈</a>

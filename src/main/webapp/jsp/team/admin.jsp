@@ -10,7 +10,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title> 小组设置  - 萌课网</title>
+    <title> 花圈设置  - 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
@@ -77,7 +77,7 @@
                     </div>
 
                     <ul class="hnav">
-                        <li><a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">小组首页</a></li>
+                        <li><a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">花圈首页</a></li>
                         <li><a href="discussPage.htm?teamId=${userTeam2.team.teamId}">讨论区</a></li>
                         <li><a href="membersAdminPage.htm?teamId=${userTeam2.team.teamId}">成员</a></li>
                         <c:if test="${userTeam.userPosition=='组长'}">
@@ -98,13 +98,13 @@
                         <form id="group-base-form" class="form group-base-form" method="post" action="updateTeamInfo.htm">
 
                             <p>
-                                <label for="teamName" class="required">小组名称:</label>
+                                <label for="teamName" class="required">花圈名称:</label>
 
                                 <input type="text" id="teamName" name="teamName" required="required" class="wide" value="${userTeam2.team.teamName}" />
 
                             </p>
                             <p>
-                                <label for="teamIntro" class="required">小组介绍:</label>
+                                <label for="teamIntro" class="required">花圈介绍:</label>
                                 <textarea id="teamIntro" name="teamIntro" required="required" class="wide low mceEditor">${userTeam2.team.teamIntro}</textarea>
                             </p>
                             <input type="hidden" name="teamId" value="${userTeam2.team.teamId}"/>

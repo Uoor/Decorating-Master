@@ -13,7 +13,7 @@
 
     <%-- 本页面为用户未登录时主页 --%>
 
-    <title>萌课网-首页</title>
+    <title>裱花大师-首页</title>
 
     <!-- Make the HTML5 elements work in IE. -->
     <!--[if IE]>
@@ -179,26 +179,26 @@
                     </li>
 
                     <li class="item course">
-                        <a href="goCourseHome.htm" class="scroll" data-offset="30" id="course">课程
+                        <a href="goCourseHome.htm" class="scroll" data-offset="30" id="course">裱花
                             <span class="down-triangle"></span>
                         </a>
                         <div class="menus" id="menu" style="display: none;">
                             <ul class="clearfix">
-                                <li><a href="goMajorHome.htm?type=摄影">摄影</a></li>
-                                <li><a href="goMajorHome.htm?type=艺术">艺术</a></li>
-                                <li><a href="goMajorHome.htm?type=兴趣">兴趣</a></li>
-                                <li><a href="goMajorHome.htm?type=计算机">计算机</a></li>
-                                <li><a href="goMajorHome.htm?type=文学">文学</a></li>
-                                <li><a href="goMajorHome.htm?type=求职">求职</a></li>
-                                <li><a href="goMajorHome.htm?type=动漫">动漫</a></li>
-                                <li><a href="goMajorHome.htm?type=音乐">音乐</a></li>
+                                <li><a href="goMajorHome.htm?type=奶油">奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=人造奶油">人造奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=鲜奶油">鲜奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=植指奶油">植指奶油</a></li>
+                                <li><a href="goMajorHome.htm?type=蛋白">蛋白</a></li>
+                                <li><a href="goMajorHome.htm?type=巧克力">巧克力</a></li>
+                                <li><a href="goMajorHome.htm?type=糖面">糖面</a></li>
+                                <li><a href="goMajorHome.htm?type=水果">水果</a></li>
                                 <li><a href="goMajorHome.htm?type=其他">其他</a></li>
                             </ul>
                         </div>
                     </li>
 
                     <li class="item">
-                        <a href="teamPage.htm" class="" data-offset="-40">小组</a>
+                        <a href="teamPage.htm" class="" data-offset="-40">花圈</a>
                     </li>
                 </ul>
 
@@ -238,7 +238,7 @@
 
 
     <div class="flat clearfix">
-        <h2><strong>课程(～￣▽￣)～</strong></h2>
+        <h2><strong>裱花(～￣▽￣)～</strong></h2>
         <ul class="cells cells-middle">
             <c:forEach items="${SearchCourselist}" var="newCourse" varStatus="iter">
                 <li class="cell">
@@ -247,7 +247,7 @@
                             <a href="courseDetailPage.htm?courseId=${newCourse.courseId}"><img src="${newCourse.logoUrl}"/></a>
                         </div>
                         <p class="title">
-                            <a href="courseDetailPage.htm?courseId=${newCourse.courseId}"><span class="video" title="视频课程"></span>${newCourse.courseTitle}</a>
+                            <a href="courseDetailPage.htm?courseId=${newCourse.courseId}"><span class="video" title="视频裱花"></span>${newCourse.courseTitle}</a>
                         </p>
                         <div class="summary">${newCourse.courseIntro}</div>
 

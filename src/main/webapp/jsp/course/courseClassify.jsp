@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>登录-微课程</title>
+<title>登录-微裱花</title>
 <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
 <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
 
@@ -47,7 +47,7 @@
                   <div class="slide">
                     <div class="caption">
                         <div class="title"><a href="">C#零基础入门教程</a></div>
-                        <div class="description">    本课程由有着8年软件开发经验，4年软件开发教学工作的苏老师亲自授课，课程注重于实战，对每一个知识点的讲解循序渐进、由浅入深，使学生能够快乐学习并在学习过...</div>
+                        <div class="description">    本裱花由有着8年软件开发经验，4年软件开发教学工作的苏老师亲自授课，裱花注重于实战，对每一个知识点的讲解循序渐进、由浅入深，使学生能够快乐学习并在学习过...</div>
                         <div class="metas">
                             <span class="fr">by <a href="/u/7413/" class="show-user-card" data-uid="7413" title="Cross">Cross<span class="p-ver-icn" title="好知个人认证"></span></a></span>
                             <div class="stats">30639查看<span class="mhs">|</span>816人学习</div>
@@ -85,12 +85,12 @@
 
         <div class="channel-row channel-straight-row">
         <div class="flat clearfix">
-            <h2>推荐课程</h2>
+            <h2>推荐裱花</h2>
             <ul class="cells cells-middle">
                <li class="cell">
                 <div class="course-item">
                            <div class="thumb"><a href="/course/4170/"><img src="http://f1.howzhi.com/ci/2013/07-03/021704076c6e427634.jpg" alt="智能社JavaScript视频教程" /></a></div>
-                    <p class="title"><a href="/course/4170/" title="智能社JavaScript视频教程"><span class="video" title="视频课程"></span>智能社JavaScript视频教程</a></p>
+                    <p class="title"><a href="/course/4170/" title="智能社JavaScript视频教程"><span class="video" title="视频裱花"></span>智能社JavaScript视频教程</a></p>
                        <div class="summary">由智能社的Blue（石川）主讲，被大家誉为——最经典的JavaScript视频教程。...</div>
               <p class="metas clearfix">
                         <span class="fr learn" title="学员人数">98</span>
@@ -123,7 +123,7 @@
     
         <div class="channel-row">
         <div class="flat clearfix">
-            <h2>最新小组话题</h2>
+            <h2>最新花圈话题</h2>
             <div class="channel-main">
                 
               <div class="discuss-list2">
@@ -137,7 +137,7 @@
                         <a href="/group/238/discuss/12423">[android]实现拖动效果</a>
                                                           </p>
                         <p class="metas">
-                           <a href="" title="来自『android开发』小组" class="mrm">android开发</a>                        by <a href="" class="show-user-card" data-uid="1328659" title="麦可网">麦可网</a>
+                           <a href="" title="来自『android开发』花圈" class="mrm">android开发</a>                        by <a href="" class="show-user-card" data-uid="1328659" title="麦可网">麦可网</a>
                                <span class="mhm">61次查看</span>
                                     <span class="mrm">最后回复: <a href="/u/1328659/" class="show-user-card" data-uid="1328659" title="麦可网">麦可网</a> <span class="mls">13-08-20 10:19</span></span>
                         </p>
@@ -153,7 +153,7 @@
                         <a href="/group/238/discuss/12422">android开发教程Stage1_移动开发平台岗位分类及企业介绍</a>
                                     <img src="/res/images/video-s.png" width="14" height="13" title="有视频哦！" />                      </p>
           <p class="metas">
-            <a href="/group/238/" title="来自『android开发』小组" class="mrm">android开发</a>                        by <a href="/u/1328659/" class="show-user-card" data-uid="1328659" title="麦可网">麦可网</a>
+            <a href="/group/238/" title="来自『android开发』花圈" class="mrm">android开发</a>                        by <a href="/u/1328659/" class="show-user-card" data-uid="1328659" title="麦可网">麦可网</a>
             <span class="mhm">52次查看</span>
                                     <span class="mrm">最后回复: <a href="/u/1328659/" class="show-user-card" data-uid="1328659" title="麦可网">麦可网</a> <span class="mls">13-08-20 10:17</span></span>
                       </p>
@@ -162,10 +162,10 @@
     </li>
       </ul>
 
-</div>                <div class="gray mvm tar">加入你对味的的小组，查看更多话题吧！</div>
+</div>                <div class="gray mvm tar">加入你对味的的花圈，查看更多话题吧！</div>
             </div>
             <div class="channel-side">
-                <h3>编程小组</h3>
+                <h3>编程花圈</h3>
                     <ul class="grids smallpic-grids">
                          <li class="grid">
                            <a href=""><img src="" class="thumb"></a>
@@ -173,7 +173,7 @@
                           </li>
                       </ul>
 
-                <div><a href="">&raquo; 申请创建小组</a></div>
+                <div><a href="">&raquo; 申请创建花圈</a></div>
             </div>
         </div>
     </div>
@@ -209,9 +209,9 @@
         <ul class="cells cells-middle">
           <li class="cell">
            <div class="course-item">
-           <div class="thumb"><a href="/course/4118/"><img src="http://f1.howzhi.com/ci/2013/06-24/184503fe93c7176782.jpg" alt="Java基础课程" /></a></div>
-             <p class="title"><a href="/course/4118/" title="Java基础课程"><span class="video" title="视频课程"></span>Java基础课程</a></p>
-           <div class="summary">本课程适合零基础学员。Java软件开发已经成为中坚力量，全球最流行的企业级开发语言，企业级...</div>
+           <div class="thumb"><a href="/course/4118/"><img src="http://f1.howzhi.com/ci/2013/06-24/184503fe93c7176782.jpg" alt="Java基础裱花" /></a></div>
+             <p class="title"><a href="/course/4118/" title="Java基础裱花"><span class="video" title="视频裱花"></span>Java基础裱花</a></p>
+           <div class="summary">本裱花适合零基础学员。Java软件开发已经成为中坚力量，全球最流行的企业级开发语言，企业级...</div>
             <p class="metas clearfix">
            <span class="fr learn" title="学员人数">348</span>
            <span class="fr view mrm" title="查看次数">4581</span>
@@ -232,8 +232,8 @@
         <li class="cell">
          <div class="course-item">
          <div class="thumb"><a href=""><img src="" alt="超越极限编程" /></a></div>
-          <p class="title"><a href="" title="超越极限编程"><span class="video" title="视频课程"></span>超越极限编程</a></p>
-          <div class="summary">讲师：张传波课程大纲：1.软件项目管理的特殊性  1.1 中国软件项目的“两大限死，两不确...</div>
+          <p class="title"><a href="" title="超越极限编程"><span class="video" title="视频裱花"></span>超越极限编程</a></p>
+          <div class="summary">讲师：张传波裱花大纲：1.软件项目管理的特殊性  1.1 中国软件项目的“两大限死，两不确...</div>
           <p class="metas clearfix">
           <span class="fr learn" title="学员人数">72</span>
           <span class="fr view mrm" title="查看次数">2734</span>
@@ -247,7 +247,7 @@
     
         <div class="channel-row">
         <div class="flat clearfix">
-            <h2>兴趣标签</h2>
+            <h2>鲜奶油标签</h2>
             <div class="tags">
                                     <a href="" class="tag">java和J2EE</a>
                                     <a href="" class="tag">C和C++</a>
@@ -261,10 +261,10 @@
     
     <div class="channel-row">
         <div class="flat clearfix">
-            <h2>课程频道</h2>
+            <h2>裱花频道</h2>
             <ul class="cells channel-cells">
                  <li class="cell"><a href=""><i class="channel-icon channel-icon-programme"></i>编程</a></li>
-                 <li class="cell"><a href=""><i class="channel-icon channel-icon-interest"></i>兴趣</a></li>
+                 <li class="cell"><a href=""><i class="channel-icon channel-icon-interest"></i>鲜奶油</a></li>
                   <li class="cell"><a href=""><i class="channel-icon channel-icon-computer"></i>电脑</a></li>
                   <li class="cell"><a href=""><i class="channel-icon channel-icon-language"></i>语言</a></li>
                   <li class="cell"><a href=""><i class="channel-icon channel-icon-career"></i>职场</a></li>

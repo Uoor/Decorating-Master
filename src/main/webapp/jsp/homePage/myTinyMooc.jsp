@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>我的萌课- 萌课网</title>
+    <title>我的裱花大师- 裱花大师</title>
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -50,14 +50,14 @@
 
                         <div class="tab-bar">
                             <ul class="clearfix">
-                                <li class="active"><a href="myTinyMooc.htm">课程推荐</a></li>
-                                <li ><a href="recommendTeam.htm">小组推荐</a></li>
+                                <li class="active"><a href="myTinyMooc.htm">裱花推荐</a></li>
+                                <li ><a href="recommendTeam.htm">花圈推荐</a></li>
 
                             </ul>
                         </div>
                     </div>
 
-                    <%-- 课程推荐 --%>
+                    <%-- 裱花推荐 --%>
                     <div class="mod">
                         <div id="course-recommend" class="course-rows">
                             <c:forEach items="${hotCourseList}" var="hotCourse">
@@ -111,12 +111,12 @@
 
 
                 <div class="mod">
-                    <div class="mod-head"><h3><span>创建课程</span></h3></div>
+                    <div class="mod-head"><h3><span>创建裱花</span></h3></div>
                     <div class="gray mbs tar">
-                        <span class="badge badge-warning fss">NEW</span> 创建课程，拿金币，做达人！
+                        <span class="badge badge-warning fss">NEW</span> 创建裱花，拿金币，做达人！
                     </div>
-                    <div class="mbm"><a href="createCoursePage.htm" class="btn btn-success btn-large" style="width: 180px;">创建课程</a></div>
-                    <div class="clearfix"><a href="howToCreate.htm" class="fr">如何创建课程？</a></div>
+                    <div class="mbm"><a href="createCoursePage.htm" class="btn btn-success btn-large" style="width: 180px;">创建裱花</a></div>
+                    <div class="clearfix"><a href="howToCreate.htm" class="fr">如何创建裱花？</a></div>
                 </div>
 
                 <li id="menu-item-4" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-4 gnews-menu-major-board"><a href="turnToHomePage.htm"></a></li>

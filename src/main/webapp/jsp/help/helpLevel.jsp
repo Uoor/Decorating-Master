@@ -6,7 +6,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>帮助中心 - 萌课网</title>
+  <title>帮助中心 - 裱花大师</title>
   <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 </head>
 
@@ -23,27 +23,27 @@
         <table width="98%">
           <tr><th>用户行为</th><th>学分</th><th>金币</th><th>备注</th></tr>
           <tr>
-            <td>创建一个课程</td>
+            <td>创建一个裱花</td>
             <td>+ 100</td>
             <td>+ 50</td>
-            <td>课程正式发布时，发放学分和金币</td>
+            <td>裱花正式发布时，发放学分和金币</td>
           </tr>
           <tr>
-            <td>课程被标志为原创</td>
+            <td>裱花被标志为原创</td>
             <td>+ 300</td>
             <td>+ 30</td>
             <td>&nbsp;</td>
           </tr>
 
           <tr>
-            <td>课程被标志为精华</td>
+            <td>裱花被标志为精华</td>
             <td>+ 500</td>
             <td>+ 50</td>
             <td>&nbsp;</td>
           </tr>
 
           <tr>
-            <td>课程被删除</td>
+            <td>裱花被删除</td>
             <td>- 100</td>
             <td>- 50</td>
             <td>&nbsp;</td>
@@ -62,7 +62,7 @@
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>学完课程的全部课时</td>
+            <td>学完裱花的全部课时</td>
             <td>+ 10</td>
             <td>&nbsp;</td> 
             <td>&nbsp;</td>
@@ -80,19 +80,19 @@
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>对课程提问</td>
+            <td>对裱花提问</td>
             <td>+ 5</td>
             <td>+ 1</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>对课程提问被删除</td>
+            <td>对裱花提问被删除</td>
             <td>- 5</td>
             <td>- 1</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>回答课程提问</td>
+            <td>回答裱花提问</td>
             <td>+ 5</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -105,37 +105,37 @@
           </tr>
 
           <tr>
-            <td>创建小组</td>
+            <td>创建花圈</td>
             <td>+ 10</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>小组发表话题</td>
+            <td>花圈发表话题</td>
             <td>+ 3</td>
             <td>+ 1</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>小组回复话题</td>
+            <td>花圈回复话题</td>
             <td>+ 1</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>小组话题被删除</td>
+            <td>花圈话题被删除</td>
             <td>- 3</td>
             <td>- 1</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>小组话题回复被删除</td>
+            <td>花圈话题回复被删除</td>
             <td>- 1</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>小组被删除</td>
+            <td>花圈被删除</td>
             <td>- 10</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

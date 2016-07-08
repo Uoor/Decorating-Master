@@ -54,7 +54,7 @@ $(function(){
 
 <section class="container discussion-form-container">
   <div class="container-padding clearfix">
-    <div class="fsm pbm"><a href="team.jsp">小组</a> &raquo;
+    <div class="fsm pbm"><a href="team.jsp">花圈</a> &raquo;
   <a href="" id="group-url">产品经理</a> &raquo;
           <span>分享</span></div>    
     <h1>分享链接</h1>
@@ -114,8 +114,8 @@ $(function(){
 <footer class="footer container">
   <div style="padding: 0px 28px;">
     <div class="fl footer-links">
-      <a href="">关于微课程</a>
-      <a href="">微课程达人</a>
+      <a href="">关于微裱花</a>
+      <a href="">微裱花达人</a>
       <a href="">联系我们</a>
       <a href="">友情链接</a>
       <a href="">意见反馈</a>

@@ -8,7 +8,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title> 分享 - 产品经理小组 - 萌课网</title>
+  <title> 分享 - 产品经理花圈 - 裱花大师</title>
   <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
   <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
   <script type="text/javascript" src="<c:url value="/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
@@ -58,22 +58,22 @@ $(function(){
 
 			<ul class="header-nav">
 				<li class="item"><a href="<c:url value="/jsp/homePage/homePage.jsp"/>" class="trigger">首页</a></li>
-				<li class="item course"><a href="#" class="trigger" id="course">课程<span
+				<li class="item course"><a href="#" class="trigger" id="course">裱花<span
 						class="down-triangle"></span></a>
 					<div class="menus">
 						<ul class="clearfix">
-							<li><a href="">摄影</a></li>
+							<li><a href="">奶油</a></li>
 							<li><a href="">编程</a></li>
-							<li><a href="">兴趣</a></li>
+							<li><a href="">鲜奶油</a></li>
 							<li><a href="">电脑</a></li>
 							<li><a href="">语言</a></li>
 							<li><a href="">生活</a></li>
 							<li><a href="">职场</a></li>
 							<li><a href="">文化</a></li>
-							<li><a href="">音乐</a></li>
+							<li><a href="">水果</a></li>
 						</ul>
 					</div></li>
-				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">小组</a></li>
+				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">花圈</a></li>
 			</ul>
 
 			<form class="search-form" action="#" method="get">
@@ -110,7 +110,7 @@ $(function(){
 
 <section class="container discussion-form-container">
   <div class="container-padding clearfix">
-    <div class="fsm pbm"><a href="team.jsp">小组</a> &raquo;
+    <div class="fsm pbm"><a href="team.jsp">花圈</a> &raquo;
   <a href="teamHome.jsp" id="group-url">产品经理</a> &raquo;
           <span>分享</span></div>    
     <h1>分享视频</h1>

@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="<c:url value="/resource/css/unicorn.login.css"/>" />
 <script src="<c:url value="/resource/js/jquery.min.js"/>"></script>
 <script src="<c:url value="/resource/js/unicorn.login.js"/>"></script>
-<title>管理员登陆 - 萌课网</title>
+<title>管理员登陆 - 裱花大师</title>
 
 </head>
 <body>

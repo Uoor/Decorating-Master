@@ -65,9 +65,9 @@
                         <div class="addLabels" style=" height:300px; width:400px;float:left;" align="left">
                             <form action="editLabel.htm" method="post" id="labelForm">
                                 <div class="keywords">
-                                    当前标签编辑类型：<c:if test="${type=='course'}"><font color="red">课程</font></c:if>
+                                    当前标签编辑类型：<c:if test="${type=='course'}"><font color="red">裱花</font></c:if>
                                     <c:if test="${type=='user'}"><font color="red">用户</font></c:if>
-                                    <c:if test="${type=='team'}"><font color="red">小组</font></c:if>
+                                    <c:if test="${type=='team'}"><font color="red">花圈</font></c:if>
                                     <sicd:label previousLabels="${previousLabels}" hotLabels="${labels}"/>
                                     <input type="hidden" value="${type}" name="type">
                                     <input type="hidden" value="${courseId}" name="courseId">
