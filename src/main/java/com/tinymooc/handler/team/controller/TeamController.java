@@ -80,7 +80,7 @@ public class TeamController {
         List<Team> hotTeams = (List<Team>) teamService.queryAllOfCondition(Team.class, detachedCriteria3);
         List<DataDic> dictionaries = (List<DataDic>) teamService.queryAllOfCondition(DataDic.class, detachedCriteria4);
         List<Discuss> discussList = (List<Discuss>) teamService.queryAllOfCondition(Discuss.class, detachedCriteria5);
-
+        System.out.println(dictionaries.get(0).getDicValue());
         req.setAttribute("userTeam1", userTeam1);
         req.setAttribute("userTeam2", userTeam2);
         req.setAttribute("hotTeams", hotTeams);

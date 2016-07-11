@@ -323,7 +323,7 @@
     </div>
 
     <div class="flat clearfix">
-        <h2><strong>热门裱花| 瞧瞧大家都在学啥&nbsp;(～￣▽￣)～</strong></h2>
+        <h2><strong>热门裱花| 瞧瞧大家都喜欢啥模型&nbsp;(～￣▽￣)～</strong></h2>
         <ul class="cells cells-middle">
             <c:forEach items="${hotCourseList}" var="hotCourse">
                 <li class="cell">
@@ -351,7 +351,7 @@
     </div>
 
     <div class="flat clearfix">
-        <h2><strong>最新裱花| 哇塞，又有新课开放了，赶紧学起来&nbsp;(～￣▽￣)～</strong></h2>
+        <h2><strong>最新裱花| 哇塞，又有新模型了，大家快来观望&nbsp;(～￣▽￣)～</strong></h2>
         <ul class="cells cells-middle">
             <c:forEach items="${newCourseList}" var="newCourse" varStatus="iter">
                 <li class="cell">
