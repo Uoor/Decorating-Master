@@ -259,11 +259,11 @@
             </article>
 
             <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-                <h1>全部</h1>
+              <!--   <h1>全部</h1>
 
                 <c:forEach items="${dictionaries}" var="dic">
                     <a href="#" data-target="#groups-photography" class="lyl">${dic.dicValue}</a>
-                </c:forEach>
+                </c:forEach> -->
 
                 <div id="groups-video" class="groups-panel">
                     <p>奶油</p>
