@@ -53,13 +53,13 @@
                         <div class="tab-bar">
                             <ul class="clearfix">
                                 <li ><a href="myTinyMooc.htm">裱花推荐</a></li>
-                                <li class="active"><a href="recommendTeam.htm">花圈推荐</a></li>
+                                <li class="active"><a href="recommendTeam.htm">店铺推荐</a></li>
 
                             </ul>
                         </div>
                     </div>
 
-                    <%-- 花圈推荐 --%>
+                    <%-- 店铺推荐 --%>
                     <div class="mod">
                         <div id="course-recommend" class="course-rows">
                             <c:forEach items="${teamList}" var="userTeam">

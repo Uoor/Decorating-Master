@@ -36,8 +36,10 @@
     <div class="wrapper">
 
         <div class="middle-container">
+            <!-- pic omit  course logo
             <div class="right-top-banner gnews-banner-major">
-                <div></div>
+                <div> 
+                --></div>
             </div>
             <div class="middle-top"></div>
             <div class="middle">

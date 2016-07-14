@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>花圈 - 裱花大师</title>
+<title>店铺 - 裱花大师</title>
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -129,7 +129,7 @@
 
                         <div class="nav clearfix">
                             <a href="goPersonal.htm?userId=${user1.userId}">主页</a>
-                            <a href="goPersonalTeam.htm?userId=${user1.userId}"class="on" >花圈</a>
+                            <a href="goPersonalTeam.htm?userId=${user1.userId}"class="on" >店铺</a>
                             <a href="goPersonalAttention.htm?userId=${user1.userId}">好友</a>
                             <a href="goPersonalNote.htm?userId=${user1.userId}">笔记</a>
                         </div>
@@ -139,11 +139,11 @@
                 <hr class="custom-hr">
 
                 <div class="mod mtl discuss-list2">
-                    <h3>参加的花圈</h3>
+                    <h3>参加的店铺</h3>
                     <div class="metas">
                         <ul class="grids smallpic-grids">
                             <c:forEach items="${userTeam}" var="team">
-                                <li class="grid"><img src="<c:url value="${team.team.headImage.imageSmall}"/>" style="width: 70px;height: 70px;"/><p><a href="teamHomePage.htm?teamId=${team.team.teamId}" title="查看该花圈">${team.team.teamName}</a></p></li>
+                                <li class="grid"><img src="<c:url value="${team.team.headImage.imageSmall}"/>" style="width: 70px;height: 70px;"/><p><a href="teamHomePage.htm?teamId=${team.team.teamId}" title="查看该店铺">${team.team.teamName}</a></p></li>
                             </c:forEach>
                         </ul>
                     </div>
@@ -160,7 +160,7 @@
                                         <div class="imageblock-image"><img src="<c:url value="${discuss.user.headImage.imageSmall }"/>"></div>
                                         <div class="imageblock-content">
                                             <p class="title"><a href="">${discuss.topic}</a>
-                                            <p class="metas"><a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="查看该花圈" class="mrm">${discuss.team.teamName}</a>
+                                            <p class="metas"><a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="查看该店铺" class="mrm">${discuss.team.teamName}</a>
                                                 by <a href="goPersonal.htm?userId=${discuss.user.userId}" class="show-user-card " title="查看该用户">${discuss.user.userName}</a>
                                                 <span class="mhm">${discuss.scanNum}次查看</span></p>
                                         </div>

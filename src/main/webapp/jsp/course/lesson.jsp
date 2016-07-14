@@ -116,6 +116,14 @@
             }
             </c:if>
         }
+
+        function test2() {
+            <c:if test="${empty user}">
+            alert("登陆后才可以下载裱花模型");
+            return false;
+            </c:if>
+
+        }
     </script>
 
     <script type="text/javascript">
@@ -203,23 +211,28 @@
             <h1>
                 <span class="lesson-title">裱花名：${lesson.courseTitle}</span>
             </h1>
-            <div class="action-bar" style="float: right;margin-bottom: 5px">
-                <c:if test="${userCourse.user.userId ne user.userId}">
+            <div class="action-bar" style="float: right;margin-bottom: 5px"; >
+
+              <%--  <c:if test="${userCourse.user.userId ne user.userId}">
                     <button class="btn btn-large btn-success" id="start" onclick="test()">${lessonLearnState}</button>
-                </c:if>
+                </c:if>--%>
             </div>
-            <div>
+           <%-- <div>
                 <c:if test="${lessonLearnState=='学习中'}">
                     <button id="note-open-btn" class="btn btn-small" title="写笔记"
                             data-open-url="/course/4631/lesson/49296?openNote=1">
                         <i class="icon-pencil"></i> 写笔记
                     </button>
                 </c:if>
-            </div>
+            </div>--%>
 
             <div class="editor-content">
+                <%--
                         <iframe src="http://play.video.qcloud.com/iplayer.html?$appid=1251419256&$fileid=${requestScope.fileId}&$autoplay=0&$sw=1280&$sh=720" frameborder="0" width="100%" height="720" scrolling="no"></iframe>
                         <script src="http://qzonestyle.gtimg.cn/open/qcloud/video/h5/fixifmheight.js" charset="utf-8"></script>
+                        --%>
+                    <img src="${currentCourse.course.logoUrl}" alt="${currentCourse.course.courseTitle}"
+                         frameborder="0" width="100%" height="720" scrolling="no"/>
                 <div class="btn-toolbar mbl clearfix" id="lesson-user-actions">
 				<span class="pull-right">
 			
@@ -415,7 +428,19 @@
         </div>
 
         <div class="flat lesson-summary-flat">
-            <h2>课时简介</h2>
+            <h2>裱花样式简介</h2>
+            <a href="download.htm?fileId=${requestScope.fileId}&DDMName=${lesson.courseTitle}" style="float:right;font-size: 15px;
+            padding-right: 40px;" >
+                <img src="/resource/img/download.png" style="width:40px" >
+
+                </a>
+<%-- WJL 打印机控件
+
+            <a href="printFileDownload.htm" style="float:right;font-size: 15px;padding-right: 40px;">
+                < img src="${rctx }/image/restaurant/restaurantBackground/filedownload.png" style="width:40px">
+                <b>打印机控件下载</b>
+            </a >
+--%>
 
             <p>${lesson.courseIntro}</p>
             <br/>
@@ -425,7 +450,7 @@
             </div>
         </div>
         <div class="flat lesson-nav" id="lesson-window-list" style="display: block;">
-            <h2>课时列表</h2>
+            <h2>裱花样式列表</h2>
             <ul id="lesson">
                 <c:forEach items="${lessonList}" var="les" varStatus="vs">
                     <li>
@@ -436,14 +461,14 @@
                 </c:forEach>
             </ul>
             <div class="clearfix window-list-bottom">
-                <span class="fl">共${lessonNum}课时</span>
+                <span class="fl">共${lessonNum}裱花样式</span>
 
                 <div class="fr">
                 </div>
             </div>
         </div>
 
-        <div class="flat">
+        <!-- <div class="flat">
             <c:if test="${learned==0}">暂无用户学过</c:if>
             <c:if test="${learned>0}">
                 <h3>${learned}人学过</h3>
@@ -463,7 +488,7 @@
                                                                  alt="${uc2.user.userName}的头像" width=24 height=24>
                 </c:forEach>
             </c:if>
-        </div>
+        </div> -->
 
     </div>
         </div>

@@ -16,13 +16,16 @@
 	src="<c:url value="/acornmediaplayer/jquery-ui-1.8.7.custom.min.js"/>"></script>
 <script type="text/javascript"
 	src="<c:url value="/acornmediaplayer/jquery.acornmediaplayer.js"/>"></script>
-<title>观看视频</title>
+<title>观看
+模型数据</title>
 </head>
 <body>
 
 
-	<%-- <h3>视频播放</h3>
-	<div>视频内容：裱花名</div>
+	<%-- <h3>
+模型数据播放</h3>
+	<div>
+模型数据内容：裱花名</div>
 	<div>
 		<embed src="<c:url value='/resource/video/${video.videoUrl}'/>"
 			autostart="false" loop="false" width="500" height="300">

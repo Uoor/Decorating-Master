@@ -112,7 +112,7 @@
 </article>
 
 <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-    <h1>最新花圈话题</h1>
+    <h1>最新店铺话题</h1>
     <div class="channel-main">
 
         <div class="discuss-list2">
@@ -129,7 +129,7 @@
                                     <a href="">${discuss.topic}</a>
                                 </p>
                                 <p class="metas">
-                                    <a href="" title="来自『${discuss.team.teamName}』花圈"
+                                    <a href="" title="来自『${discuss.team.teamName}』店铺"
                                        class="mrm">${discuss.team.teamName}</a> by <a
                                         href="goPersonal.htm?userId=${discuss.user.userId}"
                                         class="show-user-card"  title="${discuss.user.userName}">${discuss.user.userName}</a> <span
@@ -143,10 +143,10 @@
             </ul>
 
         </div>
-        <div class="gray mvm tar">加入你对味的的花圈，查看更多话题吧！</div>
+        <div class="gray mvm tar">加入你对味的的店铺，查看更多话题吧！</div>
     </div>
     <div class="channel-side">
-        <h3>${type}的相关花圈</h3>
+        <h3>${type}的相关店铺</h3>
         <ul class="grids smallpic-grids">
             <c:forEach items="${teamList}" var="team">
                 <li class="grid"><a href=""><img src="<c:url value="/resource/pic/huoban.png"/>" title="${team.teamName}" class="thumb"></a>
@@ -158,7 +158,7 @@
         </ul>
 
         <div>
-            <a href="createGuidePage.htm">» 申请创建花圈</a>
+            <a href="createGuidePage.htm">» 申请创建店铺</a>
         </div>
     </div>
     <hr class="custom-hr">

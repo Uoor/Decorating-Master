@@ -129,7 +129,7 @@
 
                         <div class="nav clearfix">
                             <a href="goPersonal.htm?userId=${user1.userId}">主页</a>
-                            <a href="goPersonalTeam.htm?userId=${user1.userId}">花圈</a>
+                            <a href="goPersonalTeam.htm?userId=${user1.userId}">店铺</a>
                             <a href="goPersonalAttention.htm?userId=${user1.userId}" class="on">好友</a>
                             <a href="goPersonalNote.htm?userId=${user1.userId}">笔记</a>
                         </div>

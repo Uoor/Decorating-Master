@@ -198,7 +198,7 @@
                     </li>
 
                     <li class="item">
-                        <a href="teamPage.htm" class="" data-offset="-40">花圈</a>
+                        <a href="teamPage.htm" class="" data-offset="-40">店铺</a>
                     </li>
                 </ul>
 
@@ -247,7 +247,8 @@
                             <a href="courseDetailPage.htm?courseId=${newCourse.courseId}"><img src="${newCourse.logoUrl}"/></a>
                         </div>
                         <p class="title">
-                            <a href="courseDetailPage.htm?courseId=${newCourse.courseId}"><span class="video" title="视频裱花"></span>${newCourse.courseTitle}</a>
+                            <a href="courseDetailPage.htm?courseId=${newCourse.courseId}"><span class="video" title="
+模型数据裱花"></span>${newCourse.courseTitle}</a>
                         </p>
                         <div class="summary">${newCourse.courseIntro}</div>
 

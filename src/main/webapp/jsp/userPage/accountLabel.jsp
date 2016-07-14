@@ -67,7 +67,7 @@
                                 <div class="keywords">
                                     当前标签编辑类型：<c:if test="${type=='course'}"><font color="red">裱花</font></c:if>
                                     <c:if test="${type=='user'}"><font color="red">用户</font></c:if>
-                                    <c:if test="${type=='team'}"><font color="red">花圈</font></c:if>
+                                    <c:if test="${type=='team'}"><font color="red">店铺</font></c:if>
                                     <sicd:label previousLabels="${previousLabels}" hotLabels="${labels}"/>
                                     <input type="hidden" value="${type}" name="type">
                                     <input type="hidden" value="${courseId}" name="courseId">

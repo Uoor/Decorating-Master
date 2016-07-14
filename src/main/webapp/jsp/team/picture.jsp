@@ -106,7 +106,7 @@ $(function() {
   </div>
   
   <ul class="hnav">
-    <li><a href="teamHomePage.htm?teamId=${teamforpicture.teamId}">花圈首页</a></li>
+    <li><a href="teamHomePage.htm?teamId=${teamforpicture.teamId}">店铺首页</a></li>
     <li><a href="discussPage.htm?teamId=${teamforpicture.teamId}">讨论区</a></li>  
     <li><a href="membersAdminPage.htm?teamId=${teamforpicture.teamId}">成员</a></li>
     

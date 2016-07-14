@@ -183,7 +183,7 @@
                 </li>
 
                 <li class="item">
-                    <a href="teamPage.htm" class="" data-offset="-40">花圈</a>
+                    <a href="teamPage.htm" class="" data-offset="-40">店铺</a>
                 </li>
                 </ul>
 

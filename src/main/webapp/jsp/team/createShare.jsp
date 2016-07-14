@@ -54,7 +54,7 @@ $(function(){
 
 <section class="container discussion-form-container">
   <div class="container-padding clearfix">
-    <div class="fsm pbm"><a href="team.jsp">花圈</a> &raquo;
+    <div class="fsm pbm"><a href="team.jsp">店铺</a> &raquo;
   <a href="" id="group-url">产品经理</a> &raquo;
           <span>分享</span></div>    
     <h1>分享链接</h1>

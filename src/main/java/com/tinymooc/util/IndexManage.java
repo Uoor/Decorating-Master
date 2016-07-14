@@ -66,7 +66,7 @@
 //				Term term2=new Term("type",docModel.getType());
 //				deleterocess(term1, term2, writer);
 //			}
-//			if(docModel.getType().equals("花圈")){
+//			if(docModel.getType().equals("店铺")){
 //				Term term1=new Term("userTeamId",docModel.getUserTeamId());
 //				Term term2=new Term("type",docModel.getType());
 //				deleterocess(term1, term2, writer);

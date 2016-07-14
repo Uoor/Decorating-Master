@@ -74,11 +74,11 @@ public class AdminController {
               Set<Course> courseSet =  new HashSet<>();
 
 
-            //将课时想光的裱花搜索出来
+            //将裱花样式想光的裱花搜索出来
             for(int i =0;i < list.size();i ++)   {
             Course course = admin.findById(Course.class,list.get(i).getCourseId()) ;
                   if (course.getCourse() !=null )     {
-               System.out.println( "输出涉及的课时" + course.getCourse().getCourseId())   ;
+               System.out.println( "输出涉及的裱花样式" + course.getCourse().getCourseId())   ;
                   courseSet.add(course.getCourse()) ;
                   }
                     else {
@@ -146,7 +146,7 @@ public class AdminController {
 			dCriteria1.add(Restrictions.isNull("course"));
 			List<Course> courselist=admin.queryAllOfCondition(Course.class, dCriteria1);
 			int courseSum=courselist.size();
-			//花圈数
+			//店铺数
 			DetachedCriteria dCriteria2=DetachedCriteria.forClass(Team.class);
 			dCriteria2.add(Restrictions.eq("teamState", "批准"));
 			List<Team> teamlist=admin.queryAllOfCondition(Team.class, dCriteria2);
@@ -166,7 +166,7 @@ public class AdminController {
 			dCriteria5.addOrder(Order.desc("applyDate"));
 			List<Course> courselist1=admin.queryMaxNumOfCondition(Course.class, dCriteria5, 5);
 			
-			//最新花圈
+			//最新店铺
 			DetachedCriteria dCriteria6=DetachedCriteria.forClass(Team.class);
 			dCriteria6.add(Restrictions.eq("teamState", "批准"));
 			dCriteria6.addOrder(Order.desc("applyDate"));
@@ -550,7 +550,7 @@ public class AdminController {
 		
 		return new ModelAndView("redirect:showInformList.htm");
 	}
-	/*##################管理员管理 花圈##################*/
+	/*##################管理员管理 店铺##################*/
 	@SuppressWarnings("unchecked")
 	@RequestMapping("turnToTeamManage.htm")
 	public ModelAndView turnToTeamManage(HttpServletRequest req) throws Exception{
@@ -592,9 +592,9 @@ public class AdminController {
 		detachedCriteria.add(Restrictions.eq("userPosition", "组长"));
 
       //   DetachedCriteria.forClass(Discuss.class).add(Restrictions.eq("team",team));
-		//获取userTeam表中，该花圈（team）关联的对象
+		//获取userTeam表中，该店铺（team）关联的对象
 		List<UserTeam> userlist= admin.queryMaxNumOfCondition(UserTeam.class, detachedCriteria, 1);
-          //获取discuss表中，该花圈（team）关联的对象
+          //获取discuss表中，该店铺（team）关联的对象
         List<Discuss> discussList = admin.queryAllOfCondition(Discuss.class,  DetachedCriteria.forClass(Discuss.class).add(Restrictions.eq("team",team))) ;
 		User user1=userlist.get(0).getUser();
 		int gold=user1.getGold();
@@ -609,7 +609,7 @@ public class AdminController {
 			user1.setCredit(credit+10);
 			admin.update(user);
 			
-			sendAmail(user1, "创建花圈成功", "+1", "+10");
+			sendAmail(user1, "创建店铺成功", "+1", "+10");
 			return new ModelAndView("redirect:turnToTeamManage.htm");
 		}
 		if(type.equals("2")){
@@ -622,12 +622,12 @@ public class AdminController {
 			user1.setCredit(credit-30);
 			admin.update(user);
 			
-			sendAmail(user1, "花圈被封禁", "-3", "-30");
+			sendAmail(user1, "店铺被封禁", "-3", "-30");
 			return new ModelAndView("redirect:turnToTeamManage.htm");
 		}
 
          if(type.equals("3")) {
-                 System.out.println("删除该花圈  :" + teamId);
+                 System.out.println("删除该店铺  :" + teamId);
              //1、删除discuss表中 <== teamId
                 for(int i = 0; i <discussList.size() ;i ++) {
                     admin.delete(discussList.get(i));
@@ -696,8 +696,8 @@ public class AdminController {
 		String courseId=req.getParameter("courseId");
 		
 		Course course=admin.findById(Course.class, courseId);
-		  System.out.println("从裱花搜索课时，看size：course.getCourses().size()"+course.getCourses().size());
-            System.out.println("从裱花搜索课时，看直接输出效果：course.getCourses()"+course.getCourses());
+		  System.out.println("从裱花搜索裱花样式，看size：course.getCourses().size()"+course.getCourses().size());
+            System.out.println("从裱花搜索裱花样式，看直接输出效果：course.getCourses()"+course.getCourses());
 		return new ModelAndView("/admin/courseManage1","course",course);}
 	}
 	
@@ -761,9 +761,9 @@ public class AdminController {
 		
 		
 		Course course=admin.findById(Course.class, courseId);
-//                              //获取当前课时所在裱花id
+//                              //获取当前裱花样式所在裱花id
 //            System.out.println(" 测试 course.getCourse().getCourseId()" + course.getCourse().getCourseId());
-//                                //获取当前课时id
+//                                //获取当前裱花样式id
 //            System.out.println(" 测试 course.getCourseId()" + course.getCourseId());
 //                                   // 获取parentId 对应的Course
 //            System.out.println(" 测试 course.getCourse" + course.getCourse());
@@ -776,6 +776,8 @@ public class AdminController {
             List<Video> videoList = videoService.queryAll(Video.class);
             String fileId = null;
             int count = 0;
+			/*
+			// 不用同步更新腾讯云同步，在UploadVideoController.java 就完成 setTencentVideo工作!!!
             for (Video v : videoList) {
                 String videoId = v.getTencentVideoId();
                 // FIXME
@@ -797,7 +799,7 @@ public class AdminController {
                     System.out.println("==================fileId=" + fileId);
                 }
             }
-
+			*/
 			course.setApproveDate(new Date());
 			course.setCourseState("批准");
 			admin.update(course);
@@ -821,7 +823,7 @@ public class AdminController {
             return new ModelAndView("redirect:turnToLockCourse.htm");
 			// return new ModelAndView("redirect:turnToLessonManage.htm","courseId",course.getCourse().getCourseId());
 		}
-                  //删除裱花 +  课时
+                  //删除裱花 +  裱花样式
             if(type.equals("7")){
 //                course.setApproveDate(new Date());
 //                course.setCourseState("批准");
@@ -839,16 +841,16 @@ public class AdminController {
                 List<UserCourse> delCourseList = admin.queryAllOfCondition(UserCourse.class, detachedCriteria); //只删除裱花，所以这边List只有1个
                 UserCourse delCourse = delCourseList.get(0);
                 admin.delete(delCourse);
-              //2 在couser表找到 该裱花对应的课时
+              //2 在couser表找到 该裱花对应的裱花样式
                 DetachedCriteria delcourse1 = DetachedCriteria.forClass(Course.class)
                         .add(Restrictions.eq("course",course))   ;//course表 course（parentId）为该裱花
 
-                //3 删除UserCourse表中 该裱花对应的课时
+                //3 删除UserCourse表中 该裱花对应的裱花样式
                 List<Course> delCourseList1 = admin.queryAllOfCondition(Course.class,delcourse1)      ;
                         for (int i = 0; i < delCourseList1.size();i++) {
                             List<UserCourse> delCourseList11 = admin.queryAllOfCondition(UserCourse.class, DetachedCriteria.forClass(UserCourse.class)
                                     .createCriteria("course")
-                                    .add(Restrictions.eq("courseId",delCourseList1.get(i).getCourseId()))); //只删除usercourse表的课时，所以这边List只有1个
+                                    .add(Restrictions.eq("courseId",delCourseList1.get(i).getCourseId()))); //只删除usercourse表的裱花样式，所以这边List只有1个
                             System.out.println("第 " + i + " 裱花:" + delCourseList11.get(0).getUserCourseId());
                             System.out.println("生成列表的大小：" + delCourseList11.size());
                             admin.delete(delCourseList11.get(0));
@@ -857,14 +859,14 @@ public class AdminController {
                         }
 
 
-                // 4 先删course表中课时
+                // 4 先删course表中裱花样式
                 System.out.println("删除前生成列表的大小：" + delCourseList1.size());
                                  for (int i = 0; i<delCourseList1.size();i++) {
                                      if(delCourseList1.get(i).getLogoUrl() != "/resource/pic/courseLogo/course1.jpg") {
                                      File coursePicDel = new File(delCourseList1.get(i).getLogoUrl())  ;
 
                                      coursePicDel.getAbsoluteFile().delete();
-                                         System.out.println("执行了删除课时操作！！");}
+                                         System.out.println("执行了删除裱花样式操作！！");}
                                                   admin.delete(delCourseList1.get(i) );
 
                                  }

@@ -50,31 +50,31 @@
           </tr>
 
           <tr>
-            <td>学习一课时</td>
+            <td>学习一裱花样式</td>
             <td>+ 5</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>取消一课时的学习</td>
+            <td>取消一裱花样式的学习</td>
             <td>- 5</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>学完裱花的全部课时</td>
+            <td>学完裱花的全部裱花样式</td>
             <td>+ 10</td>
             <td>&nbsp;</td> 
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>对课时评论</td>
+            <td>对裱花样式评论</td>
             <td>+ 2</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>课时评论被删除</td>
+            <td>裱花样式评论被删除</td>
             <td>- 2</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -105,37 +105,37 @@
           </tr>
 
           <tr>
-            <td>创建花圈</td>
+            <td>创建店铺</td>
             <td>+ 10</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>花圈发表话题</td>
+            <td>店铺发表话题</td>
             <td>+ 3</td>
             <td>+ 1</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>花圈回复话题</td>
+            <td>店铺回复话题</td>
             <td>+ 1</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>花圈话题被删除</td>
+            <td>店铺话题被删除</td>
             <td>- 3</td>
             <td>- 1</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>花圈话题回复被删除</td>
+            <td>店铺话题回复被删除</td>
             <td>- 1</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>花圈被删除</td>
+            <td>店铺被删除</td>
             <td>- 10</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

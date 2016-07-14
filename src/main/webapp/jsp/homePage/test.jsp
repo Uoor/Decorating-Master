@@ -11,7 +11,7 @@
 <script type="text /javascript" src="<c:url value="/js/zzsc.js"/>"></script>
 </head>
 <body>
-<h1>第一课时评分</h1>
+<h1>第一裱花样式评分</h1>
 
 <c:if test="${a!='0.0'}">
 <div id="xzw_starSys">

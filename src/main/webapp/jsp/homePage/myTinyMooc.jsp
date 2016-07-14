@@ -51,7 +51,7 @@
                         <div class="tab-bar">
                             <ul class="clearfix">
                                 <li class="active"><a href="myTinyMooc.htm">裱花推荐</a></li>
-                                <li ><a href="recommendTeam.htm">花圈推荐</a></li>
+                                <li ><a href="recommendTeam.htm">店铺推荐</a></li>
 
                             </ul>
                         </div>

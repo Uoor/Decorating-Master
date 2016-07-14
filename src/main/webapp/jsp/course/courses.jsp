@@ -45,7 +45,8 @@
         <li class="cell">
         <div class="course-item">
          <div class="thumb"><a href=""><img src="" alt="南京大学：普通天蛋白" /></a></div>
-         <p class="title"><a href="" title="南京大学：普通天蛋白"><span class="video" title="视频裱花"></span>南京大学：普通天蛋白</a></p>
+         <p class="title"><a href="" title="南京大学：普通天蛋白"><span class="video" title="
+模型数据裱花"></span>南京大学：普通天蛋白</a></p>
           <div class="summary">南京大学天蛋白</div>
           <p class="metas clearfix">
           <span class="fr learn" title="学员人数">7</span>

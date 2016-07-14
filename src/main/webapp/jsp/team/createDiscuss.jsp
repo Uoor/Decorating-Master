@@ -50,7 +50,7 @@
 
     <div class="container-padding clearfix">
 
-        <div class="fsm pbm"><a href="/groups/">花圈</a> &raquo;
+        <div class="fsm pbm"><a href="/groups/">店铺</a> &raquo;
             <a href="/group/pm365/" id="group-url">${team.teamName}</a> &raquo;
             <span>发表新话题</span></div>
 

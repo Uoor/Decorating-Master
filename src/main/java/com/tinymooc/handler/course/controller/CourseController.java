@@ -1,11 +1,20 @@
 package com.tinymooc.handler.course.controller;
 
-import java.util.*;
+import java.io.BufferedInputStream;
 
+import java.io.OutputStream;
+
+import  java.io.BufferedOutputStream;
+
+import java.util.*;
+import javax.servlet.ServletOutputStream;
 import java.text.DecimalFormat;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import com.alibaba.asyncload.AsyncLoadConfig;
 import com.alibaba.asyncload.AsyncLoadExecutor;
 import com.alibaba.asyncload.impl.AsyncLoadEnhanceProxy;
@@ -32,6 +41,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.springframework.context.annotation.Scope;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class CourseController {
@@ -145,11 +167,11 @@ public class CourseController {
                 Set<Course> courseSet =  new HashSet<>();
 
 
-                //将课时想光的裱花搜索出来
+                //将裱花样式想光的裱花搜索出来
                 for(int i =0;i < list.size();i ++)   {
                     Course course = courseService.findById(Course.class,list.get(i).getCourseId()) ;
                     if (course.getCourse() !=null )     {
-                        System.out.println( "输出涉及的课时" + course.getCourse().getCourseId())   ;
+                        System.out.println( "输出涉及的裱花样式" + course.getCourse().getCourseId())   ;
                         courseSet.add(course.getCourse()) ;
                     }
                     else {
@@ -329,7 +351,7 @@ public class CourseController {
             System.out.println("Test 1 else===============currentCourse.getLearnState()=" + currentCourse.getLearnState());
         }
 
-        //查询该裱花的所有课时
+        //查询该裱花的所有裱花样式
 //		DetachedCriteria criteria2=DetachedCriteria.forClass(UserCourse.class)
 //				.add(Restrictions.eq("user", user))
 //				.createCriteria("course")
@@ -470,7 +492,7 @@ public class CourseController {
         System.out.println("==============程序执行到CourseController ->Test9===============");
 
         // Test 10
-        //查询该裱花对应所有的课时及用户学习状态
+        //查询该裱花对应所有的裱花样式及用户学习状态
         DetachedCriteria detachedCriteria10 = DetachedCriteria.forClass(Course.class)
                 .add(Restrictions.eq("course", course))
                 .addOrder(Order.asc("applyDate"))
@@ -479,7 +501,7 @@ public class CourseController {
         // FIXME
         System.out.println("Test10 ===============tempLessonList.size=" + tempLessonList.size());
 
-        // 课时
+        // 裱花样式
         List<UserCourse> lessonList = new ArrayList<UserCourse>();
         for (int i = 0; i < tempLessonList.size(); i++) {
             String currentLessonState = "未学";
@@ -580,7 +602,7 @@ public class CourseController {
         log.info("==================childrenId={}", childrenId);
 
         User user = (User) req.getSession().getAttribute("user");
-        // 课时
+        // 裱花样式
         Course lesson = courseService.findById(Course.class, childrenId);
 
         // FIXME
@@ -662,19 +684,19 @@ public class CourseController {
         List<Comment> nestedCommentList = (List<Comment>) courseService.queryAllOfCondition(Comment.class, detachedCriteria7);
 
 
-        // 7-课时资源信息
+        // 7-裱花样式资源信息
         DetachedCriteria detachedCriteria8 = DetachedCriteria.forClass(Resource.class)
                 .add(Restrictions.eq("resourceObject", childrenId));
         List<Resource> resources = (List<Resource>) courseService.queryAllOfCondition(Resource.class, detachedCriteria8);
         Resource resource = resources.get(0);
 
-        // 8-裱花对应的课时列表
+        // 8-裱花对应的裱花样式列表
         DetachedCriteria detachedCriteria9 = DetachedCriteria.forClass(Course.class)
                 .add(Restrictions.eq("course", currentCourse.getCourse()))
                 .addOrder(Order.asc("lessonNum"));
         List<Course> lessonList = (List<Course>) courseService.queryAllOfCondition(Course.class, detachedCriteria9);
 
-        // 9-当前用户对于本课时的学习状态
+        // 9-当前用户对于本裱花样式的学习状态
         DetachedCriteria detachedCriteria10 = DetachedCriteria.forClass(UserCourse.class)
                 .add(Restrictions.eq("user", user))
                 .add(Restrictions.eq("course", lesson))
@@ -723,6 +745,77 @@ public class CourseController {
         return new ModelAndView("/course/lesson", "fileId", fileId);
     }
 
+//文件下载
+    @RequestMapping("download.htm")
+    public ResponseEntity<byte[]> download(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
+        String fileId = ServletRequestUtils.getStringParameter(req, "fileId", "");
+        String DDMName = ServletRequestUtils.getStringParameter(req, "DDMName", "");
+
+
+        System.out.println("fileId 路径" + fileId);
+        String path = req.getSession().getServletContext().getRealPath("/");
+        System.out.println("路径：" + path);
+        path = path +"/" +  fileId;
+      //  String path="D:\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\springMVC\\WEB-INF\\upload\\图片10（定价后）.xlsx";
+        File file=new File(path);
+        HttpHeaders headers = new HttpHeaders();
+        String fileName=new String((DDMName+".gcode").getBytes("UTF-8"),"iso-8859-1");//为了解决中文名称乱码问题
+        headers.setContentDispositionFormData("attachment", fileName);
+        headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+
+
+       /* //ÉèÖÃÏàÓ¦ÀàÐÍapplication/octet-stream
+        resp.setContentType("application/x-msdownload");
+        //ÉèÖÃÍ·ÐÅÏ¢
+        resp.setHeader("Content-Disposition", "attachment;filename=\"" + filename + "\"");
+        InputStream inputStream = new FileInputStream(file);
+        ServletOutputStream ouputStream = resp.getOutputStream();
+        byte b[] = new byte[1024];
+        int n ;
+        while((n = inputStream.read(b)) != -1){
+            ouputStream.write(b,0,n);
+        }
+        //¹Ø±ÕÁ÷¡¢ÊÍ·Å×ÊÔ´
+        ouputStream.close();
+        inputStream.close();
+*/
+
+        return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),
+                headers, HttpStatus.CREATED);
+    }
+
+
+    @RequestMapping("printFileDownload.htm")
+    public ModelAndView printFileDownload(HttpServletRequest req, HttpServletResponse resp) throws IOException
+    {
+        try{
+            String path = req.getSession().getServletContext().getRealPath("/");
+            System.out.println("路径：" + path);
+            path = path + "/upfiles/folder/20151220/145059321186741.jpg";
+            File file = new File(path);
+            String filename = file.getName();
+            InputStream fis = new BufferedInputStream(new FileInputStream(path));
+            byte[] buffer = new byte[fis.available()];
+            fis.read(buffer);
+            fis.close();
+            resp.reset();
+
+            // 先去掉文件名称中的空格,然后转换编码格式为utf-8,保证不出现乱码,这个文件名称用于浏览器的下载框中自动显示的文件名
+            resp.addHeader("Content-Disposition", "attachment;filename=" + new String(filename.replaceAll(" ", "").getBytes("utf-8"),"iso8859-1"));
+            resp.addHeader("Content-Length", "" + file.length());
+            OutputStream os = new BufferedOutputStream(resp.getOutputStream());
+            resp.setContentType("multipart/form-data");
+            os.write(buffer);// 输出文件
+            os.flush();
+            os.close();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return new ModelAndView("");
+    }
+
     @CheckAuthority(name = "回复话题")
     @RequestMapping("createReply.htm")
     public ModelAndView createReply(HttpServletRequest req, HttpServletResponse res) {
@@ -737,7 +830,7 @@ public class CourseController {
         comment.setCommentContent(content);
         comment.setCommentObject(courseTimeId);
         comment.setUser(user);
-        comment.setType("课时");
+        comment.setType("裱花样式");
         if (!parentId.equals(null)) {
             comment.setComment(courseService.findById(Comment.class, parentId));
         }
@@ -748,7 +841,7 @@ public class CourseController {
 
     @RequestMapping("startLearn.htm")
     public ModelAndView startLearn(HttpServletRequest req, HttpServletResponse res) {
-        // 本课时学习状态
+        // 本裱花样式学习状态
         log.info("==============进入startLearn===========");
         String courseId = ServletRequestUtils.getStringParameter(req, "courseId", "");
         User user = (User) req.getSession().getAttribute("user");

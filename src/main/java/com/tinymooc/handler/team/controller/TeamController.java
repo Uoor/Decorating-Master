@@ -46,7 +46,7 @@ public class TeamController {
         // FIXME
         System.out.println("============message========="+message);
         User user = (User) req.getSession().getAttribute("user");
-        // 1 我的花圈 - 我管理的花圈
+        // 1 我的店铺 - 我管理的店铺
         DetachedCriteria detachedCriteria1 = DetachedCriteria.forClass(UserTeam.class)
                 .add(Restrictions.eq("user", user))
                 .add(Restrictions.eq("userPosition", "组长"));
@@ -54,14 +54,14 @@ public class TeamController {
         DetachedCriteria criteria1 = detachedCriteria1.createCriteria("team")
                 .add(Restrictions.eq("teamState", "批准"));
 
-        // 2 我的花圈 - 我加入的花圈
+        // 2 我的店铺 - 我加入的店铺
         DetachedCriteria detachedCriteria2 = DetachedCriteria.forClass(UserTeam.class)
                 .add(Restrictions.eq("user", user))
                 .add(Restrictions.eq("userPosition", "组员"));
         DetachedCriteria criteria2 = detachedCriteria2.createCriteria("team")
                 .add(Restrictions.eq("teamState", "批准"));
 
-        // 3 查询活跃花圈（花圈建设度降序）
+        // 3 查询活跃店铺（店铺建设度降序）
         DetachedCriteria detachedCriteria3 = DetachedCriteria.forClass(Team.class)
                 .add(Restrictions.eq("teamState", "批准"))
                 .addOrder(Order.desc("construction"));
@@ -132,23 +132,23 @@ public class TeamController {
         int discussNum = discusses.size();
         int memberNum = userTeams.size();
 
-        // 获取花圈成员等级及其称号
+        // 获取店铺成员等级及其称号
         DetachedCriteria detachedCriteria3 = DetachedCriteria.forClass(Level.class)
-                .add(Restrictions.eq("type", "花圈用户"))
+                .add(Restrictions.eq("type", "店铺用户"))
                 .addOrder(Order.asc("lvCondition"));
         List<Level> teamUserLevels = (List<Level>) teamService.queryAllOfCondition(Level.class, detachedCriteria3);
 
         // FIXME
         for (Level l: teamUserLevels)
-            System.out.println("==========测试花圈成员========="+l.getTitle());
+            System.out.println("==========测试店铺成员========="+l.getTitle());
 
-        // 获取花圈等级及其称号
+        // 获取店铺等级及其称号
         DetachedCriteria detachedCriteria4 = DetachedCriteria.forClass(Level.class)
-                .add(Restrictions.eq("type", "花圈"))
+                .add(Restrictions.eq("type", "店铺"))
                 .addOrder(Order.asc("lvCondition"));
         List<Level> teamLevels = (List<Level>) teamService.queryAllOfCondition(Level.class, detachedCriteria4);
 
-        // 获取花圈标签
+        // 获取店铺标签
         DetachedCriteria detachedCriteria5 = DetachedCriteria.forClass(LabelObject.class)
                 .add(Restrictions.eq("objectId", team.getTeamId()));
         List<LabelObject> labelObjects = (List<LabelObject>) teamService.queryAllOfCondition(LabelObject.class, detachedCriteria5);
@@ -156,7 +156,7 @@ public class TeamController {
         // 组内成员等级
         Level level1 = new Level();
 
-        // 花圈等级
+        // 店铺等级
         Level level2 = new Level();
         for (int j = 0; j < teamUserLevels.size(); j++) {
             if (j == teamUserLevels.size() - 1) {
@@ -208,7 +208,7 @@ public class TeamController {
         return new ModelAndView("/team/createPublicTeam", "majorType", majorType);
     }
 
-    @CheckAuthority(name = "创建花圈")
+    @CheckAuthority(name = "创建店铺")
     @RequestMapping("createTeam.htm")
     public ModelAndView createTeam(HttpServletRequest req, HttpServletResponse res) {
         String teamName = ServletRequestUtils.getStringParameter(req, "teamName", "");
@@ -292,15 +292,15 @@ public class TeamController {
             }
         }
 
-        // 获取花圈成员等级及其称号
+        // 获取店铺成员等级及其称号
         DetachedCriteria detachedCriteria3 = DetachedCriteria.forClass(Level.class)
-                .add(Restrictions.eq("type", "花圈用户"))
+                .add(Restrictions.eq("type", "店铺用户"))
                 .addOrder(Order.asc("lvCondition"));
         List<Level> teamUserLevels = (List<Level>) teamService.queryAllOfCondition(Level.class, detachedCriteria3);
 
         // 组内成员等级
         Level level1 = new Level();
-        // 花圈等级
+        // 店铺等级
         Level level2 = new Level();
         for (int j = 0; j < teamUserLevels.size(); j++) {
             if (j == teamUserLevels.size() - 1) {
@@ -316,9 +316,9 @@ public class TeamController {
             }
         }
 
-        // 获取花圈等级及其称号
+        // 获取店铺等级及其称号
         DetachedCriteria detachedCriteria4 = DetachedCriteria.forClass(Level.class)
-                .add(Restrictions.eq("type", "花圈"))
+                .add(Restrictions.eq("type", "店铺"))
                 .addOrder(Order.asc("lvCondition"));
         List<Level> teamLevels = (List<Level>) teamService.queryAllOfCondition(Level.class, detachedCriteria4);
 
@@ -795,7 +795,7 @@ public class TeamController {
         d1S.flush();
 //		         关闭输出流   
         d1S.close();
-        System.out.println("唯一花圈头像已保存到" + uploadPath + uploadPath1);
+        System.out.println("唯一店铺头像已保存到" + uploadPath + uploadPath1);
 
 
         //存头像数据

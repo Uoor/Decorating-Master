@@ -16,7 +16,7 @@
 <script type="text/javascript" src="<c:url value="/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
 <script src="<c:url value="/bootstrap/js/bootstrap.js"/>"></script>	
 <script type="text/javascript" src="<c:url value="/js/ga.js"/>"></script>
-<title>微裱花-花圈</title>
+<title>微裱花-店铺</title>
 <style type="text/css">
 
 
@@ -97,7 +97,7 @@
 			<li><a href="#tab1" data-toggle="tab">用户</a></li>
 			</c:if>
 			  <c:if test="${!empty userTeams}">
-			<li><a href="#tab2" data-toggle="tab">花圈</a></li>
+			<li><a href="#tab2" data-toggle="tab">店铺</a></li>
 			</c:if>
 			  <c:if test="${!empty userCourses}">
 			<li><a href="#tab3" data-toggle="tab">裱花</a></li>
@@ -126,8 +126,8 @@
 			<div class="tab-pane" id="tab2">
 			<table class="table table-condensed">
 			  <tr>
-			  <th>花圈</th>
-			  <th>花圈介绍</th>
+			  <th>店铺</th>
+			  <th>店铺介绍</th>
 			  <th>创建人</th>
 			  <th>创建时间</th>
 			  </tr>
@@ -203,7 +203,7 @@
 			      <span class="mhs">|</span>
 			      <a href="http://www.howzhi.com/learn/balls">球类</a>
 			      <span class="mhs">|</span>
-			      <a href="http://www.howzhi.com/course/pingpang/" target="_blank">8课时</a>
+			      <a href="http://www.howzhi.com/course/pingpang/" target="_blank">8裱花样式</a>
 			      <span class="mhs">|</span>
 			      <a href="http://www.howzhi.com/course/pingpang/members" target="_blank">91人学习</a>
 			      <span class="mhs">|</span>

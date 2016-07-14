@@ -199,7 +199,7 @@
                     </li>
 
                     <li class="item">
-                        <a href="teamPage.htm" class="" data-offset="-40">花圈</a>
+                        <a href="teamPage.htm" class="" data-offset="-40">店铺</a>
                     </li>
                 </ul>
 
@@ -282,7 +282,8 @@
                 <img src="http://files.bbs.tl.changyou.com/data/attachment/forum/201512/29/215028j60su9u6kkpesyez.png" class="flav-slide-pics" />
 						<span class="text_wrap">
 						<h2>I am in TINYMOOC.</h2>
-						<p>我们有精心制作的视频裱花<br />
+						<p>我们有精心制作的
+模型数据裱花<br />
                         </p>
 						</span>
             </li>
@@ -332,7 +333,8 @@
                             <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><img src="${hotCourse.course.logoUrl}"/></a>
                         </div>
                         <p class="title">
-                            <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><span class="video" title="视频裱花"></span>${hotCourse.course.courseTitle}</a>
+                            <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><span class="video" title="
+模型数据裱花"></span>${hotCourse.course.courseTitle}</a>
                         </p>
                         <div class="summary">${hotCourse.course.courseIntro}</div>
                         <p class="metas clearfix">
@@ -360,7 +362,8 @@
                             <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><img src="${newCourse.course.logoUrl}"/></a>
                         </div>
                         <p class="title">
-                            <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><span class="video" title="视频裱花"></span>${newCourse.course.courseTitle}</a>
+                            <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><span class="video" title="
+模型数据裱花"></span>${newCourse.course.courseTitle}</a>
                         </p>
                         <div class="summary">${newCourse.course.courseIntro}</div>
                         <p class="metas clearfix">
@@ -375,12 +378,12 @@
         </ul>
     </div>
 
-    <!-- 话题、花圈 -->
+    <!-- 话题、店铺 -->
     <div class="why-gnosh-movies">
     </div>
 
     <div class="flat clearfix">
-        <h2><strong>话题、花圈&nbsp;╰(￣▽￣)╭</strong></h2>
+        <h2><strong>话题、店铺&nbsp;╰(￣▽￣)╭</strong></h2>
         <div class="flat-main">
             <h3>最新话题</h3>
             <div class="discuss-list2">
@@ -397,7 +400,7 @@
                                         <a href="discussDetailPage.htm?discussId=${discuss.discussId}"><span style="color: rgb(102, 194, 160)">${discuss.topic}</span></a>
                                     </p>
                                     <p class="metas">
-                                        <a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="来自『${discuss.team.teamName}』花圈"
+                                        <a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="来自『${discuss.team.teamName}』店铺"
                                            class="mrm">${discuss.team.teamName}</a> by <a
                                             href="goPersonal.htm?userId=${discuss.user.userId}"
                                             class="show-user-card"  title="${discuss.user.userName}">${discuss.user.userName}</a><span
@@ -411,7 +414,7 @@
                 </ul>
             </div>
             <div class="discuss-list2" style="margin-top:15px;">
-                <h3>推荐花圈 </h3>
+                <h3>推荐店铺 </h3>
                 <div class="metas">
                     <ul class="grids smallpic-grids">
                         <c:forEach items="${teamList}" var="team">
@@ -426,7 +429,7 @@
             </div>
         </div>
 
-        <!-- 推荐花圈 -->
+        <!-- 推荐店铺 -->
     </div>
 
 </section>

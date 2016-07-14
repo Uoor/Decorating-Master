@@ -8,7 +8,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>产品经理的花圈成员
+  <title>产品经理的店铺成员
  - 好知网</title>
  <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
  <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
@@ -74,7 +74,7 @@ $(function(){
 							<li><a href="">水果</a></li>
 						</ul>
 					</div></li>
-				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">花圈</a></li>
+				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">店铺</a></li>
 			</ul>
 
 			<form class="search-form" action="#" method="get">
@@ -124,7 +124,7 @@ $(function(){
   </div>
   
   <ul class="hnav">
-    <li><a href="teamHome.jsp">花圈首页</a></li>
+    <li><a href="teamHome.jsp">店铺首页</a></li>
     <li><a href="discuss.jsp">讨论区</a></li>
     <li class="this"><a href="members.jsp">成员</a></li>
         

@@ -79,7 +79,7 @@
                 </div>
                 <div class="imageblock-content">
                     <div class="clearfix">
-                        <h1 class="pull-left">花圈名：${userTeam2.team.teamName}</h1>
+                        <h1 class="pull-left">店铺名：${userTeam2.team.teamName}</h1>
                     </div>
 
                     <ul class="course-metas">
@@ -93,7 +93,7 @@
 
             <div class="UIImageBlock_Content_1">
                 <div class="nav clearfix">
-                    <a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">花圈首页</a>
+                    <a href="teamHomePage.htm?teamId=${userTeam2.team.teamId}">店铺首页</a>
                     <a href="discussPage.htm?teamId=${userTeam2.team.teamId}">讨论区</a>
                     <a href="membersAdminPage.htm?teamId=${userTeam2.team.teamId}">成员</a>
                     <c:if test="${userTeam.userPosition=='组长'}">
@@ -125,12 +125,12 @@
                             </p>
 
                             <p>建设度：${userTeam2.contribution}&nbsp;&nbsp;&nbsp;
-                                花圈等级：${level2.lv}&nbsp;&nbsp;&nbsp;
-                                花圈称号：${level2.title}
+                                店铺等级：${level2.lv}&nbsp;&nbsp;&nbsp;
+                                店铺称号：${level2.title}
                             </p>
 
                             <div class="tags">
-                                花圈标签：
+                                店铺标签：
                                 <c:if test="${empty labelList}"><b>暂时没有标签</b></c:if>
                                 <c:if test="${!empty labelList}">
                                     <c:forEach items="${labelList}" var="label">
@@ -152,7 +152,7 @@
                             </div>
                         </c:if>
                         <c:if test="${discussNum==0}">
-                            <h3>本花圈暂时还没有话题</h3>
+                            <h3>本店铺暂时还没有话题</h3>
                         </c:if>
                         <c:if test="${discussNum>0}">
                             <h3>最近的讨论<span>(共${discussNum}话题)</span></h3>
@@ -207,8 +207,8 @@
     <div id="course-side">
         <c:if test="${empty userTeam1.userPosition}">
             <div class="mod joingroup-mod">
-                <span class="gray">加入花圈后才能发言哦！</span>
-                <a href="takePartInTeam.htm?teamId=${userTeam2.team.teamId}" class="swbtn"><span>加入花圈</span></a>
+                <span class="gray">加入店铺后才能发言哦！</span>
+                <a href="takePartInTeam.htm?teamId=${userTeam2.team.teamId}" class="swbtn"><span>加入店铺</span></a>
             </div>
         </c:if>
         <c:if test="${!empty userTeam1.user}">
@@ -271,7 +271,7 @@
         <c:if test="${userTeam1.userPosition=='成员'}">
             <div class="mod">
                 <div class="ptl">
-                    <p>&raquo; <a href="">退出花圈</a></p>
+                    <p>&raquo; <a href="">退出店铺</a></p>
                 </div>
             </div>
         </c:if>

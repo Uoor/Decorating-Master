@@ -55,7 +55,7 @@
 							<div class="clearfix mtm">
 
 								<div class="pills" style="margin-bottom: 0px">
-									<a href="http://www.howzhi.com/course/4631/">课时</a><a
+									<a href="http://www.howzhi.com/course/4631/">裱花样式</a><a
 										href="http://www.howzhi.com/course/4631/notes">笔记(2)</a> <a
 										href="http://www.howzhi.com/course/4631/members">学员(231)</a>
 								</div>
@@ -81,7 +81,7 @@
 							<div class="lesson-toolbar-main-inner clearfix">
 								<div class="btn-group fl">
 									<a class="btn btn-small  active"
-										href="./第1课 像素（1） - 突破平面 深度剖析PS - 好知网_files/第1课 像素（1） - 突破平面 深度剖析PS - 好知网.htm">课时</a><a
+										href="./第1课 像素（1） - 突破平面 深度剖析PS - 好知网_files/第1课 像素（1） - 突破平面 深度剖析PS - 好知网.htm">裱花样式</a><a
 										class="btn btn-small "
 										href="http://www.howzhi.com/course/4631/lesson/49296/notes">笔记(2)</a>
 								</div>
@@ -121,7 +121,8 @@
 						</object>
 					</div>
 					<div class="gray fsn">
-						小提示：如无法播放此裱花视频，请<a
+						小提示：如无法播放此裱花
+模型数据，请<a
 							href="http://www.howzhi.com/group/feedback/discuss/1827"
 							target="_blank" class="thin fsn">查看帮助</a>或<a target="_blank"
 							href="http://wpa.qq.com/msgrd?v=3&uin=2485597828&site=qq&menu=yes"
@@ -233,13 +234,13 @@
 		<div id="course-side">
 
 			<div class="flat lesson-summary-flat">
-				<h2>课时简介</h2>
+				<h2>裱花样式简介</h2>
 				<p>像素（1）</p>
 			</div>
 			<div class="flat lesson-nav" id="lesson-window-list"
 				style="display: block;">
 				<a href="javascript:;" class="fr fsn more-items">+ 展开</a> <a href="javascript:;"class="fr fsn less-items" style="display: none;">- 收起</a>
-				<h2>课时列表</h2>
+				<h2>裱花样式列表</h2>
 				<ul>
 
 					<li class=" current"><span class="lesson-index">L1</span> <span
@@ -248,7 +249,7 @@
 					
 				</ul>
 				<div class="clearfix window-list-bottom">
-					<span class="fl">共12课时</span>
+					<span class="fl">共12裱花样式</span>
 					<div class="fr">
 						<a href="javascript:;" class="prev-page btn btn-mini disabled">&lt;</a>
 						<a href="javascript:;" class="next-page btn btn-mini">&gt;</a>
@@ -316,7 +317,7 @@
 
 			</div>
 			<div class="flat">
-				<h3>相关花圈</h3>
+				<h3>相关店铺</h3>
 				<ul class="grids smallpic-grids">
 					<li class="grid"><a
 						href=""><img src="" class="thumb"></a>
@@ -329,7 +330,7 @@
 			</div>
 
 			<div class="flat latest-topics clearfix">
-				<h2>相关花圈最新话题</h2>
+				<h2>相关店铺最新话题</h2>
 				<ul class="text-list">
 					<li><a href="http://www.howzhi.com/group/snap/discuss/13801">西湖暮色</a></li>
 					

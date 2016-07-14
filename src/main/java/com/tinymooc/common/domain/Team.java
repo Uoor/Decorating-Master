@@ -20,7 +20,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 /**
- * 花圈
+ * 店铺
  */
 @Entity
 @Table(name = "team", catalog = "tinymooc")

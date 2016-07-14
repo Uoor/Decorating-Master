@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>新增课时 - 裱花大师</title>
+<title>新增裱花样式 - 裱花大师</title>
 <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
 <link rel="stylesheet" href="<c:url value="/resource/bootstrap/css/bootstrap.css"/>" media="screen">
 <script type="text/javascript" src="<c:url value="/resource/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
@@ -57,23 +57,25 @@ $("a#video").click(function(){
 </div>
 
   <div class="light-page page-small lesson-form-page" style="">
-    <div class="page-head"><h2>添加第${lessons+1}课时</h2></div>
+    <div class="page-head"><h2>添加第${lessons+1}裱花样式</h2></div>
     <div class="page-body clearfix">
       <div class="page-body-main">
          <form id="lesson-form" class="form-horizontal" method="post" data-widget="validator-bootstrap"  data-auto-submit="false" action="uploadAll.htm" enctype="multipart/form-data">
           <div class="control-group">
-            <label class="control-label">课时类型</label>
+            <label class="control-label">裱花样式类型</label>
             <div class="controls">
               <div class="btn-group" id="lesson-method-btn-group">
                 <a class="btn btn-small" id="img">图文</a>
-                <a class="btn btn-small active" id="video">视频</a>
+                <a class="btn btn-small active" id="video">
+模型数据</a>
               </div>
               <input type="hidden" name="lessonNum" value="${lessons+1}" id="lesson-method-field" />
 
             </div>
           </div>
           <div class="control-group" id="media-control-group">
-            <label class="control-label">视频地址</label>
+            <label class="control-label">
+模型数据地址</label>
             <div class="controls media-controls">
                <input id="videoSelect" type="file" name="url" required="required">
             </div>

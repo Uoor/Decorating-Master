@@ -113,7 +113,7 @@ public class HomePageController {
         // FIXME
         System.out.println("=====未登录newCourseList.size=====" + newCourseList.size());
 
-        //推荐花圈
+        //推荐店铺
         DetachedCriteria dCriteria2 = DetachedCriteria.forClass(Team.class);
         dCriteria2.addOrder(Order.desc("construction"));
         dCriteria2.add(Restrictions.eq("teamState", "批准"));
@@ -138,7 +138,7 @@ public class HomePageController {
 
         request.setAttribute("hotCourseList", hotCourseList); // 热门裱花
         request.setAttribute("newCourseList", newCourseList); // 最新裱花
-        request.setAttribute("teamList", teamList); // 花圈
+        request.setAttribute("teamList", teamList); // 店铺
         request.setAttribute("discussList", discussList); // 话题
         request.setAttribute("labelList", labelList); // 标签
         request.setAttribute("noteList", noteList); // 笔记
@@ -272,7 +272,7 @@ public class HomePageController {
                 .add(Restrictions.ne("userId", user.getUserId()));
         List<User> expertList = userService.queryMaxNumOfCondition(User.class, detachedCriteria2, 4);
 
-        //花圈推荐
+        //店铺推荐
         DetachedCriteria detachedCriteria3 = DetachedCriteria.forClass(LabelObject.class)
                 .add(Restrictions.eq("objectId", user.getUserId()));
         List<LabelObject> labelObjectList = userService.queryAllOfCondition(LabelObject.class, detachedCriteria3);
@@ -677,12 +677,12 @@ public class HomePageController {
         }
 
 
-        //花圈话题
+        //店铺话题
         DetachedCriteria detachedCriteria4 = DetachedCriteria.forClass(Discuss.class);
         detachedCriteria4.addOrder(Order.desc("scanNum")).createCriteria("team").add(Restrictions.eq("type", type)).add(Restrictions.eq("teamState", "批准"));
         List<Discuss> discussList = userService.queryMaxNumOfCondition(Discuss.class, detachedCriteria4, 4);
 
-        //相关花圈
+        //相关店铺
         DetachedCriteria detachedCriteria5 = DetachedCriteria.forClass(Team.class);
         detachedCriteria5.addOrder(Order.desc("construction"));
         detachedCriteria5.add(Restrictions.eq("teamState", "批准"));

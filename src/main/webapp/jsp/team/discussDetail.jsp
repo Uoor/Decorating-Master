@@ -183,7 +183,7 @@
 <section class="container">
 
     <div class="fsm pbm">
-        <a href="teamPage.htm">花圈</a> &raquo;
+        <a href="teamPage.htm">店铺</a> &raquo;
         <a href="">${userTeam.team.teamName}</a> &raquo;
         <a href="discussPage.htm?teamId=${userTeam.team.teamId}">讨论区</a> &raquo;
         话题
@@ -342,7 +342,7 @@
             </div>
         </div>
         <div class="flat">
-            <h3>同花圈最新话题</h3>
+            <h3>同店铺最新话题</h3>
             <ul class="text-list">
                 <c:forEach items="${discusses}" var="dis">
                     <li><a href="">${dis.topic}</a></li>

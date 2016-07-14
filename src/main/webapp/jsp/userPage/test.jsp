@@ -171,7 +171,7 @@
           <li ><a href="teach.htm"><i class="feature-icon feature-icon-teach"></i>创建裱花</a></li>
           <li ><a href="note.htm"><i class="feature-icon feature-icon-note"></i>笔记</a></li>
           <li ><a href="challenge.htm"><i class="feature-icon feature-icon-faq"></i>微挑战</a></li>
-          <li ><a href="discussion.htm"><i class="feature-icon feature-icon-group"></i>花圈<span id="group-counter" class="counter"></span></a></li>
+          <li ><a href="discussion.htm"><i class="feature-icon feature-icon-group"></i>店铺<span id="group-counter" class="counter"></span></a></li>
           <li ><a href="favorite.htm"><i class="feature-icon feature-icon-favorite"></i>收藏夹</a></li>
           <li ><a href="shop.htm"><i class="feature-icon feature-icon-faq"></i>商城</a></li>
           <li ><a href="accountprop.htm"><i class="feature-icon feature-icon-faq"></i>我的道具</a></li>

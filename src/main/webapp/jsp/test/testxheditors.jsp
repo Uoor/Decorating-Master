@@ -15,7 +15,8 @@
 <%-- xheditor测试--%>
 <textarea class="xheditors" id="activeContentRichEditor" name="activityIntroduce" style="height:200px;width:61%;">Test</textarea>
 
-<%-- 腾讯视频测试--%>
+<%-- 腾讯
+模型数据测试--%>
 <iframe src="http://play.video.qcloud.com/iplayer.html?$appid=1251419256&$fileid=14651978969256120443&$autoplay=0&$sw=1366&$sh=768" frameborder="0" width="100%" height="720" scrolling="no"></iframe>	<!-- 页面内多处使用iframe代码，后面的JS代码只需要使用一次(作用是调整iframe的高度) -->
 <script src="http://qzonestyle.gtimg.cn/open/qcloud/video/h5/fixifmheight.js" charset="utf-8"></script>
 

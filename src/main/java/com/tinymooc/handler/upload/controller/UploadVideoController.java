@@ -88,8 +88,10 @@ public class UploadVideoController extends BaseServiceImpl implements BaseServic
             int maxsize = 1000 * 1024 * 1024;
             List list = up.parseRequest(request);
             Iterator i = list.iterator();
-            String resourceUrl = "";
+            String  resourceUrl = "";
             String postfix = "";
+            String filepath = null;
+
             while (i.hasNext()) {
                 FileItem fm = (FileItem) i.next();
                 if (!fm.isFormField()) {
@@ -108,12 +110,15 @@ public class UploadVideoController extends BaseServiceImpl implements BaseServic
                         message = "文件太大，不超过1000M";
                         break;
                     }
-
+                    String path = request.getSession().getServletContext().getRealPath("/");
+                    System.out.println("路径：" + path);
+            //        path = path + "/upfiles/folder/20151220/145059321186741.jpg";
 //                    String filepath = "F:\\eclipse_workplace\\tinymooc\\src\\main\\webapp\\resource\\video";
-                    String filepath = "D:\\GitHub\\TinyMooc\\src\\main\\webapp\\resource\\video";
+                     filepath = path + "/resource/video/";
 
                     //		System.out.println("filepath =====" + filepath);
                     //		String filename="";
+                    System.out.println("保存路径： " + filepath);
                     postfix = resourceUrl.substring(resourceUrl.lastIndexOf(".") + 1, resourceUrl.length());
 
                     // FIXME
@@ -163,7 +168,7 @@ public class UploadVideoController extends BaseServiceImpl implements BaseServic
             Resource resource = new Resource();
             resource.setResourceId(UUIDGenerator.randomUUID());
             resource.setResourceObject(course.getCourseId());
-            resource.setType("video");
+            resource.setType("ddm");
             uploadService.save(resource);
 
             Video video = new Video();
@@ -171,6 +176,9 @@ public class UploadVideoController extends BaseServiceImpl implements BaseServic
             video.setResourceId(resource.getResourceId());
             video.setResource(resource);
             video.setVideoUrl(resourceUrl);
+            String tencentVideoId =  "/resource/video/" + courseTitle + ".gcode";
+            //保存后半部分就好了！
+            video.setTencentVideoId(tencentVideoId);
 
             uploadService.save(video);
             return new ModelAndView("redirect:courseDetailPage.htm?courseId=" + courseId);

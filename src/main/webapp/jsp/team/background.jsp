@@ -8,7 +8,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title> 头部背景图片设置 - 起风了的花圈管理 - 好知网</title>
+  <title> 头部背景图片设置 - 起风了的店铺管理 - 好知网</title>
   
   <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
   <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
@@ -73,7 +73,7 @@ $(function(){
           </ul>
         </div>
       </li>
-      <li class="item"><a href="http://www.howzhi.com/groups/explore" class="trigger">花圈</a></li>
+      <li class="item"><a href="http://www.howzhi.com/groups/explore" class="trigger">店铺</a></li>
     </ul>
 
     <form class="search-form" action="http://www.howzhi.com/search" method="get">
@@ -122,7 +122,7 @@ $(function(){
   </div>
   
   <ul class="hnav">
-     <li><a href="">花圈首页</a></li>
+     <li><a href="">店铺首页</a></li>
     <li><a href="">讨论区</a></li>
     <li class=""><a href="">成员</a></li>
     <li class="this"><a href="this">管理</a></li>

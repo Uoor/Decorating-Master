@@ -8,7 +8,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />"/>
-    <title>裱花大师 - 花圈</title>
+    <title>裱花大师 - 店铺</title>
 
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
@@ -182,11 +182,11 @@
                     <ul class="sub-menu">
 
                         <c:if test="${empty userTeam1 && empty userTeam2}">
-                            <div class="empty">你还没有参加任何花圈！</div>
+                            <div class="empty">你还没有参加任何店铺！</div>
                         </c:if>
 
                         <c:if test="${!empty userTeam1}">
-                            <div class="gray">我管理的花圈</div>
+                            <div class="gray">我管理的店铺</div>
 
                             <ul class="grids smallpic-grids">
                                 <c:forEach items="${userTeam1}" var="team">
@@ -199,7 +199,7 @@
                         </c:if>
 
                         <c:if test="${!empty userTeam2}">
-                            <div class="gray">我加入的花圈</div>
+                            <div class="gray">我加入的店铺</div>
 
                             <ul class="grids smallpic-grids">
                                 <c:forEach items="${userTeam2}" var="userteam2">
@@ -220,7 +220,7 @@
 
                         </c:if>
 
-                        <div class="mvs"><a href="createGuidePage.htm" class="">» 申请创建花圈</a></div>
+                        <div class="mvs"><a href="createGuidePage.htm" class="">» 申请创建店铺</a></div>
 
                     </ul>
                     </li>
@@ -241,7 +241,7 @@
         <div class="right">
 
             <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-                <h1>活跃花圈</h1>
+                <h1>活跃店铺</h1>
 
                 <ul class="grids smallpic-grids">
                     <c:forEach items="${hotTeams}" var="team" begin="0" end="6">

@@ -8,7 +8,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title> 分享 - 产品经理花圈 - 裱花大师</title>
+  <title> 分享 - 产品经理店铺 - 裱花大师</title>
   <link rel="Shortcut Icon" href="<c:url value="/pic/icon.ico" />" />
   <link rel="stylesheet" href="<c:url value="/bootstrap/css/bootstrap.css"/>" media="screen">
   <script type="text/javascript" src="<c:url value="/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
@@ -73,7 +73,7 @@ $(function(){
 							<li><a href="">水果</a></li>
 						</ul>
 					</div></li>
-				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">花圈</a></li>
+				<li class="item"><a href="<c:url value="/jsp/team/team.jsp"/>" class="trigger">店铺</a></li>
 			</ul>
 
 			<form class="search-form" action="#" method="get">
@@ -110,10 +110,11 @@ $(function(){
 
 <section class="container discussion-form-container">
   <div class="container-padding clearfix">
-    <div class="fsm pbm"><a href="team.jsp">花圈</a> &raquo;
+    <div class="fsm pbm"><a href="team.jsp">店铺</a> &raquo;
   <a href="teamHome.jsp" id="group-url">产品经理</a> &raquo;
           <span>分享</span></div>    
-    <h1>分享视频</h1>
+    <h1>分享
+模型数据</h1>
     
     <form id="group-share-form" class="dform discussion-form share-form" method="post" novalidate>
       <div class="normal-main">
@@ -134,7 +135,9 @@ $(function(){
           <div class="item" id="shareform-url-item">
             <label class="item-label required" for="groupshare_webUrl">链接地址</label>
             <input type="text" id="groupshare_webUrl" name="groupshare[webUrl]" required="required"    class="item-input" />
-                          <div class="hint">输入视频网站播放页面的网址(支持 优酷/土豆/酷6/新浪视频 )</div>
+                          <div class="hint">输入
+模型数据网站播放页面的网址(支持 优酷/土豆/酷6/新浪
+模型数据 )</div>
                         
             <div class="processerror mvs" id="shareform-processerror" style="display:none;"></div>
           </div>

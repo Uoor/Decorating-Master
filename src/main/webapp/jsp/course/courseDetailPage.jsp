@@ -237,7 +237,7 @@
                             </c:if>
                         </li>
                         <li>
-                            <span>课时：</span>${lessonNum} 课
+                            <span>裱花样式：</span>${lessonNum} 课
                         </li>
                         <li>
                             <span>学员：</span><a href="">${studentNum}</a> 人
@@ -248,9 +248,9 @@
                     </ul>
 
                     <div class="action-bar">
-                        <c:if test="${currentCourse.user.userId ne user.userId}">
+                       <%-- <c:if test="${currentCourse.user.userId ne user.userId}">
                             <button class="btn btn-large btn-success" id="start">${currentCourseState}</button>
-                        </c:if>
+                        </c:if>--%>
                     </div>
                 </div>
             </div>
@@ -330,7 +330,7 @@
             <div>
                 <div class="clearfix mtm">
                     <div class="pills" style="margin-bottom:0px">
-                        <a href="" class="on">课时</a>
+                        <a href="" class="on">裱花样式</a>
                     </div>
                 </div>
             </div>
@@ -341,18 +341,18 @@
             <div class="btn-group fr">
                 <c:if test="${currentCourse.user.userId==user.userId}">
                     <a class="btn btn-small"
-                       href="createLessonPage.htm?courseId=${currentCourse.course.courseId}">新增课时</a>
+                       href="createLessonPage.htm?courseId=${currentCourse.course.courseId}">新增裱花样式</a>
                 </c:if>
             </div>
 
-            <h2>课时 <span class="lessons-total">(共${lessonNum}小节)</span></h2>
+            <h2>裱花样式 <span class="lessons-total">(共${lessonNum}小节)</span></h2>
 
             <div class="lessons">
                 <ul id="status">
                     <c:if test="${lessonNum==0}">
-                        <b>创建者暂时还没有添加课时</b>
+                        <b>创建者暂时还没有添加裱花样式</b>
                         <c:if test="${user.userId eq currentCourse.user.userId}">
-                            <a href="createLessonPage.htm?courseId=${currentCourse.course.courseId}">（添加课时）</a>
+                            <a href="createLessonPage.htm?courseId=${currentCourse.course.courseId}">（添加裱花样式）</a>
                         </c:if>
                     </c:if>
                     <c:if test="${lessonNum>0}">

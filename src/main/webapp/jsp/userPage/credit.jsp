@@ -45,7 +45,7 @@
         <tbody>  
            <tr>
             <td>2013-09-06 19:39</td>
-            <td>学习课时</td>
+            <td>学习裱花样式</td>
             <td>+5</td>
           </tr>
           
@@ -94,7 +94,7 @@
           <li ><a href="/me/teach"><i class="feature-icon feature-icon-teach"></i>创建裱花</a></li>
           <li ><a href="/me/note"><i class="feature-icon feature-icon-note"></i>笔记</a></li>
           <li ><a href="/me/question"><i class="feature-icon feature-icon-faq"></i>微挑战</a></li>
-          <li ><a href="/me/group/discussion"><i class="feature-icon feature-icon-group"></i>花圈<span id="group-counter" class="counter"></span></a></li>
+          <li ><a href="/me/group/discussion"><i class="feature-icon feature-icon-group"></i>店铺<span id="group-counter" class="counter"></span></a></li>
           <li ><a href="/task/"><i class="feature-icon feature-icon-task"></i>任务</a></li>
           <li ><a href="/me/course/favorite"><i class="feature-icon feature-icon-favorite"></i>收藏夹</a></li>
         </ul>

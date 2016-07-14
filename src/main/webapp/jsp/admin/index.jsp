@@ -72,7 +72,7 @@
 						<li><a href="turnToLockCourse.htm">封禁的裱花</a></li>
 					</ul>
 				</li>
-				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>花圈管理</span></a></li>
+				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>店铺管理</span></a></li>
 				<li><a href="turnToUserManage.htm"><i class="icon icon-user"></i> <span>用户管理</span></a></li>
 				<li><a href="turnToAuthorManage.htm"><i class="icon icon-pencil"></i> <span>权限管理</span></a></li>
 				<li><a href=""><i class="icon icon-th"></i> <span>爬虫管理</span></a></li>
@@ -127,7 +127,7 @@
 							<li>
 								<div class="right">
 									<strong>${teamSum}</strong>
-									花圈数
+									店铺数
 								</div>
 							</li>
 							<li>
@@ -219,14 +219,14 @@
 				<div class="row-fluid">
 					<div class="span6">
 						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>最新花圈</h5></div>
+							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>最新店铺</h5></div>
 							<div class="widget-content nopadding">
 								<ul class="recent-posts">
 									<li>
 										<table class="table table-striped sortable" >
 											<thead>
 												<tr>
-												    <th>花圈名称</th>
+												    <th>店铺名称</th>
 													<th>简介</th>
 													<th>建设度</th>
 													<th>创建时间</th>	

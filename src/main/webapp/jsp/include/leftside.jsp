@@ -36,7 +36,7 @@
                         <li id="menu-item-1271" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1273"><a href="myTinyMooc.htm"><span>我的裱花大师</span></a></li>
                         <li id="menu-item-1273" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1273"><a href="courseList.htm"><span>裱花管理</span></a></li>
                         <li id="menu-item-1270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1270"><a href="goNote.htm"><span>笔记</span></a></li>
-                        <li id="menu-item-1274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1274"><a href="teamPage.htm"><span>花圈</span></a></li>
+                        <li id="menu-item-1274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1274"><a href="teamPage.htm"><span>店铺</span></a></li>
                         <li id="menu-item-1272" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1272"><a href="myFavorite.htm"><span>收藏夹</span></a></li>
                         <li id="menu-item-1275" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1275"><a href="myAttention.htm"><span>好友</span></a></li>
                         <li id="menu-item-1276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1276"><a href="goPrivateMail.htm"><span>私信</span></a></li>

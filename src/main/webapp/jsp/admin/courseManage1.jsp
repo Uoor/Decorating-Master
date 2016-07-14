@@ -30,7 +30,7 @@
 				//alert(sta);
              if(sta=="申请中" ){
              		 flag = 1;
-                   alert("还有课时没有通过，不能发布！");
+                   alert("还有裱花样式没有通过，不能发布！");
                    return false;
                  }	//alert(sta);
                
@@ -105,7 +105,7 @@
 						<li><a href="turnToLockCourse.htm">封禁的裱花</a></li>
 					</ul>
 				</li>
-				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>花圈管理</span></a></li>
+				<li><a href="turnToTeamManage.htm"><i class="icon icon-user"></i> <span>店铺管理</span></a></li>
 				<li><a href="turnToUserManage.htm"><i class="icon icon-user"></i> <span>用户管理</span></a></li>
 				<li><a href="turnToAuthorManage.htm"><i class="icon icon-pencil"></i> <span>权限管理</span></a></li>
 				<li><a href=""><i class="icon icon-th"></i> <span>爬虫管理</span></a></li>
@@ -139,7 +139,7 @@
 				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>首页</a>
 				<a href="#">裱花管理</a>
 				<a href="#">申请中的裱花</a>
-				<a href="#" class="current">申请中的课时</a>
+				<a href="#" class="current">申请中的裱花样式</a>
 			</div>
 			<div class="container-fluid">
 				<div class="page">
@@ -152,10 +152,10 @@
 						<table class="table table-striped sortable" id="tab" >
 							<thead>
 								<tr>
-									<th>课时标题</th>
+									<th>裱花样式标题</th>
 									<th>所属裱花</th>
-									<th>课时简介</th>
-									<th>课时号</th>
+									<th>裱花样式简介</th>
+									<th>裱花样式号</th>
 									<th>浏览次数</th>
 									<th>申请时间</th>
 									<th>状态</th>
