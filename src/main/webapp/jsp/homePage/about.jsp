@@ -117,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="search">
 				<form method="post" name="form1" class="search-form" onsubmit="return _search()">
-					<input type="text" name="searchValue" class="search-input" placeholder="搜索" >
+					<input type="text" name="searchValue" class="search-input" placeholder="想学什么？搜搜看..." >
 					<input type="submit" class="search-btn" value="">
 				</form>
 			</div>

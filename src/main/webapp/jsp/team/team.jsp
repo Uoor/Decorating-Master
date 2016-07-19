@@ -1,192 +1,188 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ include file="/resource/jspf/commons.jspf" %>
-<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="sicd" uri="/sicd-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />"/>
-    <title>裱花大师 - 店铺</title>
+    <title>裱花大师-店铺</title>
 
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/img.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <%-- ----------------------以下---------------------------- --%>
+    <link href="<%=request.getContextPath()%>/resource/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<%=request.getContextPath()%>/resource/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Realty Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.useso.com/css?family=Exo+2:400,900italic,900,800italic,800,700italic,700,600italic,600,500italic,500,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="<c:url value="/resource/js/jquery-1.11.1.min.js"/>"></script>
+    <script src="<c:url value="/resource/js/responsiveslides.min.js"/>"></script>
+    <script>
+        function _search()
+        {
+            var form = document.form1;
+            form.searchValue.value = (form.searchValue.value).replace(/[&\|\\\*^%$#@\-]/g,"");
+            if(form.searchValue.value.trim() == '')
+            {
+                alert("输入需要搜索关键字！");
+                return false;
+            }
+            form.action ='searchCourseFront.htm';
+        }
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+
+
+    <%--  <script type="text/javascript" src="<c:url value="/resource/bootstrap/js/jquery-1.8.3.min.js"/>"></script>--%>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="<c:url value="/resource/js/move-top.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resource/js/easing.js"/>"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
+    </script>
+    <!---End-smoth-scrolling---->
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/resource/css/swipebox.css">
+    <script src="<c:url value="/resource/js/jquery.swipebox.min.js"/>"></script>
 
     <script type="text/javascript">
-        $("a.on").live('click', function () {
-            c = $(this).html()+'被点击';
-            alert(c);
-            b = $(this).html();
-            if (b == "全部") {
-                $("#groups-video").css("display", "block");
-                $("#groups-art").css("display", "block");
-                $("#groups-favorite").css("display", "block");
-                $("#groups-computer").css("display", "block");
-                $("#groups-literature").css("display", "block");
-                $("#groups-job").css("display", "block");
-                $("#groups-comic").css("display", "block");
-                $("#groups-openSubject").css("display", "block");
-                $("#groups-other").css("display","block");
-            }
+        jQuery(function($) {
+            $(".swipebox").swipebox();
         });
-
-
-        $("a.lyl").live('click', function () {
-                    a = $(this).html();
-                    //alert(a);
-                    if (a == "奶油") {
-//                        alert(a);
-                        $("#groups-video").css("display", "block");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "人造奶油") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "block");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "鲜奶油") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "block");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "植指奶油") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "block");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "蛋白") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "block");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "巧克力") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "block");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "糖面") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "block");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "水果") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "block");
-                        $("#groups-other").css("display", "none");
-                    }
-                    if (a == "其他") {
-//                        alert(a);
-                        $("#groups-video").css("display", "none");
-                        $("#groups-art").css("display", "none");
-                        $("#groups-favorite").css("display", "none");
-                        $("#groups-literature").css("display", "none");
-                        $("#groups-computer").css("display", "none");
-                        $("#groups-job").css("display", "none");
-                        $("#groups-comic").css("display", "none");
-                        $("#groups-openSubject").css("display", "none");
-                        $("#groups-other").css("display", "block");
-                    }
-                }
-        );
     </script>
+
 </head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="header-top">
 
-<body class="archive category category-gnews category-3">
-<script type="text/javascript">
-    $(document).ready(function () {
-        var message='<%=request.getParameter("message")%>';
-        if(message==null || message=='null'){
-        }else{
-            $.scojs_message(message, $.scojs_message.TYPE_OK);
-        }
-    });
-</script>
-<c:if test="${empty user.userId}">
-    <jsp:include page="/jsp/include/head1.jsp"></jsp:include>
-</c:if>
-<c:if test="${!empty user.userId}">
-    <jsp:include page="/jsp/include/head2.jsp"></jsp:include>
-</c:if>
 
-<div class="movedown">
+
+            <div class="top-menu">
+                <span class="menu"><img src="resource/images/nav.png" alt=""/> </span>
+                <ul>
+                    <li><a href="http://localhost:8092/turnToHomePage.htm" class="active">首页</a></li>
+                    <li class="biaohua"><a href="goCourseHome.htm" class="active" >裱花</a>
+                        <ul class="nav-menus">
+                            <li><a href="goMajorHome.htm?type=奶油">奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=人造奶油">人造奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=鲜奶油">鲜奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=植指奶油">植指奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=蛋白">蛋白</a></li>
+                            <li><a href="goMajorHome.htm?type=巧克力">巧克力</a></li>
+                            <li><a href="goMajorHome.htm?type=糖面">糖面</a></li>
+                            <li><a href="goMajorHome.htm?type=水果">水果</a></li>
+                            <li><a href="goMajorHome.htm?type=其他">其他</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="teamPage.htm">店铺</a></li>
+                    <li><a href="about.htm">关于我们</a></li>
+                    <li><a href="contact.htm">联系我们</a></li>
+                </ul>
+                <!-- script for menu -->
+
+                <script>
+                    $("span.menu").click(function(){
+                        $(".top-menu ul").slideToggle("slow" , function(){
+                        });
+                    });
+
+
+
+                </script>
+
+                <!-- //script for menu -->
+
+            </div>
+            <div class="buttons">
+                <a href="goLoginPage.htm" class="button" >登录</a>
+                <a href="goRegisterPage.htm" class="button">注册</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="header-bottom">
+            <div class="logo">
+                <a href="index.html"> <img src="resource/images/logo.png" width="80" height="80"></a>
+            </div>
+
+            <div class="search">
+                <form method="post" name="form1" class="search-form" onsubmit="return _search()">
+                    <input type="text" name="searchValue" class="search-input" placeholder="搜索" >
+                    <input type="submit" class="search-btn" value="">
+                </form>
+            </div>
+
+
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </div>
 
-<div class="wrapper">
 
-    <div class="left">
+<div class="projects-section">
+    <div class="container">
+        <div class="clearfix">
 
-        <header>
-            <div class="movedown"></div>
-            <div class="logo" ></div>
 
-            <nav>
+            <h3>活跃店铺</h3>
+            <div class="Features-grids">
+
+                <c:forEach items="${hotTeams}" var="team" begin="0" end="6">
+                    <li class="grid">
+                        <a href="teamHomePage.htm?teamId=${team.teamId}" title="${team.teamName}"><img
+                                src="${team.headImage.imageSmall}" alt="${team.teamName}"></a>
+
+                        <div class="mvs"><a href="teamHomePage.htm?teamId=${team.teamId}"
+                                            title="${team.teamName}">${team.teamName}</a></div>
+                    </li>
+                </c:forEach>
+
+                <%--
+                      <c:forEach items="${teamList}" var="team">
+
+                          <div class="col-md-3 Feature-grid">
+                              <img src="<c:url value="${team.headImage.imageSmall}"/>" title="${team.teamName}" class="img-responsive zoom-img">
+                              <h4> <a href="teamHomePage.htm?teamId=${team.teamId}" title="${team.teamName}">${team.teamName}</a></h4>
+
+                          </div>
+
+                      </c:forEach>--%>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Features-section">
+    <div class="container">
+        <div class="clearfix">
+
+
                 <ul>
-                    <li id="menu-item-4" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-4 gnews-menu"><a href="turnToHomePage.htm"></a></li>
-                    <ul class="sub-menu">
+
+                    <ul class="Features-grids">
 
                         <c:if test="${empty userTeam1 && empty userTeam2}">
-                            <div class="empty">你还没有参加任何店铺！</div>
+                            <h3>你还没有参加任何店铺！</h3>
                         </c:if>
 
                         <c:if test="${!empty userTeam1}">
-                            <div class="gray">我管理的店铺</div>
+                            <h3>我管理的店铺</h3>
 
                             <ul class="grids smallpic-grids">
                                 <c:forEach items="${userTeam1}" var="team">
@@ -199,7 +195,7 @@
                         </c:if>
 
                         <c:if test="${!empty userTeam2}">
-                            <div class="gray">我加入的店铺</div>
+                            <h3>我加入的店铺</h3>
 
                             <ul class="grids smallpic-grids">
                                 <c:forEach items="${userTeam2}" var="userteam2">
@@ -223,283 +219,86 @@
                         <div class="mvs"><a href="createGuidePage.htm" class="">» 申请创建店铺</a></div>
 
                     </ul>
-                    </li>
+
                 </ul>
-            </nav>
-        </header>
 
 
-        <div class="garlic"></div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="Resources-section">
+    <div class="container">
+        <div class="col-md-3 Resources">
+            <h3>about</h3>
+            <p>Morbi pretium gravida justo nec ultrices. Ut et facilisis justo. Fusce ac turpis eros, vel molestie lectus.feugiat velit velit non turpis</p>
+        </div>
+        <div class="col-md-3 Resources1">
+            <h3>resources</h3>
+            <ul>
+                <li>New Listing Sign-Up</li>
+                <li>Consectetur adipiscing</li>
+                <li>Integer molestie lorem</li>
+                <li>Facilisis in pretium nisl</li>
+            </ul>
+        </div>
+        <div class="col-md-3 Resources1">
+            <h3>Owners</h3>
+            <ul>
+                <li>Integer molestie lorem</li>
+                <li>Integer molestie lorem</li>
+                <li>Consectetur adipiscing</li>
+                <li>Lorem ipsum dolor sit</li>
+            </ul>
+        </div>
+        <div class="col-md-3 Resources1">
+            <h3>social</h3>
+            <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>google</li>
+                <li>viemo</li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-top">
+            <p>Copyright &copy; 2016.Company name All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                 */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 
     </div>
-    <div class="right-container">
-        <div class="right-top-banner gnews-banner">
-            <div></div>
-        </div>
-        <div class="right-top"></div>
-        <div class="right">
-
-            <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-                <h1>活跃店铺</h1>
-
-                <ul class="grids smallpic-grids">
-                    <c:forEach items="${hotTeams}" var="team" begin="0" end="6">
-                        <li class="grid">
-                            <a href="teamHomePage.htm?teamId=${team.teamId}" title="${team.teamName}"><img
-                                    src="${team.headImage.imageSmall}" alt="${team.teamName}"></a>
-
-                            <div class="mvs"><a href="teamHomePage.htm?teamId=${team.teamId}"
-                                                title="${team.teamName}">${team.teamName}</a></div>
-                        </li>
-                    </c:forEach>
-                </ul>
-                <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                <hr class="custom-hr">
-            </article>
-
-            <article class="post-1702 post type-post status-publish format-standard hentry category-gnews category-uncategorized tag-asparagus tag-delicious tag-eating-grilled tag-food tag-healthy tag-recipe tag-seasonal tag-variety tag-vegetables" id="post-1702">
-              <!--   <h1>全部</h1>
-
-                <c:forEach items="${dictionaries}" var="dic">
-                    <a href="#" data-target="#groups-photography" class="lyl">${dic.dicValue}</a>
-                </c:forEach> -->
-
-                <div id="groups-video" class="groups-panel">
-                    <p>奶油</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells">
-                            <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='奶油'}">
-                                    <li style="float:left">
-                                        <div class="group-cell">
-                                            <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                    src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                            <div class="metas">
-                                                <div class="title">
-                                                    <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                                </div>
-                                                <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </c:if>
-                            </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-                <div id="groups-art" class="groups-panel">
-                    <p>人造奶油</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells">
-                            <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='人造奶油'}">
-                                    <li style="float:left">
-                                        <div class="group-cell">
-                                            <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                    src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                            <div class="metas">
-                                                <div class="title">
-                                                    <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                                </div>
-                                                <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </c:if>
-                            </c:forEach>
-
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-                <div id="groups-favorite" class="groups-panel" style="display: block;">
-                    <p>鲜奶油</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells">
-                            <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='鲜奶油'}">
-                                    <li style="float:left">
-                                        <div class="group-cell">
-                                            <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                    src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                            <div class="metas">
-                                                <div class="title">
-                                                    <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                                </div>
-                                                <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </c:if>
-                            </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-
-                <div id="groups-computer" class="groups-panel">
-                    <p>植指奶油</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='植指奶油'}">
-                                <li style="float:left">
-                                    <div class="group-cell">
-                                        <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                        <div class="metas">
-                                            <div class="title">
-                                                <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                            </div>
-                                            <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </c:if>
-                        </c:forEach></ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-                <div id="groups-literature" class="groups-panel">
-                    <p>蛋白</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='蛋白'}">
-                                <li style="float:left">
-                                    <div class="group-cell">
-                                        <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                        <div class="metas">
-                                            <div class="title">
-                                                <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                            </div>
-                                            <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </c:if>
-                        </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-                <div id="groups-job" class="groups-panel">
-                    <p>巧克力</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells">
-                            <c:forEach items="${hotTeams}" var="team">
-                                <c:if test="${team.type=='巧克力'}">
-                                    <li style="float:left">
-                                        <div class="group-cell">
-                                            <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                    src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                            <div class="metas">
-                                                <div class="title">
-                                                    <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                                </div>
-                                                <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </c:if>
-                            </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-                <div id="groups-comic" class="groups-panel">
-                    <p>糖面</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='糖面'}">
-                                <li style="float:left">
-                                    <div class="group-cell">
-                                        <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                        <div class="metas">
-                                            <div class="title">
-                                                <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                            </div>
-                                            <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </c:if>
-                        </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-                <div id="groups-openSubject" class="groups-panel">
-                    <p>水果</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='水果'}">
-                                <li style="float:left">
-                                    <div class="group-cell">
-                                        <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                        <div class="metas">
-                                            <div class="title">
-                                                <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                            </div>
-                                            <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </c:if>
-                        </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-
-                <div id="groups-other" class="groups-panel">
-                    <p>其他</p>
-
-                    <div class="mbl">
-                        <ul class="group-cells"><c:forEach items="${hotTeams}" var="team">
-                            <c:if test="${team.type=='其他'}">
-                                <li style="float:left">
-                                    <div class="group-cell">
-                                        <div class="pic"><a href="teamHomePage.htm?teamId=${team.teamId}"><img
-                                                src="${team.headImage.imageSmall}" alt="${team.teamName}"></a></div>
-                                        <div class="metas">
-                                            <div class="title">
-                                                <a href="teamHomePage.htm?teamId=${team.teamId}">${team.teamName}</a>
-                                            </div>
-                                            <div class="summary">${fn:substring(team.teamIntro,0,30)}</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </c:if>
-                        </c:forEach>
-                        </ul>
-                        <div style='visibility:hidden;clear: both;display: block;height: 0px;overflow:hidden'></div>
-                    </div>
-                </div>
-
-            </article>
-
-
-        </div> <!-- end .right -->
-        <div class="right-bottom"></div>
-
-        <div class="movedown"></div>
-    </div> <!-- end .right-container -->
-
-    <jsp:include page="/jsp/include/foot.jsp"></jsp:include>
-
 </div>
+
 
 </body>
 </html>

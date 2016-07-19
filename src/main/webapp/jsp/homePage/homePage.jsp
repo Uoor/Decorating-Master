@@ -3,43 +3,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="Shortcut Icon" href="<c:url value="/resource/pic/icon.ico" />" />
-
-    <script type="text/javascript" src="<c:url value="/resource/bootstrap/js/jquery-1.8.3.min.js"/>"></script>
-    <%--<link rel="stylesheet" type="text/css" href="/resource/bootstrap/css/bootstrap.css"/>--%>
-    <link rel="stylesheet" type="text/css" href="/resource/css/site_v2.css"/>
-
-
-    <%-- 本页面为用户未登录时主页 --%>
-
     <title>裱花大师-首页</title>
 
-    <!-- Make the HTML5 elements work in IE. -->
-    <!--[if IE]>
-    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resource/css/site.css"/>
-    <link href="<%=request.getContextPath()%>/resource/css/fonts.css" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript">
-
-        $(function(){
-
-            $("#course").mouseover(function(){
-
-                $("#menu").css("display","block");
-
-            });
-            $(".item.course").mouseleave(function(){
-
-                $("#menu").css("display","none");
-            });
-        });
-
+    <%-- ----------------------以下---------------------------- --%>
+    <link href="<%=request.getContextPath()%>/resource/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="<%=request.getContextPath()%>/resource/css/style2.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Realty Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.useso.com/css?family=Exo+2:400,900italic,900,800italic,800,700italic,700,600italic,600,500italic,500,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="<c:url value="/resource/js/jquery-1.11.1.min.js"/>"></script>
+    <script src="<c:url value="/resource/js/responsiveslides.min.js"/>"></script>
+    <script>
         function _search()
         {
             var form = document.form1;
@@ -51,292 +30,205 @@
             }
             form.action ='searchCourseFront.htm';
         }
-
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
     </script>
 
+
+    <%--  <script type="text/javascript" src="<c:url value="/resource/bootstrap/js/jquery-1.8.3.min.js"/>"></script>--%>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="<c:url value="/resource/js/move-top.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/resource/js/easing.js"/>"></script>
     <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
     </script>
-
+    <!---End-smoth-scrolling---->
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/resource/css/swipebox.css">
+    <script src="<c:url value="/resource/js/jquery.swipebox.min.js"/>"></script>
     <script type="text/javascript">
-
-
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
     </script>
-
-    <style>
-
-        #home .news h1 , #news .news article h2 {
-            font-weight: normal;
-        }
-
-        #footer {
-            font-weight: normal;
-            text-align: center;
-        }
-
-        #flavours .text p {
-            padding-right: 50px;
-        }
-
-        #home .better_shared {
-            z-index: 1000 !important;
-        }
-
-        #share .beetroot {
-            height: 411px !important;;
-        }
-
-        #news .news article p {
-            margin-bottom: 1em;
-        }
-
-        .whats-your-gnosh{
-            background: url("http://files.bbs.tl.changyou.com/data/attachment/forum/201512/21/213915rgplghygcgrg4yjr.png") top left no-repeat;
-            height:1046px;
-            width:1100px;
-            margin-top: -92px;
-            margin-left: -66px;
-        }
-
-        .why-gnosh-movies1{
-           /* background: url("http://files.bbs.tl.changyou.com/data/attachment/forum/201512/28/170611h1f45gf51i2z4ram.png") top left no-repeat;
-            height:120px;*/
-            width:1100px;
-            margin-top: 130px;
-            margin-left: 0px;
-        }
-
-        .why-gnosh-movies{
-            background: url("http://files.bbs.tl.changyou.com/data/attachment/forum/201512/28/170611h1f45gf51i2z4ram.png") top left no-repeat;
-            height:120px;
-            width:1100px;
-            margin-top: 50px;
-            margin-left: 0px;
-        }
-
-        .flavours-original:hover{
-
-            z-index: 1021;
-        }
-
-        .flavours-tapas:hover{
-
-            z-index: 1021;
-        }
-
-        .flavours-mm:hover{
-
-            z-index: 1021;
-        }
-    </style>
-
-    <style type="text/css">
-        #share #dsq-comments p { width: 100%; position: static; }
-
-        #contact .food { top: -246px; }
-
-            /* #share .feed { z-index: 1050; } */
-        #wrapperLayer{position:fixed;top:0;bottom:0;right:0;z-index:3000;}
-        #wrapperLayer img{margin: auto;left: 0;right: 0;position: fixed;top: 0;bottom: 0;/*max-width: 100%;max-height: 100%;*/}
-        #darkenLayer{position:fixed;top:0;bottom:0;right:0;z-index:2999;width:100%;height:100%;background:url("http://www.gnosh.co.uk/wp-content/themes/gnosh/images/trans-grey.png");}
-        .close-btn-popup{position: fixed;z-index: 3001;width: 780px;font-size: 21px;height: 580px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;margin-right: auto;text-align: right;padding: 10px;}
-        .close-btn{text-decoration: none;color: white;position: relative;z-index: 1;position: relative;z-index: 1;font-family: "Calvert MT","Calvert MT W01",arial,sans-serif;}
-        .arrow-lt-flav{z-index:20;background: url("<%=request.getContextPath()%>/resource/img/arrow-left.png");position: absolute;
-            top:558px;margin-left: -31px;padding-left:38px;padding-top: 50px;}
-        .arrow-rt-flav{z-index:20;background: url("<%=request.getContextPath()%>/resource/img/arrow-right.png");position: absolute;
-            top:560px;margin-left: 524px;padding-left:38px;padding-top: 50px;}
-        .find-out-lnk{position: absolute;bottom: 0;right: 0;margin-bottom: 15px;width: 186px;height: 34px;margin-right: 28px;}
-        .flav-photos-tapas{position: absolute;margin-left: -350px;margin-top: 404px;display:none;}
-        .flav-photos-originals{position: absolute;margin-left: -350px;margin-top: 404px;display:none;}
-        .flav-photos-dippables{position: absolute;margin-left: -350px;margin-top: 404px;display:none;}
-        .flav-photos-mm{position: absolute;margin-left: -350px;margin-top: 404px;display:inline-block;}
-        .flav-slide{list-style: none;position: absolute;margin-top: 340px;width: 500px;margin-left: 500px;}
-        .flav-slide .text_wrap h2{text-align:center;color: #652D16;font-size: 19px;line-height: 22px;margin-bottom: 9px;font-weight: normal;width:400px;}
-        .flav-slide .text_wrap p{text-align:center;color: #554E4E;font-size: 24px;line-height: 30px;margin-bottom: 10px;width:400px;}
-        .flav-slide-pics{position: absolute;margin-left: 0px;margin-top: 50px;}
-        .flav-slide li{display:none;}
-        .flav-slide .display-slide{display:inline-block;}
-        .flav-slide .text_wrap{position: absolute;margin-top: 388px;}
-        .no-list{list-style:none;}
-        #flav_orig_slide{display:none;}
-        #flav_dipp_slide{display:none;}
-        #flav_tap_slide{display:none;}
-    </style>
-    <!-- End Ben Addition -->
 
 </head>
-
-
 <body>
-<div class="wrapper">
-    <header id="header">
-        <h1><a href="http://localhost:8092/turnToHomePage.htm" target="_blank"></a></h1>
-        <nav>
-          <%--  <img src="/resource/img/140832wwpp6lmi9ae2pe2a.png">--%>
-            <div class="pages">
-                <ul class="header-nav">
+<div class="header">
+    <div class="container">
+        <div class="header-top">
 
-                    <li class="item">
-                        <a href="http://localhost:8092/turnToHomePage.htm" target="_blank" class="scroll">首页</a>
-                    </li>
 
-                    <li class="item course">
-                        <a href="goCourseHome.htm" class="scroll" data-offset="30" id="course">裱花
-                            <span class="down-triangle"></span>
-                        </a>
-                        <div class="menus" id="menu" style="display: none;">
-                            <ul class="clearfix">
-                                <li><a href="goMajorHome.htm?type=奶油">奶油</a></li>
-                                <li><a href="goMajorHome.htm?type=人造奶油">人造奶油</a></li>
-                                <li><a href="goMajorHome.htm?type=鲜奶油">鲜奶油</a></li>
-                                <li><a href="goMajorHome.htm?type=植指奶油">植指奶油</a></li>
-                                <li><a href="goMajorHome.htm?type=蛋白">蛋白</a></li>
-                                <li><a href="goMajorHome.htm?type=巧克力">巧克力</a></li>
-                                <li><a href="goMajorHome.htm?type=糖面">糖面</a></li>
-                                <li><a href="goMajorHome.htm?type=水果">水果</a></li>
-                                <li><a href="goMajorHome.htm?type=其他">其他</a></li>
-                            </ul>
-                        </div>
-                    </li>
 
-                    <li class="item">
-                        <a href="teamPage.htm" class="" data-offset="-40">店铺</a>
+            <div class="top-menu">
+                <span class="menu"><img src="images/nav.png" alt=""/> </span>
+                <ul>
+                    <li><a href="http://localhost:8092/turnToHomePage.htm" class="active">首页</a></li>
+                    <li class="biaohua"><a href="goCourseHome.htm" class="active" >裱花</a>
+                        <ul class="nav-menus">
+                            <li><a href="goMajorHome.htm?type=奶油">奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=人造奶油">人造奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=鲜奶油">鲜奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=植指奶油">植指奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=蛋白">蛋白</a></li>
+                            <li><a href="goMajorHome.htm?type=巧克力">巧克力</a></li>
+                            <li><a href="goMajorHome.htm?type=糖面">糖面</a></li>
+                            <li><a href="goMajorHome.htm?type=水果">水果</a></li>
+                            <li><a href="goMajorHome.htm?type=其他">其他</a></li>
+                        </ul>
                     </li>
+                    <li><a href="teamPage.htm">店铺</a></li>
+                    <li><a href="about.htm">关于我们</a></li>
+                    <li><a href="contact.htm">联系我们</a></li>
                 </ul>
+                <!-- script for menu -->
 
-             <%--   <form class="search-form" action="MulsearchByKey.htm" method="post">
-                    <input type="text" class="search-input" value name="keyWord" placeholder="想学什么？搜搜看...">
-                    <input type="submit" class="search-btn" value>
-                </form>--%>
-                <form name="form1" class="search-form"  method="post" onsubmit="return _search()">
+                <script>
+                    $("span.menu").click(function(){
+                        $(".top-menu ul").slideToggle("slow" , function(){
+                        });
+                    });
 
-                        <input type="text" name="searchValue" class="search-input" placeholder="想学什么？搜搜看..." >
-                        <input type="submit" class="search-btn" value="">
 
-                </form>
 
+                </script>
+
+                <!-- //script for menu -->
 
             </div>
-
-            <div class="social">
-                <div class="rightmove">
-                    <a href="goLoginPage.htm" target="_blank" >登录</a>
-                    <a href="goRegisterPage.htm" target="_blank">注册</a>
-                </div>
+            <div class="buttons">
+                <a href="goLoginPage.htm" class="button" >登录</a>
+                <a href="goRegisterPage.htm" class="button">注册</a>
             </div>
-        </nav>
-    </header>
-
-
-<%--
-<section id="home">
-    <!-- All replaced with images in the CSS -->
-&lt;%&ndash;    <a data-offset="100" class="scroll why_the_apos hoverable">Why the apostrophe and more about us&hellip;</a>&ndash;%&gt;
-    <!--<p class="gourmet_dips">Gourmet dips without the fuss</p>-->
-   &lt;%&ndash; <a class="product_award1" target="_blank" >Product Awards</a>
-    <a class="product_award2" target="_blank" >Product Awards</a>
-    <a class="product_award3" >Quality Food Awards</a>&ndash;%&gt;
-    <!--<a href="#contact" data-offset="-150" class="share_thoughts hoverable scroll">Share your thoughts with us</a>-->
- &lt;%&ndash;   <span class="better_shared">Some things are better shared</span>
-    <a class="scroll whats_your_gnosh hoverable" data-offset-minus="60">What&#8217;s your G&#8217;nosh?</a>
-    <a class="where_to_gnosh hoverable">Where to G&#8217;NOSH?</a>&ndash;%&gt;
-   &lt;%&ndash; <span class="tomato_dip"></span>&ndash;%&gt;
-&lt;%&ndash;    <span class="garlic"></span>
-    <span class="pepper"></span>
-    <span class="basil"></span>&ndash;%&gt;
-&lt;%&ndash;    <a href="#" class="keep_up"></a>&ndash;%&gt;
-
-    <!-- Twitter box -->
-   &lt;%&ndash; <div class="twitter">
-        <ul id="tweets">
-        </ul>
-        <div class="extras">
+            <div class="clearfix"></div>
         </div>
-    </div>&ndash;%&gt;
+        <div class="header-bottom">
+            <div class="logo">
+                <a href="index.html"> <img src="resource/images/logo.png" width="80" height="80"></a>
+            </div>
 
-
-&lt;%&ndash;    <article class="news"><h1 style="font-size: 18px;text-transform:none;"></h1>
-        <time datetime="2012-05-31">15/12/21</time>
-        <p>让我们把学习回归到最质朴、最纯净的状态，满足人类对未知世界的求知欲。</br>
-            宇宙那么大，我们没弄懂的事情还多着呢。<br/> -- 裱花大师</p>
-
-    </article>&ndash;%&gt;
-
-
-</section><!-- end #home -->--%>
-
-<%--<section id="flavours">
-    <div class="whats-your-gnosh">
+            <div class="search">
+                <form method="post" name="form1" class="search-form" onsubmit="return _search()">
+                    <input type="text" name="searchValue" class="search-input" placeholder="搜索" >
+                    <input type="submit" class="search-btn" value="">
+                </form>
+            </div>
 
 
 
-        <a class="flavours-original"></a>
-        <!--<a href="#" class="flavours-dippables"></a>-->
-        <a class="flavours-tapas"></a>
-        <a class="flavours-mm"></a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
 
-        <a href="#" class="arrow-lt-flav"></a>
-        <a href="#" class="arrow-rt-flav"></a>
 
-        <ul id="flav_mm_slide" class="flav-slide">
-            <li class="display-slide">
-                <img src="http://files.bbs.tl.changyou.com/data/attachment/forum/201512/29/215028j60su9u6kkpesyez.png" class="flav-slide-pics" />
-						<span class="text_wrap">
-						<h2>I am in TINYMOOC.</h2>
-						<p>我们有精心制作的
-模型数据裱花<br />
-                        </p>
-						</span>
-            </li>
+<div class="banner-section">
+    <div class="container">
+        <div class="col-md-5 banner-gridimg">
+            <img src="resource/images/img2.jpg">
+        </div>
+        <div class="col-md-7 banner-grid">
+            <h1>It's beautifully made & performs beautiful.</h1>
+            <h5>Loving it is easy, that's why so many people do.</h5>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.nisl magna sodales eros, ut feugiat velit velit non turpis</p>
+            <a href="#"class="button3">Purchase Now</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="content">
+    <div class="join">
+        <div class="container">
+            <div class="col-md-2 join-grid">
+                <a href="#">join us now</a>
+            </div>
+            <div class="col-md-10 join-grid1">
+                <p>And get your own offer, Get a 30% discount for the first 5 purchases.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="container">
+            <h3>our services</h3>
+            <div class="services-grids">
+                <div class="col-md-3 services-grid">
+                    <img src="resource/images/service-1.png" class="img-responsive" alt="">
+                    <h4>nulla nec ligula risus</h4>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
+                    <a href="#" class="button4">more info</a>
+                </div>
+                <div class="col-md-3 services-grid">
+                    <img src="resource/images/service-4.png" class="img-responsive" alt="">
+                    <h4>massa as laorretum</h4>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
+                    <a href="#" class="button4">more info</a>
+                </div>
+                <div class="col-md-3 services-grid">
+                    <img src="resource/images/service-3.png" class="img-responsive" alt="">
+                    <h4>lorem ipsum dolor est </h4>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
+                    <a href="#" class="button4">more info</a>
+                </div>
+                <div class="col-md-3 services-grid">
+                    <img src="resource/images/service-5.png" class="img-responsive" alt="">
+                    <h4>lorem ipsum dolor est </h4>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
+                    <a href="#" class="button4">more info</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Features-section">
+        <div class="container">
+            <h3>热门裱花</h3>
+            <div class="Features-grids">
 
-            <li>
-                <img src="http://files.bbs.tl.changyou.com/data/attachment/forum/201512/28/155616lfv2dbodztbfd1ob.png" class="flav-slide-pics" />
-						<span class="text_wrap">
-						<h2>I am in TINYMOOC.</h2>
-						<p>我们有实时交互的学习资料<br />
-                        </p>
-						</span>
-            </li>
 
-            <li>
-                <img src="http://files.bbs.tl.changyou.com/data/attachment/forum/201512/29/215112qy4hc96xoiqboxpo.png" class="flav-slide-pics" />
-						<span class="text_wrap">
-						<h2>I am in TINYMOOC.</h2>
-						<p>我们有循序渐进的学习计划<br />
-                        </p>
-						</span>
-            </li>
+                <c:forEach items="${hotCourseList}" var="hotCourse">
+                <div class="col-md-3 Feature-grid">
+                    <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><img src="${hotCourse.course.logoUrl}"  class="img-responsive zoom-img"/></a>
+                    <h4>  <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><span class="video" title="
+模型数据裱花"></span>${hotCourse.course.courseTitle}</a></h4>
+                    <p>${hotCourse.course.courseIntro}</p>
+                    <p class="metas clearfix">
+                        <span title="查看次数" style="float: right;"><i class="icon-signal"></i>${hotCourse.course.scanNum}</span>
+							<span class="fl by">by
+								<a href="goPersonal.htm?userId=${hotCourse.user.userId}" class="show-user-card" title="查看该用户">${hotCourse.user.userName}</a>
+							</span>
+                    </p>
+                </div>
+                </c:forEach>
 
-            <li>
-                <img src="http://files.bbs.tl.changyou.com/data/attachment/forum/201512/29/215106bh54d3kr58ukkdoz.png" class="flav-slide-pics" />
-						<span class="text_wrap">
-						<h2>I am in TINYMOOC.</h2>
-						<p>我们有互帮互助的问答社区 <br />
-                        </p>
-						</span>
-            </li>
-        </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </div>
 
-</section>--%>
-
-<section id="why-gnosh">
-   <div class="why-gnosh-movies1">
-    </div>
-
-    <div class="flat clearfix">
-        <h2><strong>热门裱花| 瞧瞧大家都喜欢啥模型&nbsp;(～￣▽￣)～</strong></h2>
-        <ul class="cells cells-middle">
-            <c:forEach items="${hotCourseList}" var="hotCourse">
-                <li class="cell">
-                    <div class="course-item">
-                        <div class="thumb">
-                            <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><img src="${hotCourse.course.logoUrl}"/></a>
-                        </div>
-                        <p class="title">
-                            <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><span class="video" title="
-模型数据裱花"></span>${hotCourse.course.courseTitle}</a>
-                        </p>
-                        <div class="summary">${hotCourse.course.courseIntro}</div>
+    <div class="projects-section">
+        <div class="container">
+            <h3>最新裱花</h3>
+            <div class="Features-grids">
+                <c:forEach items="${newCourseList}" var="hotCourse">
+                    <div class="col-md-3 Feature-grid">
+                        <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}"><img src="${hotCourse.course.logoUrl}"  class="img-responsive zoom-img"/></a>
+                        <h4>  <a href="courseDetailPage.htm?courseId=${hotCourse.course.courseId}">
+                            <span class="video" title="模型数据裱花"></span>${hotCourse.course.courseTitle}
+                              </a>
+                        </h4>
+                        <p>${hotCourse.course.courseIntro}</p>
                         <p class="metas clearfix">
                             <span title="查看次数" style="float: right;"><i class="icon-signal"></i>${hotCourse.course.scanNum}</span>
 							<span class="fl by">by
@@ -344,99 +236,96 @@
 							</span>
                         </p>
                     </div>
-                </li>
-            </c:forEach>
-        </ul>
-    </div>
+                </c:forEach>
 
-    <div class="why-gnosh-movies">
-    </div>
-
-    <div class="flat clearfix">
-        <h2><strong>最新裱花| 哇塞，又有新模型了，大家快来观望&nbsp;(～￣▽￣)～</strong></h2>
-        <ul class="cells cells-middle">
-            <c:forEach items="${newCourseList}" var="newCourse" varStatus="iter">
-                <li class="cell">
-                    <div class="course-item">
-                        <div class="thumb">
-                            <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><img src="${newCourse.course.logoUrl}"/></a>
-                        </div>
-                        <p class="title">
-                            <a href="courseDetailPage.htm?courseId=${newCourse.course.courseId}"><span class="video" title="
-模型数据裱花"></span>${newCourse.course.courseTitle}</a>
-                        </p>
-                        <div class="summary">${newCourse.course.courseIntro}</div>
-                        <p class="metas clearfix">
-                            <span title="查看次数" style="float: right;"><i class="icon-signal"></i>${newCourse.course.scanNum}</span>
-							<span class="fl by">by
-								<a href="#" class="show-user-card" title="">${newCourse.user.userName}</a>
-							</span>
-                        </p>
-                    </div>
-                </li>
-            </c:forEach>
-        </ul>
-    </div>
-
-    <!-- 话题、店铺 -->
-    <div class="why-gnosh-movies">
-    </div>
-
-    <div class="flat clearfix">
-        <h2><strong>话题、店铺&nbsp;╰(￣▽￣)╭</strong></h2>
-        <div class="flat-main">
-            <h3>最新话题</h3>
-            <div class="discuss-list2">
-                <ul>
-                    <c:forEach items="${discussList}" var="discuss">
-                        <li>
-                            <div class="imageblock clearfix">
-                                <div class="imageblock-image">
-                                    <img src="${discuss.user.headImage.imageSmall}" title="${discuss.user.userName}">
-                                </div>
-                                <div class="imageblock-content">
-
-                                    <p class="title">
-                                        <a href="discussDetailPage.htm?discussId=${discuss.discussId}"><span style="color: rgb(102, 194, 160)">${discuss.topic}</span></a>
-                                    </p>
-                                    <p class="metas">
-                                        <a href="teamHomePage.htm?teamId=${discuss.team.teamId}" title="来自『${discuss.team.teamName}』店铺"
-                                           class="mrm">${discuss.team.teamName}</a> by <a
-                                            href="goPersonal.htm?userId=${discuss.user.userId}"
-                                            class="show-user-card"  title="${discuss.user.userName}">${discuss.user.userName}</a><span
-                                            class="mhm">${discuss.scanNum}次查看</span>
-                                        <span class="mls">${discuss.publishDate}</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </c:forEach>
-                </ul>
-            </div>
-            <div class="discuss-list2" style="margin-top:15px;">
-                <h3>推荐店铺 </h3>
-                <div class="metas">
-                    <ul class="grids smallpic-grids">
-                        <c:forEach items="${teamList}" var="team">
-                            <li class="grid"><img src="<c:url value="${team.headImage.imageSmall}"/>" title="${team.teamName}" class="thumb">
-                                <p>
-                                    <a href="teamHomePage.htm?teamId=${team.teamId}" title="${team.teamName}">${team.teamName}</a>
-                                </p>
-                            </li>
-                        </c:forEach>
-                    </ul>
-                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
-
-        <!-- 推荐店铺 -->
     </div>
 
-</section>
 
-    <jsp:include page="/jsp/include/foot.jsp"></jsp:include>
+    <div class="RecentPosts-section">
+        <div class="container">
+            <h3>推荐店铺</h3>
+            <div class="Features-grids">
+            <c:forEach items="${teamList}" var="team">
 
-</div><!-- end .wrapper -->
+            <div class="col-md-3 Feature-grid">
+                <img src="<c:url value="${team.headImage.imageSmall}"/>" title="${team.teamName}" class="img-responsive zoom-img">
+                <h4> <a href="teamHomePage.htm?teamId=${team.teamId}" title="${team.teamName}">${team.teamName}</a></h4>
+
+            </div>
+
+            </c:forEach>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="Resources-section">
+        <div class="container">
+            <div class="col-md-3 Resources">
+                <h3>about</h3>
+                <p>Morbi pretium gravida justo nec ultrices. Ut et facilisis justo. Fusce ac turpis eros, vel molestie lectus.feugiat velit velit non turpis</p>
+            </div>
+            <div class="col-md-3 Resources1">
+                <h3>resources</h3>
+                <ul>
+                    <li>New Listing Sign-Up</li>
+                    <li>Consectetur adipiscing</li>
+                    <li>Integer molestie lorem</li>
+                    <li>Facilisis in pretium nisl</li>
+                </ul>
+            </div>
+            <div class="col-md-3 Resources1">
+                <h3>Owners</h3>
+                <ul>
+                    <li>Integer molestie lorem</li>
+                    <li>Integer molestie lorem</li>
+                    <li>Consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit</li>
+                </ul>
+            </div>
+            <div class="col-md-3 Resources1">
+                <h3>social</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>google</li>
+                    <li>viemo</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-top">
+            <p>Copyright &copy; 2016.Company name All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                 */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+    </div>
+</div>
+
 
 </body>
 </html>
