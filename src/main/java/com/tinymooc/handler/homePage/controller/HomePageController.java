@@ -505,6 +505,20 @@ public class HomePageController {
         }
     }
 
+    @RequestMapping("contact.htm")
+    public ModelAndView contact(HttpServletRequest request) {
+
+        return new ModelAndView("/homePage/contact");
+
+    }
+
+    @RequestMapping("about.htm")
+    public ModelAndView about(HttpServletRequest request) {
+
+        return new ModelAndView("/homePage/about");
+
+    }
+
     @RequestMapping("goPersonalTeam.htm")
     public ModelAndView goPersonalTeam(HttpServletRequest request) {
         String userId = request.getParameter("userId");
