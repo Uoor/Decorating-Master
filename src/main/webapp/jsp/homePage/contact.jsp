@@ -139,8 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="contact_top">
 			 		
 			 			<div class="col-md-8 contact_left">
-			 				<h4>Contact Form</h4>
-			 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt dolor et tristique bibendum. Aenean sollicitudin vitae dolor ut posuere.</p>
+			 				<h4>联系 表格</h4>
 							  <form>
 								 <div class="form_details">
 					                 <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
@@ -149,21 +148,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									 <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
 									 <div class="clearfix"> </div>
 									 <div class="sub-button">
-									 	<input type="submit" value="Send message">
+									 	<input type="submit" value="提交">
 									 </div>
 						          </div>
 						       </form>
 					        </div>
 					        <div class="col-md-4 company-right">
 					        	<div class="company_ad">
-							     		<h3>Contact Info</h3>
-							     		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit velit justo.</span>
+							     		<h3>联系 信息</h3>
 			      						<address>
-											 <p>email:<a href="mailto:example@mail.com">info@display.com</a></p>
-											 <p>phone: 1.306.222.4545</p>
-									   		<p>222 2nd Ave South</p>
-									   		<p>Saskabush, SK   S7M 1T6</p>
-									 	 	
+											 <p>邮件:<a href="mailto:example@mail.com">i@monkeyhorse.cn</a></p>
+											 <p>电话: 13696948507</p>
+									   		<p>望海路#39</p>
+
 							   			</address>
 							   		</div>
 							   		
@@ -175,68 +172,71 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
   </div>
 
-		<div class="Resources-section">
-			<div class="container">
-				<div class="col-md-3 Resources">
-					<h3>about</h3>
-					<p>Morbi pretium gravida justo nec ultrices. Ut et facilisis justo. Fusce ac turpis eros, vel molestie lectus.feugiat velit velit non turpis</p>
-				</div>
-				<div class="col-md-3 Resources1">
-					<h3>resources</h3>
-					<ul>
-						<li>New Listing Sign-Up</li>
-						<li>Consectetur adipiscing</li>
-						<li>Integer molestie lorem</li>
-						<li>Facilisis in pretium nisl</li>
-					</ul>
-				</div>
-				<div class="col-md-3 Resources1">
-					<h3>Owners</h3>
-					<ul>
-						<li>Integer molestie lorem</li>
-						<li>Integer molestie lorem</li>
-						<li>Consectetur adipiscing</li>
-						<li>Lorem ipsum dolor sit</li>
-					</ul>
-				</div>
-				<div class="col-md-3 Resources1">
-					<h3>social</h3>
-					<ul>
-						<li>facebook</li>
-						<li>twitter</li>
-						<li>google</li>
-						<li>viemo</li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
+
+<div class="Resources-section">
+	<div class="container">
+		<div class="col-md-3 Resources">
+			<h3>购买及了解</h3>
+			<ul>
+				<li>普通型号</li>
+				<li>加速型号</li>
+				<li>配件</li>
+			</ul>
 		</div>
+		<div class="col-md-3 Resources1">
+			<h3>创意分享平台</h3>
+			<ul>
+				<li>新手入门</li>
+				<li>高级玩法</li>
+				<li>创意PK大赛</li>
+
+			</ul>
+		</div>
+		<div class="col-md-3 Resources1">
+			<h3>裱花大师价值</h3>
+			<ul>
+				<li>辅助功能</li>
+				<li>健康责任</li>
+				<li>环境责任</li>
+			</ul>
+		</div>
+		<div class="col-md-3 Resources1">
+			<h3>联系我们</h3>
+			<ul>
+				<li>电话</li>
+				<li>邮件</li>
+				<li>QQ</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
 	</div>
-		<div class="footer-section">
-			<div class="container">
-				<div class="footer-top">
-					<p>Copyright &copy; 2016.Company name All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
-				</div>
-				<script type="text/javascript">
-					$(document).ready(function() {
-						/*
-						 var defaults = {
-						 containerID: 'toTop', // fading element id
-						 containerHoverID: 'toTopHover', // fading element hover id
-						 scrollSpeed: 1200,
-						 easingType: 'linear'
-						 };
-						 */
-
-						$().UItoTop({ easingType: 'easeOutQuart' });
-
-					});
-				</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
-
-			</div>
+</div>
+</div>
+<div class="footer-section">
+	<div class="container">
+		<div class="footer-top">
+			<p>Copyright &copy; 2016.Decorating Master All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				 var defaults = {
+				 containerID: 'toTop', // fading element id
+				 containerHoverID: 'toTopHover', // fading element hover id
+				 scrollSpeed: 1200,
+				 easingType: 'linear'
+				 };
+				 */
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+	</div>
+</div>
 
 
 </body>

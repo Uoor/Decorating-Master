@@ -139,17 +139,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 
-
 <div class="banner-section">
     <div class="container">
         <div class="col-md-5 banner-gridimg">
             <img src="resource/images/img2.jpg">
         </div>
         <div class="col-md-7 banner-grid">
-            <h1>It's beautifully made & performs beautiful.</h1>
-            <h5>Loving it is easy, that's why so many people do.</h5>
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.nisl magna sodales eros, ut feugiat velit velit non turpis</p>
-            <a href="#"class="button3">Purchase Now</a>
+            <h1>帮助您降低成本，提升蛋糕品质</h1>
+            <h5>爱顾客，就是爱自己</h5>
+            <p>我们的机器“裱花大师”专注为您节省高级蛋糕师傅的聘请成本，提供更多花式创意，实现即时标准化制作，让您的蛋糕因美丽和健康而更有竞争力</p>
+            <a href="goCourseHome.htm" class="button3">更多裱花</a>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -158,41 +157,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="join">
         <div class="container">
             <div class="col-md-2 join-grid">
-                <a href="#">join us now</a>
+                <a href="goRegisterPage.htm">注册</a>
             </div>
             <div class="col-md-10 join-grid1">
-                <p>And get your own offer, Get a 30% discount for the first 5 purchases.</p>
+                <p>前1000名顾客享受20%折扣优惠</p>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
     <div class="services-section">
         <div class="container">
-            <h3>our services</h3>
+            <h3>我们的服务</h3>
             <div class="services-grids">
                 <div class="col-md-3 services-grid">
                     <img src="resource/images/service-1.png" class="img-responsive" alt="">
-                    <h4>nulla nec ligula risus</h4>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
-                    <a href="#" class="button4">more info</a>
+                    <h4>上门专业培训</h4>
+                    <p>即刻障碍体验，机器和培训师同时到达</p>
+                    <%-- <a href="#" class="button4">more info</a>--%>
                 </div>
                 <div class="col-md-3 services-grid">
                     <img src="resource/images/service-4.png" class="img-responsive" alt="">
-                    <h4>massa as laorretum</h4>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
-                    <a href="#" class="button4">more info</a>
+                    <h4>售后一年保修</h4>
+                    <p>品质保证，可放心使用</p>
+
                 </div>
                 <div class="col-md-3 services-grid">
                     <img src="resource/images/service-3.png" class="img-responsive" alt="">
-                    <h4>lorem ipsum dolor est </h4>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
-                    <a href="#" class="button4">more info</a>
+                    <h4>平台两年免费使用</h4>
+                    <p>免费无限量下载，为您提供丰厚附加值</p>
+
                 </div>
                 <div class="col-md-3 services-grid">
                     <img src="resource/images/service-5.png" class="img-responsive" alt="">
-                    <h4>lorem ipsum dolor est </h4>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus, sem eget sagittis sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.</p>
-                    <a href="#" class="button4">more info</a>
+                    <h4>裱花模型售卖 </h4>
+                    <p>创意裱花师增收服务</p>
+
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -340,34 +339,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="Resources-section">
         <div class="container">
             <div class="col-md-3 Resources">
-                <h3>about</h3>
-                <p>Morbi pretium gravida justo nec ultrices. Ut et facilisis justo. Fusce ac turpis eros, vel molestie lectus.feugiat velit velit non turpis</p>
-            </div>
-            <div class="col-md-3 Resources1">
-                <h3>resources</h3>
+                <h3>购买及了解</h3>
                 <ul>
-                    <li>New Listing Sign-Up</li>
-                    <li>Consectetur adipiscing</li>
-                    <li>Integer molestie lorem</li>
-                    <li>Facilisis in pretium nisl</li>
+                    <li>普通型号</li>
+                    <li>加速型号</li>
+                    <li>配件</li>
                 </ul>
             </div>
             <div class="col-md-3 Resources1">
-                <h3>Owners</h3>
+                <h3>创意分享平台</h3>
                 <ul>
-                    <li>Integer molestie lorem</li>
-                    <li>Integer molestie lorem</li>
-                    <li>Consectetur adipiscing</li>
-                    <li>Lorem ipsum dolor sit</li>
+                    <li>新手入门</li>
+                    <li>高级玩法</li>
+                    <li>创意PK大赛</li>
+
                 </ul>
             </div>
             <div class="col-md-3 Resources1">
-                <h3>social</h3>
+                <h3>裱花大师价值</h3>
                 <ul>
-                    <li>facebook</li>
-                    <li>twitter</li>
-                    <li>google</li>
-                    <li>viemo</li>
+                    <li>辅助功能</li>
+                    <li>健康责任</li>
+                    <li>环境责任</li>
+                </ul>
+            </div>
+            <div class="col-md-3 Resources1">
+                <h3>联系我们</h3>
+                <ul>
+                    <li>电话</li>
+                    <li>邮件</li>
+                    <li>QQ</li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -377,7 +378,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer-section">
     <div class="container">
         <div class="footer-top">
-            <p>Copyright &copy; 2016.Company name All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
+            <p>Copyright &copy; 2016.Decorating Master All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
         </div>
         <script type="text/javascript">
             $(document).ready(function() {

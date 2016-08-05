@@ -132,11 +132,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="content">
 					<div class="about us">
 					<div class="container">
-					<h3>about us</h3>
+					<h3>关于我们</h3>
 					<div class="about-grids">
 					<div class="col-md-7 about-grid1"> 
-					<h4>Sed ut perspiciatis unde omnis iste natus sit</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nunc id lacus gravida ultricies. Nulla consectetur maximus sem vel aliquet. Donec blandit condimentum varius. Mauris tincidunt, urna suscipit aliquam eleifend, augue metus maximus sapien, eu mollis tellus massa a mauris. Donec vulputate est velit, eu gravida ex sagittis eget. Integer sit amet faucibus libero. Duis sagittis gravida mauris, aliquet volutpat lorem ullamcorper ac. Phasellus massa velit, dictum in nisi vitae, gravida cursus nibh. In at metus aliquet, gravida nunc eget, lacinia purus. Sed a mi mollis, faucibus erat. Vivamus at facilisis tortor. Integer condimentum lectus sit amet .sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.nisl magna sodales eros, ut feugiat velit velit non turpis.ipsum dolor sit amet, consectetur adipiscing elit.ectus sit amet .sagittis, nisl magna sodales eros, ut feugiat velit velit non turpis.nisl magna sodales eros, </p>
+					<h4>我们是一群关注食品健康的工程师。</h4>
+					<p>在与糕点师友人的交谈后了解到，目前市面上的蛋糕的奶油都是含有反式脂肪酸的植物奶油，对身体有极大的危害。更深入了解到，蛋糕厂家出于控制成本，方便存储的目的才选择使用植脂。看到了这一令人忧心的状况，我们的团队开始大开脑洞，综合3d打印等先进技术的原理，开发出了一款能帮助蛋糕店降低成本，让蛋糕更健康的裱花机器。</p>
 					</div>
 					<div class="col-md-5 about-grid">
 					<img src="resource/images/p1.jpg" class="img-responsive" alt="" />
@@ -145,14 +145,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					</div>
 					</div>
-					<div class="ourteam">
+				<%--	<div class="ourteam">
 					<div class="container">
-					<h3>work team</h3>
+					<h3>团队成员</h3>
 					<div class="team-grids">
 					<div class="col-md-3 team-grid">
 					<img src="resource/images/p2.jpg" class="img-responsive" alt="" />
-					<h5>eva adamson</h5>
-					<p>Were dolor in hendrerit in vulputate velit esse molestie con sequat,</p>
+					<h5>卢乐成</h5>
+					<p>创始人
+						资深创客
+						结构设计师</p>
 					</div>
 					<div class="col-md-3 team-grid">
 					<img src="resource/images/p3.jpg" class="img-responsive" alt="" />
@@ -170,98 +172,75 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p>Were dolor in hendrerit in vulputate velit esse molestie con sequat,</p>
 					</div>
 					</div class="clearfix"></div>
+					</div>--%>
 					</div>
-					</div>
-					
-			<div class="Offer-section">
-			<div class="container">
-			<h3>What We Offer</h3>
-			<div class="offer-grids">
-			<div class="col-md-4 offer-grid">
-		<img src="resource/images/img3.jpg" class="img-responsive" alt="">
-			<h5>Praesent vestibulum</h5>
-			<p>Donec vulputate est velit, eu gravida ex sagittis eget. Integer sit amet faucibus libero. Duis sagittis gravida mauris, aliquet volutpat lorem ullamcorper </p>
-			<a href="#"class="button5">more info</a>
-			</div>
-			<div class="col-md-4 offer-grid">
-			<img src="resource/images/img4.jpg" class="img-responsive" alt="">
-			<h5> molestie lacus eget</h5>
-			<p>Donec vulputate est velit, eu gravida ex sagittis eget. Integer sit amet faucibus libero. Duis sagittis gravida mauris, aliquet volutpat lorem ullamcorper </p>
-			<a href="#"class="button5">more info</a>
-			</div>
-			<div class="col-md-4 offer-grid">
-			<img src="resource/images/img5.jpg" class="img-responsive" alt="">
-			<h5>sit amet faucibus</h5>
-			<p>Donec vulputate est velit, eu gravida ex sagittis eget. Integer sit amet faucibus libero. Duis sagittis gravida mauris, aliquet volutpat lorem ullamcorper </p>
-			<a href="#"class="button5">more info</a>
-			</div>
-			<div class="clearfix"></div>
-			</div>
-			</div>
-			</div>
+
+
 <div class="Resources-section">
 	<div class="container">
-	<div class="col-md-3 Resources">
-	<h3>about</h3>
-	<p>Morbi pretium gravida justo nec ultrices. Ut et facilisis justo. Fusce ac turpis eros, vel molestie lectus.feugiat velit velit non turpis</p>
+		<div class="col-md-3 Resources">
+			<h3>购买及了解</h3>
+			<ul>
+				<li>普通型号</li>
+				<li>加速型号</li>
+				<li>配件</li>
+			</ul>
+		</div>
+		<div class="col-md-3 Resources1">
+			<h3>创意分享平台</h3>
+			<ul>
+				<li>新手入门</li>
+				<li>高级玩法</li>
+				<li>创意PK大赛</li>
+
+			</ul>
+		</div>
+		<div class="col-md-3 Resources1">
+			<h3>裱花大师价值</h3>
+			<ul>
+				<li>辅助功能</li>
+				<li>健康责任</li>
+				<li>环境责任</li>
+			</ul>
+		</div>
+		<div class="col-md-3 Resources1">
+			<h3>联系我们</h3>
+			<ul>
+				<li>电话</li>
+				<li>邮件</li>
+				<li>QQ</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
 	</div>
-	<div class="col-md-3 Resources1">
-	<h3>resources</h3>
-	<ul>
-	<li>New Listing Sign-Up</li>
-	<li>Consectetur adipiscing</li>
-	<li>Integer molestie lorem</li>
-	<li>Facilisis in pretium nisl</li>
-	</ul>
-	</div>
-	<div class="col-md-3 Resources1">
-	<h3>Owners</h3>
-	<ul>
-	<li>Integer molestie lorem</li>
-	<li>Integer molestie lorem</li>
-	<li>Consectetur adipiscing</li>
-	<li>Lorem ipsum dolor sit</li>
-	</ul>
-	</div>
-	<div class="col-md-3 Resources1">
-	<h3>social</h3>
-	<ul>
-	<li>facebook</li>
-	<li>twitter</li>
-	<li>google</li>
-	<li>viemo</li>
-	</ul>
-	</div>
-	<div class="clearfix"></div>
-	</div>
-	</div>
-	</div>
-		<div class="footer-section">
-					<div class="container">
-						<div class="footer-top">
-					<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-					</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</div>
+<div class="footer-section">
+	<div class="container">
+		<div class="footer-top">
+			<p>Copyright &copy; 2016.Decorating Master All rights reserved.<a href="http://www.monkeyhorse.cn/" target="_blank" title="MH">MH</a> </p>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				 var defaults = {
+				 containerID: 'toTop', // fading element id
+				 containerHoverID: 'toTopHover', // fading element hover id
+				 scrollSpeed: 1200,
+				 easingType: 'linear'
+				 };
+				 */
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 
-					</div>
-					</div>
+	</div>
+</div>
 
 
- </body>
+</body>
 </html>
