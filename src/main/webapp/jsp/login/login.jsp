@@ -43,24 +43,23 @@
 
                         <form class="standardForm standardForm--login " method="post" action="login.htm">
 
-                            <h1>
-                                Log in to TINYMOOC                    </h1>
+                            <h1>裱花大师</h1>
                             <div class="socialLogin">
 
                                 <button class="Button Module btn hasText large rounded unAuthFacebookConnect registerLoginButton" id="Button-6" type="button">
 
                                     <em></em>
-                                    <span class="buttonText">Log in with QQ</span>
+                                    <span class="buttonText">QQ登录</span>
                                 </button>
                                 <button class="Button GplusConnectButton Module btn hasText large rounded unAuthGplusConnect registerLoginButton Button" id="GplusConnectButton-7" type="button">
 
                                     <em></em>
-                                    <span class="buttonText">Log in with WeChat</span>
+                                    <span class="buttonText">WeChat登录</span>
                                 </button>
 
                                 <button class="Button Module btn hasText large rounded unAuthTwitterConnect registerLoginButton" id="Button-8" type="button">
                                     <em></em>
-                                    <span class="buttonText">Log in with SINAWB</span>
+                                    <span class="buttonText">SINAWB登录</span>
                                 </button>
 
                             </div>
@@ -88,17 +87,17 @@
                                 <div class="formFooterButtons">
                                     <button class="Button Module btn hasText large primary rounded" id="Button-9" type="submit" tabIndex="4">
 
-                                        <span class="buttonText">Log in</span>
+                                        <span class="buttonText">登录</span>
                                     </button>
                                    &nbsp;&nbsp;<span style="color: red">${note}</span>
                                 </div>
                                 <br/>
                                 <ul class="auxillaryLinks">
                                     <li>
-                                        <a href="goFindPassword.htm">Forgot your password?</a>
+                                        <a href="goFindPassword.htm">忘记密码</a>
                                     </li>
                                     <li>
-                                        <a href="goRegisterPage.htm">Sign up now</a>
+                                        <a href="goRegisterPage.htm">注册</a>
                                     </li>
                                 </ul>
                             </div>
