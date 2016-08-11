@@ -3598,7 +3598,7 @@ img {
 	padding: 5px 0px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; word-break: break-all;
 }
 .uinfo-mod .info-item-name {
-	color: #ffffff;
+	color: #0088cc;
 }
 .uinfo-mod .daren-about {
 	background: rgb(249, 249, 249); padding: 8px 10px;
@@ -3689,7 +3689,7 @@ img {
 }
 #course-side .flat {
 	margin-bottom: 8px;
-    color: #d4d4d4;
+    color: #0088cc;
 }
 .dform #course-main .item-input {
 	width: 620px;

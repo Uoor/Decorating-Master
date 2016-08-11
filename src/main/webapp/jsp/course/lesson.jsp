@@ -428,10 +428,10 @@
         </div>
 
         <div class="flat lesson-summary-flat">
-            <h2>裱花样式简介</h2>
+            <h2>裱花样式下载</h2>
             <a href="download.htm?fileId=${requestScope.fileId}&DDMName=${lesson.courseTitle}" style="float:right;font-size: 15px;
             padding-right: 40px;" >
-                <img src="/resource/img/download.png" style="width:40px" >
+                <img src="/resource/img/download.png" style="width:65px" >
 
                 </a>
 <%-- WJL 打印机控件
