@@ -42,7 +42,7 @@
                         <form class="standardForm standardForm--login " method="post" action="userRegister.htm" name="form1">
 
                             <h1>
-                                Join TINYMOOC                 </h1>
+                                裱花大师                 </h1>
 
                             <div class="socialLogin">
                                     <p>
@@ -76,12 +76,12 @@
                                 <div class="formFooterButtons">
                                     <button class="Button Module btn hasText large primary rounded" id="Button-9" type="submit" tabIndex="4" onclick="validate()" id="loginOK">
 
-                                        <span class="buttonText">Register</span>
+                                        <span class="buttonText">注册</span>
                                     </button>
                                 </div>
 
                                 <ul class="auxillaryLinks">
-                                    <p>Have had an account？</p>
+                                    <p>已注册账号？</p>
                                     <li>
                                         <a href="goLoginPage.htm">Log in</a>
                                     </li>

@@ -74,18 +74,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="top-menu" >
                 <span class="menu"><img src="resource/images/nav.png" alt=""/> </span>
                 <ul>
-                    <li><a href="http://localhost:8092/turnToHomePage.htm" class="active">首页</a></li>
+                    <li><a href="turnToHomePage.htm" class="active">首页</a></li>
                     <li class="biaohua"><a href="goCourseHome.htm" class="active" >裱花</a>
                         <ul class="nav-menus">
-                            <li><a href="goMajorHome.htm?type=奶油">奶油</a></li>
-                            <li><a href="goMajorHome.htm?type=人造奶油">人造奶油</a></li>
-                            <li><a href="goMajorHome.htm?type=鲜奶油">鲜奶油</a></li>
-                            <li><a href="goMajorHome.htm?type=植指奶油">植指奶油</a></li>
-                            <li><a href="goMajorHome.htm?type=蛋白">蛋白</a></li>
+                            <li><a href="goMajorHome.htm?type=树脂奶油">树脂奶油</a></li>
+                            <li><a href="goMajorHome.htm?type=动脂奶油">动脂奶油</a></li>
                             <li><a href="goMajorHome.htm?type=巧克力">巧克力</a></li>
-                            <li><a href="goMajorHome.htm?type=糖面">糖面</a></li>
-                            <li><a href="goMajorHome.htm?type=水果">水果</a></li>
+                            <li><a href="goMajorHome.htm?type=翻糖">翻糖</a></li>
+                            <li><a href="goMajorHome.htm?type=豆沙">豆沙</a></li>
+                            <li><a href="goMajorHome.htm?type=奶油霜">奶油霜</a></li>
                             <li><a href="goMajorHome.htm?type=其他">其他</a></li>
+
                         </ul>
                     </li>
                     <li><a href="teamPage.htm">店铺</a></li>
